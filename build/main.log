@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.10)  9 MAR 2023 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.10)  9 MAR 2023 23:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -737,7 +737,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
+ (build/main.bbl)
 Package biblatex Info: Reference section=0 on input line 12.
 Package biblatex Info: Reference segment=0 on input line 12.
 \openout2 = `structure/title.aux'.
@@ -835,7 +835,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
  (./chapters/01-introduction.tex
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 24.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -844,16 +844,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 \clearpage
+l.33 \clearpage
                          % To start a new page [1
 
 
@@ -864,7 +864,7 @@ l.17 \clearpage
 <figures/blackbox.jpeg, id=111, 321.2pt x 321.2pt>
 File: figures/blackbox.jpeg Graphic file (type jpg)
 <use figures/blackbox.jpeg>
-Package pdftex.def Info: figures/blackbox.jpeg  used on input line 25.
+Package pdftex.def Info: figures/blackbox.jpeg  used on input line 41.
 (pdftex.def)             Requested size: 321.19922pt x 321.19922pt.
  [2
 
@@ -927,7 +927,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  23188 strings out of 478268
- 413637 string characters out of 5846346
+ 413647 string characters out of 5846346
  1177497 words of memory out of 5000000
  40804 multiletter control sequences out of 15000+600000
  545269 words of font info for 212 fonts, out of 8000000 for 9000
