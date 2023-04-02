@@ -1,17 +1,70 @@
-\chapter{Background}
-\label{chap:background}
+\chapter{Machine Learning Techniques}
+\label{chap:MLTechniques}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% OUTLINE FOR BACKGROUND
-% 1. Supernovae 
-%     1.1. Types of supernovae
-%     1.2. Supernova classification
-%     1.3. Supernova light curves
-% 2. Previous Attempts at Machine Learning
-%     2.1. 1D CNN currently in use at DESI
-%     2.2. 2D CNN developed last year 
-% 3. Advancements in Machine Learning
-%     3.1. Transformers
-%     3.2. Vision Transformers (ViT)
-%     3.3. Self-Attention (VERY IMPORTANT FOR THIS)
+% Outline 
+% Introduce Machine Learning, and why traiditonal FCN is not good enough
+% 1. Convolutional Neural Networks
+% 1.1 Example architecture and sucess in vision tasks
+% 1.2 1D CNN implemented on DESI spectra
+% 1.3 2D CNN implemented on DESI spectra (Eddies Research)
+% 2. Transformers 
+% 2.1 Example architecture and sucess in NLP tasks + Vision Tasks --> Connection 
+%      to DESI
+% 2.2 Multi-Head Attention and Self-Attention for spectral classification
+% 2.3 Possilbility of NOT having to k-correct for redshift because of this attention
+% 2.4 Adjected ViT architecture for DESI
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Lorem Ipsum
+To aid in the classification of supernovae, machine learning techniques provide 
+flexibility and scalability that have been previously unattainable by manual 
+methods. The simplest form of machine learning algorithms are the feed-forward 
+fully connected neural networks (FCNs). These networks apply a series of linear 
+transformations to the input data, followed by a bias and a non-linear activation 
+function. The output of the network is another vector tailored for whatever the 
+purpose of the FCN is (i.e. for classification, is a vector of probabilities 
+that the input data belongs to, see Appendix~\ref{app:FCN}). 
+
+This architecture, while simplistic, is very powerful. \textcite{cybenko1989} showed that for any boolean 
+function (i.e. 2 class classification), a FCN with a single hidden layer could 
+approximate any function arbitrarily well; this is known as the universal approximation
+theorem. This theorem is the basis for the success of FCNs in
+many fields, but also the reason why they are not the best choice for all problems.
+The main issue with FCNs is that they are not invariant to translations, which is 
+essential for many problems such as image recognition, time series analysis, and 
+natural language processing. Therefore, alternative options have been proposed. 
+\section{Convolutional Neural Networks}
+\label{sec:CNN}
+Convolutional neural networks (CNNs) were originally developed as a solution 
+to positional differences in the input data \parencite{fukushima1979}. This architecture 
+was shown to be effective in image recognition tasks by \textcite{lecun2004}, and 
+was popularized after the success of AlexNet in the 
+ImageNet challenge \textcite{krizhevsky2012}, and have since been applied for use in 
+many other vision tasks, as well as other fields such as NLP and audio processing. 
+CNNs are composed of a series of convolutional layers, usually followed by a 
+pooling layer, and then a fully connected layer (Appendix~\ref{app:CNN}). The convolutional layers are 
+composed of a series of convolutional filters (usually referred to as feature maps)
+which are applied across the entire input space. The application of the same filter 
+across the entire input space is what gives the CNN its invariance to translations.
+
+\subsection{CNNs on Spectroscopic Data}
+\label{sec:CNNspectra}
+Due to their affinity for disregarding spacial invariance, CNNs theoretically should 
+translate to spectral classification quite well. In fact, CNNs have been applied t
+o spectroscopic data in the past, even on the DESI dataset. 
+\textcite{parks2018} used a CNN to detect strong emission lines in DESI spectra with 
+great success. * Talk about 1D CNN currently running, and preprocessing used *
+
+This work provides a baseline for the use of CNNs on supernovae classification, 
+but leaves more to be desired. Therefore, an alternate architecture was proposed 
+by * Cite Eddies work * which augments the preprocessing of the spectra with 
+a conversion to a 2D image. This 2D image was then fed to a more traditional vision 
+CNN architecture (Appendix~\ref{app:CNN}). This change lead to a model that was 
+able to determine the 
+\section{Previous and Current Attempts at Machine Learning}
+\label{sec:previousML}
+% talk about advantage of CNN
+
+\section{Introduction of Transformers}
+\label{sec:transformers}
+% Advantage of transformers in this field
+

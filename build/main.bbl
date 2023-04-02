@@ -46,6 +46,263 @@
       \field{title}{Rendezvous with Rama}
       \field{year}{1990}
     \endentry
+    \entry{cybenko1989}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=743aed8cb3e0d5dddafd15fc0421d6eb}{%
+           family={Cybenko},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{743aed8cb3e0d5dddafd15fc0421d6eb}
+      \strng{fullhash}{743aed8cb3e0d5dddafd15fc0421d6eb}
+      \strng{bibnamehash}{743aed8cb3e0d5dddafd15fc0421d6eb}
+      \strng{authorbibnamehash}{743aed8cb3e0d5dddafd15fc0421d6eb}
+      \strng{authornamehash}{743aed8cb3e0d5dddafd15fc0421d6eb}
+      \strng{authorfullhash}{743aed8cb3e0d5dddafd15fc0421d6eb}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper we demonstrate that finite linear combinations of compositions of a fixed, univariate function and a set of affine functionals can uniformly approximate any continuous function ofn real variables with support in the unit hypercube; only mild conditions are imposed on the univariate function. Our results settle an open question about representability in the class of single hidden layer neural networks. In particular, we show that arbitrary decision regions can be arbitrarily well approximated by continuous feedforward neural networks with only a single internal, hidden layer and any continuous sigmoidal nonlinearity. The paper discusses approximation properties of other possible types of nonlinearities that might be implemented by artificial neural networks.}
+      \field{isbn}{1435-568X}
+      \field{journaltitle}{Mathematics of Control, Signals and Systems}
+      \field{number}{4}
+      \field{title}{Approximation by superpositions of a sigmoidal function}
+      \field{volume}{2}
+      \field{year}{1989}
+      \field{pages}{303\bibrangedash 314}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/BF02551274
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF02551274
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF02551274
+      \endverb
+      \warn{\item Entry 'cybenko1989' (references.bib): Invalid format '1989/12/01' of date field 'date' - ignoring}
+    \endentry
+    \entry{fukushima1979}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=23d96062ed18321873ac4b8b6e2fc816}{%
+           family={Fukushima},
+           familyi={F\bibinitperiod},
+           given={Kunihiko},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Tokyo, Japan}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann Publishers Inc.}%
+      }
+      \strng{namehash}{23d96062ed18321873ac4b8b6e2fc816}
+      \strng{fullhash}{23d96062ed18321873ac4b8b6e2fc816}
+      \strng{bibnamehash}{23d96062ed18321873ac4b8b6e2fc816}
+      \strng{authorbibnamehash}{23d96062ed18321873ac4b8b6e2fc816}
+      \strng{authornamehash}{23d96062ed18321873ac4b8b6e2fc816}
+      \strng{authorfullhash}{23d96062ed18321873ac4b8b6e2fc816}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, I propose a new algorithm for self-organizing a multilayered neural network which has an ability to recognize patterns based on the geometrical similarity of their shapes. This network, whose nickname is "neo-cognitron", has a structure similar to the hierarchy model of the visual nervous system proposed by Hubel and Wiesel. The network consists of a photoreceptor layer followed by a cascade connection of a number of modular structures, each of which is composed of two layers of cells connected in a cascade. The first layer of each module consists of "S-cells", which show characteristics similar to simple cells or lower order hypercomplex cells, and the second layer consists of "C-cells" similar to complex cells or higher order hypercomplex cells. The input synapses to each S-cell have plasticity and are modifiable. The network has an ability of unsupervised learning: We don't need any "teacher" during the process of self-organization, and it is only needed to present a set of stimulus patterns repeatedly to the input layer. The network has been simulated on a digital computer. After completion of self-organization, the stimulus patterns has become to elicit their own response from the last C-cell layer. That is, the response of the last C-cell layer changes without fail, if a stimulus patterns of a different category is presented to the input layer. The response of that layer, however, is not affected by the pattern's position at all. Neither is it affected by a certain amount of changes of the pattern's shape or size.}
+      \field{booktitle}{Proceedings of the 6th International Joint Conference on Artificial Intelligence - Volume 1}
+      \field{isbn}{0934613478}
+      \field{series}{IJCAI'79}
+      \field{title}{Self-Organization of a Neural Network Which Gives Position-Invariant Response}
+      \field{year}{1979}
+      \field{pages}{291\bibrangedash 293}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.5555/1624861.1624928
+      \endverb
+    \endentry
+    \entry{krizhevsky2012}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c5e3a676e2ac1164b3afcd539c131fc9}{%
+           family={Krizhevsky},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d569d1d5b8b5a7836017a98b430f959}{%
+           family={Sutskever},
+           familyi={S\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=813bd95fe553e6079cd53a567b238287}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=128472f7930be2fd0645b02dc02aaeb8}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=270087258d6a002033f05032fbdf6fad}{%
+           family={Burges},
+           familyi={B\bibinitperiod},
+           given={C.J.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bbfb0f3936c83b7b099561e6f0e32ef3}{%
+           family={Bottou},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ad5ed31dbb8d37755c6cb48bedfdfe1d}{%
+           family={Weinberger},
+           familyi={W\bibinitperiod},
+           given={K.Q.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{fullhash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{bibnamehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{authorbibnamehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{authornamehash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{authorfullhash}{1a23c09aa65b3c2ade45ed18d8127375}
+      \strng{editorbibnamehash}{6d86a4a427d6d8717a2b98ed4d40921c}
+      \strng{editornamehash}{6d86a4a427d6d8717a2b98ed4d40921c}
+      \strng{editorfullhash}{7d78cfe0216557561ed3a11320faaa87}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{ImageNet Classification with Deep Convolutional Neural Networks}
+      \field{volume}{25}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf
+      \endverb
+    \endentry
+    \entry{lecun2004}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9ae8dc3a930d73e11e1b22a9ef065055}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a128f901f27089486fa73ef3c8ef4528}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Fu\bibnamedelima Jie},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbfb0f3936c83b7b099561e6f0e32ef3}{%
+           family={Bottou},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{51d17054567366d5d38f2d2c149ea226}
+      \strng{fullhash}{51d17054567366d5d38f2d2c149ea226}
+      \strng{bibnamehash}{51d17054567366d5d38f2d2c149ea226}
+      \strng{authorbibnamehash}{51d17054567366d5d38f2d2c149ea226}
+      \strng{authornamehash}{51d17054567366d5d38f2d2c149ea226}
+      \strng{authorfullhash}{51d17054567366d5d38f2d2c149ea226}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2004. CVPR 2004.}
+      \field{title}{Learning methods for generic object recognition with invariance to pose and lighting}
+      \field{volume}{2}
+      \field{year}{2004}
+      \field{pages}{II\bibrangedash 104 Vol.2}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/CVPR.2004.1315150
+      \endverb
+    \endentry
+    \entry{parks2018}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7b8d6f08df5a2b6f0e04ca2a8c2d79e3}{%
+           family={Parks},
+           familyi={P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=007c6247db5f7fb28b9162ba2dadc420}{%
+           family={Prochaska},
+           familyi={P\bibinitperiod},
+           given={J\bibnamedelima Xavier},
+           giveni={J\bibinitperiod\bibinitdelim X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f22e04059e5500beee695504eee814e3}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Shawfeng},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aad981708c41165f42d6d48575813da1}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Zheng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{03516251ee4452bdb56cb6066f57351c}
+      \strng{fullhash}{774d8e1792822c80b29246d8423e069c}
+      \strng{bibnamehash}{03516251ee4452bdb56cb6066f57351c}
+      \strng{authorbibnamehash}{03516251ee4452bdb56cb6066f57351c}
+      \strng{authornamehash}{03516251ee4452bdb56cb6066f57351c}
+      \strng{authorfullhash}{774d8e1792822c80b29246d8423e069c}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{We have designed, developed, and applied a convolutional neural network (CNN) architecture using multi-task learning to search for and characterize strong H i Lyα absorption in quasar spectra. Without any explicit modelling of the quasar continuum or application of the predicted line profile for Lyα from quantum mechanics, our algorithm predicts the presence of strong H i absorption and estimates the corresponding redshift zabs and H i column density \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\$, with emphasis on damped Lyα systems (DLAs, absorbers with \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\ge 2 \\times 10^\\{20\\} \\, \\{\\rm cm^\\{-2\\}\\}\\$). We tuned the CNN model using a custom training set of DLAs injected into DLA-free quasar spectra from the Sloan Digital Sky Survey (SDSS), data release 5 (DR5). Testing on a held-back validation set demonstrates a high incidence of DLAs recovered by the algorithm (97.4 per cent as DLAs and 99 per cent as an H i absorber with \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\&gt; 10^\\{19.5\\} \\, \\{\\rm cm^\\{-2\\}\\}\\$) and excellent estimates for zabs and \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\$. Similar results are obtained against a human-generated survey of the SDSS DR5 data set. The algorithm yields a low incidence of false positives and negatives but is challenged by overlapping DLAs and/or very high \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\$ systems. We have applied this CNN model to the quasar spectra of SDSS DR7 and the Baryon Oscillation Spectroscopic Survey (data release 12) and provide catalogues of 4913 and 50 969 DLAs, respectively (including 1659 and 9230 high-confidence DLAs that were previously unpublished). This work validates the application of deep learning techniques to astronomical spectra for both classification and quantitative measurements.}}
+      \field{issn}{0035-8711}
+      \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{{Deep learning of quasar spectra to discover and characterize damped Lyα systems}}
+      \field{volume}{476}
+      \field{year}{2018}
+      \field{pages}{1151\bibrangedash 1168}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1093/mnras/sty196
+      \endverb
+      \verb{eprint}
+      \verb https://academic.oup.com/mnras/article-pdf/476/1/1151/24261051/sty196.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/mnras/sty196
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/mnras/sty196
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

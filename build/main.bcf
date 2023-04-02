@@ -2349,7 +2349,17 @@
     <bcf:citekey order="2">clarke1990rendezvous</bcf:citekey>
     <bcf:citekey order="3">clarke1990rendezvous</bcf:citekey>
     <bcf:citekey order="4">clarke1990rendezvous</bcf:citekey>
-    <bcf:citekey order="5">clarke1990rendezvous</bcf:citekey>
+    <bcf:citekey order="5">cybenko1989</bcf:citekey>
+    <bcf:citekey order="6">fukushima1979</bcf:citekey>
+    <bcf:citekey order="7">lecun2004</bcf:citekey>
+    <bcf:citekey order="8">krizhevsky2012</bcf:citekey>
+    <bcf:citekey order="9">parks2018</bcf:citekey>
+    <bcf:citekey order="10">clarke1990rendezvous</bcf:citekey>
+    <bcf:citekey order="11">cybenko1989</bcf:citekey>
+    <bcf:citekey order="12">fukushima1979</bcf:citekey>
+    <bcf:citekey order="13">lecun2004</bcf:citekey>
+    <bcf:citekey order="14">krizhevsky2012</bcf:citekey>
+    <bcf:citekey order="15">parks2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
