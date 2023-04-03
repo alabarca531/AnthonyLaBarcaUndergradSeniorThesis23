@@ -65,19 +65,21 @@ but was not able to achieve astonishingly high accuracy. Figure \ref{fig:cnn_qua
 shows the ROC curve and confusion matrix for the CNN trained on synthetic spectra. 
 
 % Make figure with two images side by side 
+
 \begin{figure}[h]
     \centering
-    \subfloat[\centering~ROC curve]{{\includegraphics[width=5cm]{figures/cnn_rocfull.png} }}
+    \subfloat[\centering~ROC curve]{\includegraphics[width=5cm]{figures/cnn_rocfull.png}}
     \qquad
-    \subfloat[\centering~Confusion Matrix]{{\includegraphics[width=5cm]{figures/cnn_cmfull.png}}}
-    \caption{CNN Diagnostics\label{fig:cnn_qual}}
+    \subfloat[\centering~Confusion Matrix]{\includegraphics[width=5cm]{figures/cnn_cmfull.png}}
+    \caption{CNN Diagnostics}
+    \label{fig:cnn_qual}
 \end{figure}
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{figures/cnn_max_ypred.png}
-    \caption{Max value of the output vector for the CNN.
-    \label{fig:cnn_max}}
+    \caption{Max value of the output vector for the CNN.}
+    \label{fig:cnn_max}
 \end{figure}
 
 The maximum value of the output vector was used to determine the predicted class,
@@ -87,15 +89,20 @@ the distribution of the maximum value found. As shown, there are approximately
 more that are not.
 \begin{figure}[h]
     \centering
-    \subfloat[\centering~ROC curve]{{\includegraphics[width=5cm]{figures/cnn_roc99.png}}}
+    \subfloat[\centering~ROC curve]{\includegraphics[width=5cm]{figures/cnn_roc99.png}}
     \qquad
-    \subfloat[\centering~Confusion Matrix]{{\includegraphics[width=5cm]{figures/cnn_cm99.png}}}
-    \caption{CNN Diagnostics\label{fig:cnn_qual2}}
+    \subfloat[\centering~Confusion Matrix]{\includegraphics[width=5cm]{figures/cnn_cm99.png}}
+    \caption{CNN Diagnostics}
+    \label{fig:cnn_qual2}
 \end{figure} 
 If we look at the diagnostics again, but only for highly confident classifications,
-we see a much better ROC curve and confusion matrix (Figure \ref{fig:cnn_qual2}).
+we see a much better ROC curve and confusion matrix (Figure \ref{fig:cnn_qual2}). 
+This begs the question, which is more important? The ability to classify a lot of 
+spectra with low confidence, or a few spectra with high confidence? Even if a 
+cut was made on the confidence of the classification, would the optimal solution
+yield better results under the same conditions? 
 
-
+From
 
 % \begin{figure}[h]
 % \centering
