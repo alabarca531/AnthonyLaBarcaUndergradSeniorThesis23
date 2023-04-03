@@ -2,7 +2,14 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces This is a black box\relax }}{2}{figure.caption.3}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces CNN Diagnostics\relax }}{5}{figure.caption.5}%
+\contentsline {subfigure}{\numberline {((a))}{\ignorespaces {\centering ~ROC curve}}}{5}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {((b))}{\ignorespaces {\centering ~Confusion Matrix}}}{5}{subfigure.1.2}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Max value of the output vector for the CNN. \relax }}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces CNN Diagnostics\relax }}{6}{figure.caption.7}%
+\contentsline {subfigure}{\numberline {((a))}{\ignorespaces {\centering ~ROC curve}}}{6}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {((b))}{\ignorespaces {\centering ~Confusion Matrix}}}{6}{subfigure.3.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Examples of different continuum options (from left to right: linear, linear increasing, linear decreasing, exponential increasing, and exponential decreasing).\relax }}{7}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Examples of different continuum options (from left to right: linear, linear increasing, linear decreasing, exponential increasing, and exponential decreasing).\relax }}{8}{figure.caption.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

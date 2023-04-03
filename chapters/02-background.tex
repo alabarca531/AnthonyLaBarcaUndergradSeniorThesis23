@@ -58,8 +58,51 @@ This work provides a baseline for the use of CNNs on supernovae classification,
 but leaves more to be desired. Therefore, an alternate architecture was proposed 
 by * Cite Eddies work * which augments the preprocessing of the spectra with 
 a conversion to a 2D image. This 2D image was then fed to a more traditional vision 
-CNN architecture (Appendix~\ref{app:CNN}). This change lead to a model that was 
-able to determine the 
+CNN architecture (Appendix~\ref{app:CNN}). 
+
+This architecture was shown to train quickly (less than 1 hour on a single GPU), 
+but was not able to achieve astonishingly high accuracy. Figure \ref{fig:cnn_qual}
+shows the ROC curve and confusion matrix for the CNN trained on synthetic spectra. 
+
+% Make figure with two images side by side 
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC curve]{{\includegraphics[width=5cm]{figures/cnn_rocfull.png} }}
+    \qquad
+    \subfloat[\centering~Confusion Matrix]{{\includegraphics[width=5cm]{figures/cnn_cmfull.png}}}
+    \caption{CNN Diagnostics\label{fig:cnn_qual}}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/cnn_max_ypred.png}
+    \caption{Max value of the output vector for the CNN.
+    \label{fig:cnn_max}}
+\end{figure}
+
+The maximum value of the output vector was used to determine the predicted class,
+which may not be the best choice for this problem. Figure \ref{fig:cnn_max} shows
+the distribution of the maximum value found. As shown, there are approximately 
+20 thousand spectra that are classified very confidently, but there are many
+more that are not.
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC curve]{{\includegraphics[width=5cm]{figures/cnn_roc99.png}}}
+    \qquad
+    \subfloat[\centering~Confusion Matrix]{{\includegraphics[width=5cm]{figures/cnn_cm99.png}}}
+    \caption{CNN Diagnostics\label{fig:cnn_qual2}}
+\end{figure} 
+If we look at the diagnostics again, but only for highly confident classifications,
+we see a much better ROC curve and confusion matrix (Figure \ref{fig:cnn_qual2}).
+
+
+
+% \begin{figure}[h]
+% \centering
+% \includegraphics[width=0.5\textwidth]{figures/cnn_cmfull.png}
+% \caption{Confusion matrix for the CNN trained on synthetic spectra.}
+% \label{fig:cnn_qual}
+% \end{figure}
 \section{Previous and Current Attempts at Machine Learning}
 \label{sec:previousML}
 % talk about advantage of CNN
