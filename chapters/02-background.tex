@@ -59,13 +59,6 @@ but leaves more to be desired. Therefore, an alternate architecture was proposed
 by * Cite Eddies work * which augments the preprocessing of the spectra with 
 a conversion to a 2D image. This 2D image was then fed to a more traditional vision 
 CNN architecture (Appendix~\ref{app:CNN}). 
-
-This architecture was shown to train quickly (less than 1 hour on a single GPU), 
-but was not able to achieve astonishingly high accuracy. Figure \ref{fig:cnn_qual}
-shows the ROC curve and confusion matrix for the CNN trained on synthetic spectra. 
-
-% Make figure with two images side by side 
-
 \begin{figure}[h]
     \centering
     \subfloat[\centering~ROC curve]{\includegraphics[width=5cm]{figures/cnn_rocfull.png}}
@@ -74,7 +67,9 @@ shows the ROC curve and confusion matrix for the CNN trained on synthetic spectr
     \caption{CNN Diagnostics}
     \label{fig:cnn_qual}
 \end{figure}
-
+This architecture was shown to train quickly (less than 1 hour on a single GPU), 
+but was not able to achieve astonishingly high accuracy. Figure \ref{fig:cnn_qual}
+shows the ROC curve and confusion matrix for the CNN trained on synthetic spectra. 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{figures/cnn_max_ypred.png}
@@ -95,6 +90,7 @@ more that are not.
     \caption{CNN Diagnostics}
     \label{fig:cnn_qual2}
 \end{figure} 
+
 If we look at the diagnostics again, but only for highly confident classifications,
 we see a much better ROC curve and confusion matrix (Figure \ref{fig:cnn_qual2}). 
 This begs the question, which is more important? The ability to classify a lot of 

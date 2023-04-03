@@ -1,41 +1,41 @@
-\chapter{Validity of Transformers for Spectral Classification}
-\label{chap:chapter-3}
-\section{Creation of artificial spectra}
-\label{sec:creation}
-Creating large amounts of high signal-to-noise signals was essential to verifying 
-the application of a Vision Transformer. These signals needed to include the 
-basic features of supernova spectrum, such as the presence of a continuum, 
-absorption lines, and emission lines. The locations of these spectral features 
-in particular were not important, as long as each class of supernovae had consistent 
-features. The \texttt{GenData} class was created to generate these signals. 
+% \chapter{Validity of Transformers for Spectral Classification}
+% \label{chap:chapter-3}
+% \section{Creation of artificial spectra}
+% \label{sec:creation}
+% Creating large amounts of high signal-to-noise signals was essential to verifying 
+% the application of a Vision Transformer. These signals needed to include the 
+% basic features of supernova spectrum, such as the presence of a continuum, 
+% absorption lines, and emission lines. The locations of these spectral features 
+% in particular were not important, as long as each class of supernovae had consistent 
+% features. The \texttt{GenData} class was created to generate these signals. 
 
-\subsection{Features of \texttt{GenData} class}
-\label{ssec:features}
-The \texttt{GenData} class must provide a means of generating a large number (order of $10^5$)
-of random spectra. These spectra must exhibit a consistent continuum, variable noise, 
-and a set of spectral features that are unique to arbitrary classes. In order to 
-accomplish this, the \texttt{GenData} class must first identify a domain in which 
-to place spectral features, noise, and the continuum. The continuum is a function across
-the domain that remains consistent for all samples, and examples can be found in Fig.~\ref{fig:continuumoptions}.
-A set number of spectral features are randomly placed within the domain. The number of spectral
-features is determined by the user. Then, each class (or type) of spectra is assigned 
-a random combination of these spectral features. This is to ensure that each class 
-has a unique set of spectral features, while maintaining a consistent location of features. 
-Once the different classes are specified, the creation of the spectra can begin.
+% \subsection{Features of \texttt{GenData} class}
+% \label{ssec:features}
+% The \texttt{GenData} class must provide a means of generating a large number (order of $10^5$)
+% of random spectra. These spectra must exhibit a consistent continuum, variable noise, 
+% and a set of spectral features that are unique to arbitrary classes. In order to 
+% accomplish this, the \texttt{GenData} class must first identify a domain in which 
+% to place spectral features, noise, and the continuum. The continuum is a function across
+% the domain that remains consistent for all samples, and examples can be found in Fig.~\ref{fig:continuumoptions}.
+% A set number of spectral features are randomly placed within the domain. The number of spectral
+% features is determined by the user. Then, each class (or type) of spectra is assigned 
+% a random combination of these spectral features. This is to ensure that each class 
+% has a unique set of spectral features, while maintaining a consistent location of features. 
+% Once the different classes are specified, the creation of the spectra can begin.
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\textwidth]{figures/blackbox.jpeg}
-    \caption{Examples of different continuum options
-    (from left to right: linear, linear increasing, linear decreasing, 
-exponential increasing, and exponential decreasing).}
-    \label{fig:continuumoptions}
-\end{figure}
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.5\textwidth]{figures/blackbox.jpeg}
+%     \caption{Examples of different continuum options
+%     (from left to right: linear, linear increasing, linear decreasing, 
+% exponential increasing, and exponential decreasing).}
+%     \label{fig:continuumoptions}
+% \end{figure}
 
-\subsection{Creation of spectra}
-\label{ssec:creation}
-Once the spectral features present in each class are determined, the spectra can 
-be constructed from the ground up. First, the continuum is created 
+% \subsection{Creation of spectra}
+% \label{ssec:creation}
+% Once the spectral features present in each class are determined, the spectra can 
+% be constructed from the ground up. First, the continuum is created 
 
 % The essential Some of the features of the \texttt{GenData} class are as follows:
 % \begin{itemize}
