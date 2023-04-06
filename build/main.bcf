@@ -2354,12 +2354,16 @@
     <bcf:citekey order="7">lecun2004</bcf:citekey>
     <bcf:citekey order="8">krizhevsky2012</bcf:citekey>
     <bcf:citekey order="9">parks2018</bcf:citekey>
-    <bcf:citekey order="10">clarke1990rendezvous</bcf:citekey>
-    <bcf:citekey order="11">cybenko1989</bcf:citekey>
-    <bcf:citekey order="12">fukushima1979</bcf:citekey>
-    <bcf:citekey order="13">lecun2004</bcf:citekey>
-    <bcf:citekey order="14">krizhevsky2012</bcf:citekey>
-    <bcf:citekey order="15">parks2018</bcf:citekey>
+    <bcf:citekey order="10">vaswani2017</bcf:citekey>
+    <bcf:citekey order="11">dosovitskiy2020</bcf:citekey>
+    <bcf:citekey order="12">clarke1990rendezvous</bcf:citekey>
+    <bcf:citekey order="13">cybenko1989</bcf:citekey>
+    <bcf:citekey order="14">fukushima1979</bcf:citekey>
+    <bcf:citekey order="15">lecun2004</bcf:citekey>
+    <bcf:citekey order="16">krizhevsky2012</bcf:citekey>
+    <bcf:citekey order="17">parks2018</bcf:citekey>
+    <bcf:citekey order="18">vaswani2017</bcf:citekey>
+    <bcf:citekey order="19">dosovitskiy2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

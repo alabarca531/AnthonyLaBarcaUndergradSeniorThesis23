@@ -19,33 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
-    \entry{clarke1990rendezvous}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5d9327b8153ed2705b5f1c5f43793454}{%
-           family={Clarke},
-           familyi={C\bibinitperiod},
-           given={Arthur\bibnamedelima Charles},
-           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Spectra}%
-      }
-      \strng{namehash}{5d9327b8153ed2705b5f1c5f43793454}
-      \strng{fullhash}{5d9327b8153ed2705b5f1c5f43793454}
-      \strng{bibnamehash}{5d9327b8153ed2705b5f1c5f43793454}
-      \strng{authorbibnamehash}{5d9327b8153ed2705b5f1c5f43793454}
-      \strng{authornamehash}{5d9327b8153ed2705b5f1c5f43793454}
-      \strng{authorfullhash}{5d9327b8153ed2705b5f1c5f43793454}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Rendezvous with Rama}
-      \field{year}{1990}
-    \endentry
     \entry{cybenko1989}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=743aed8cb3e0d5dddafd15fc0421d6eb}{%
@@ -86,6 +59,108 @@
       \verb https://doi.org/10.1007/BF02551274
       \endverb
       \warn{\item Entry 'cybenko1989' (references.bib): Invalid format '1989/12/01' of date field 'date' - ignoring}
+    \endentry
+    \entry{dosovitskiy2020}{article}{}
+      \name{author}{12}{}{%
+        {{un=0,uniquepart=base,hash=72308762399d6ab62bbd9391c64c7bfd}{%
+           family={Dosovitskiy},
+           familyi={D\bibinitperiod},
+           given={Alexey},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=836254958eac09b30d45dd67a75ce4fa}{%
+           family={Beyer},
+           familyi={B\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6807e3c00242c6bf6a3179905040471b}{%
+           family={Kolesnikov},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b398fca6879fde89a032b8e7de2f26b5}{%
+           family={Weissenborn},
+           familyi={W\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00b950307c7d096765bb6df00c7c5c3a}{%
+           family={Zhai},
+           familyi={Z\bibinitperiod},
+           given={Xiaohua},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a47640139e63b9b5969c969dfe95def}{%
+           family={Unterthiner},
+           familyi={U\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=965baf6fa5686a42b1564330c5e11f2f}{%
+           family={Dehghani},
+           familyi={D\bibinitperiod},
+           given={Mostafa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06829adce8713f0ace444279dcd7328f}{%
+           family={Minderer},
+           familyi={M\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c95269b4a2e23e1e526be521c7ec6ad4}{%
+           family={Heigold},
+           familyi={H\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=450963f966620925cb8fecd32f7a6ee1}{%
+           family={Gelly},
+           familyi={G\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=493a532418540859dca92cf3b579de2a}{%
+           family={Houlsby},
+           familyi={H\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d96316bc7578db680aba71d4226354c8}
+      \strng{fullhash}{b8c06eaeb698f61fc96ff3e5570552ec}
+      \strng{bibnamehash}{d96316bc7578db680aba71d4226354c8}
+      \strng{authorbibnamehash}{d96316bc7578db680aba71d4226354c8}
+      \strng{authornamehash}{d96316bc7578db680aba71d4226354c8}
+      \strng{authorfullhash}{b8c06eaeb698f61fc96ff3e5570552ec}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale}
+      \field{volume}{abs/2010.11929}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2010.11929
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2010.11929
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2010.11929
+      \endverb
     \endentry
     \entry{fukushima1979}{inproceedings}{}
       \name{author}{1}{}{%
@@ -303,7 +378,125 @@
       \verb https://doi.org/10.1093/mnras/sty196
       \endverb
     \endentry
+    \entry{vaswani2017}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={Łukasz},
+           giveni={Ł\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{7}{}{%
+        {{hash=e7e74de725116358b68a6e890c026145}{%
+           family={Guyon},
+           familyi={G\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=3b118a9660c18913c6d05d3bcfae41a3}{%
+           family={Luxburg},
+           familyi={L\bibinitperiod},
+           given={U.\bibnamedelimi Von},
+           giveni={U\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9b411b6c9cefdde16ffea77ecf612142}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1444141e07dd9549dbb4b8530fe4ec15}{%
+           family={Wallach},
+           familyi={W\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f3857e15544199442f3d4fb2cf6645b4}{%
+           family={Fergus},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c73f06e2fc98c9b0bf52eb5fdce61943}{%
+           family={Vishwanathan},
+           familyi={V\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=36b98b7ab533936cf1b5716148de704f}{%
+           family={Garnett},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{bibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{editorbibnamehash}{7cffda9a379be8eb9063eee4eb0f58b3}
+      \strng{editornamehash}{7cffda9a379be8eb9063eee4eb0f58b3}
+      \strng{editorfullhash}{1564f811a39f09a7400a11284c987926}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Attention is All you Need}
+      \field{volume}{30}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+      \endverb
+    \endentry
   \enddatalist
+  \missing{clarke1990rendezvous}
 \endrefsection
 \endinput
 

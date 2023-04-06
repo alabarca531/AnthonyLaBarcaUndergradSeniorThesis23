@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.10)  3 APR 2023 12:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.10)  3 APR 2023 14:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -148,28 +148,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box53
 \@float@everytoks=\toks23
 \@floatcapt=\box54
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
- (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2022/03/01 v3.6b Customizing captions (AR)
- (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen162
-\captionmargin=\dimen163
-\caption@leftmargin=\dimen164
-\caption@rightmargin=\dimen165
-\caption@width=\dimen166
-\caption@indent=\dimen167
-\caption@parindent=\dimen168
-\caption@hangindent=\dimen169
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count272
-\c@continuedfloat=\count273
-Package caption Info: float package is loaded.
-)
-\c@subfigure=\count274
-\c@subtable=\count275
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -187,14 +165,14 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
-
-(/usr/local/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/local/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+
+(/usr/local/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -215,9 +193,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen170
-\Hy@linkcounter=\count276
-\Hy@pagecounter=\count277
+\@linkdim=\dimen162
+\Hy@linkcounter=\count272
+\Hy@pagecounter=\count273
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -227,7 +205,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count278
+\Hy@SavedSpaceFactor=\count274
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -241,21 +219,21 @@ Package hyperref Info: Plain pages OFF on input line 4152.
 Package hyperref Info: Backreferencing OFF on input line 4157.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4390.
-\c@Hy@tempcnt=\count279
+\c@Hy@tempcnt=\count275
  (/usr/local/texlive/2022/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4749.
-\XeTeXLinkMargin=\dimen171
+\XeTeXLinkMargin=\dimen163
  (/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count280
-\Field@Width=\dimen172
-\Fld@charsize=\dimen173
+\Fld@menulength=\count276
+\Field@Width=\dimen164
+\Fld@charsize=\dimen165
 Package hyperref Info: Hyper figures OFF on input line 6027.
 Package hyperref Info: Link nesting OFF on input line 6032.
 Package hyperref Info: Hyper index ON on input line 6035.
@@ -269,9 +247,9 @@ LaTeX Info: Redefining \pageref on input line 6101.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count281
-\c@Item=\count282
-\c@Hfootnote=\count283
+\Hy@abspage=\count277
+\c@Item=\count278
+\c@Hfootnote=\count279
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -280,8 +258,8 @@ File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count284
-\c@bookmark@seq@number=\count285
+\Fld@listcount=\count280
+\c@bookmark@seq@number=\count281
  (/usr/local/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -292,12 +270,12 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip62
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
-\csq@reset=\count286
-\csq@gtype=\count287
-\csq@glevel=\count288
-\csq@qlevel=\count289
-\csq@maxlvl=\count290
-\csq@tshold=\count291
+\csq@reset=\count282
+\csq@gtype=\count283
+\csq@glevel=\count284
+\csq@qlevel=\count285
+\csq@maxlvl=\count286
+\csq@tshold=\count287
 \csq@ltx@everypar=\toks24
  (/usr/local/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
@@ -306,7 +284,29 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen166
+\captionmargin=\dimen167
+\caption@leftmargin=\dimen168
+\caption@rightmargin=\dimen169
+\caption@width=\dimen170
+\caption@indent=\dimen171
+\caption@parindent=\dimen172
+\caption@hangindent=\dimen173
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count288
+\c@continuedfloat=\count289
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+\c@subfigure=\count290
+\c@subtable=\count291
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -793,8 +793,24 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
+Package hyperref Info: Link coloring ON on input line 13.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count426
+)
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
+ (build/main.out) (build/main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
 
 
@@ -814,27 +830,11 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 13.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty)
-
-LaTeX Warning: You have requested, on input line 13, version
-               `2012/07/28' of package nameref,
-               but only version
-               `'
-               is available.
-
-LaTeX Info: Redefining \ref on input line 13.
-LaTeX Info: Redefining \pageref on input line 13.
-(build/main.out) (build/main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
-
 \big@size=\dimen178
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
-)
+(/usr/local/texlive/2022/texmf-dist/tex/latex/biblatex/lbx/english.lbx)
+File: english.lbx 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -847,6 +847,13 @@ Package biblatex Info: ... file 'main.bbl' found.
 Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'cybenko1989':
 (biblatex)                - Entry 'cybenko1989' (references.bib): Invalid format '1989/12/01' of date field 'date' - ignoring.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                clarke1990rendezvous
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
 
 )
 Package biblatex Info: Reference section=0 on input line 13.
@@ -921,22 +928,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 17.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-)
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
  [5
 
 
-] [6]
+])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [6]
 \openout2 = `structure/tablesfigures.aux'.
 
  (./structure/tablesfigures.tex (build/main.lot)
@@ -954,12 +953,48 @@ Package microtype Info: Loading generic protrusion settings for font family
 
  (./chapters/01-introduction.tex
 Chapter 1.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 24.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+LaTeX Warning: Citation 'clarke1990rendezvous' on page 1 undefined on input line 24.
+
+
+Overfull \hbox (32.27939pt too wide) in paragraph at lines 24--25
+[]\T1/ptm/m/n/12 (-20) The stan-dard [][]\T1/cmtt/m/n/12 \cite []\T1/ptm/m/n/12 (-20) com-mand pro-duces the fol-low-ing out-put: []. 
+ []
+
+
+LaTeX Warning: Citation 'clarke1990rendezvous' on page 1 undefined on input line 26.
+
+
+Overfull \hbox (14.85085pt too wide) in paragraph at lines 26--27
+[]\T1/ptm/m/n/12 (-20) The [][]\T1/cmtt/m/n/12 \textcite []\T1/ptm/m/n/12 (-20) com-mand pro-duces the fol-low-ing out-put: []. 
+ []
+
+
+LaTeX Warning: Citation 'clarke1990rendezvous' on page 1 undefined on input line 29.
+
+
+Overfull \hbox (28.8564pt too wide) in paragraph at lines 29--30
+[]\T1/ptm/m/n/12 (-20) The [][]\T1/cmtt/m/n/12 \parencite []\T1/ptm/m/n/12 (-20) com-mand pro-duces the fol-low-ing out-put: ([]). 
+ []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+
+LaTeX Warning: Citation 'clarke1990rendezvous' on page 1 undefined on input line 31.
+
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -972,10 +1007,10 @@ l.33 \clearpage
 
 
 ]
-<figures/blackbox.jpeg, id=174, 321.2pt x 321.2pt>
+<figures/blackbox.jpeg, id=152, 321.2pt x 321.2pt>
 File: figures/blackbox.jpeg Graphic file (type jpg)
 <use figures/blackbox.jpeg>
-Package pdftex.def Info: figures/blackbox.jpeg  used on input line 41.
+Package pdftex.def Info: figures/blackbox.jpeg  used on input line 42.
 (pdftex.def)             Requested size: 155.99762pt x 156.00237pt.
  [2
 
@@ -991,27 +1026,41 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 
  (./chapters/02-background.tex
 Chapter 2.
-./chapters/02-background.tex:25: Undefined control sequence.
-\reserved@c ->\T@ref 
-                     
-l.25 ... input data belongs to, see Appendix~\ref{
-                                                  app:FCN}).
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-./chapters/02-background.tex:44: Undefined control sequence.
-\reserved@c ->\T@ref 
-                     
-l.44 ...en a fully connected layer (Appendix~\ref{
-                                                  app:CNN}). The convolution...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'lecun2004' on input line 39.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'krizhevsky2012' on input line 41.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
 
 [4
 
@@ -1019,203 +1068,182 @@ and I'll forget about whatever was undefined.
 
 
 ]
-./chapters/02-background.tex:61: Undefined control sequence.
-\reserved@c ->\T@ref 
-                     
-l.61 CNN architecture (Appendix~\ref{
-                                     app:CNN}).
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-./chapters/02-background.tex:64: Undefined control sequence.
-\reserved@c ->\T@ref 
-                     
-l.64 ... astonishingly high accuracy. Figure \ref{
-                                                  fig:cnn_qual}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./chapters/02-background.tex:64: Missing $ inserted.
-<inserted text> 
-                $
-l.64 ...hingly high accuracy. Figure \ref{fig:cnn_
-                                                  qual}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./chapters/02-background.tex:64: Extra }, or forgotten $.
-l.64 ...y high accuracy. Figure \ref{fig:cnn_qual}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./chapters/02-background.tex:66: Missing $ inserted.
-<inserted text> 
-                $
-l.66 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Package biblatex Warning: Bibliography string 'andothers' untranslated
+(biblatex)                at entry 'parks2018' on input line 54.
 
 
-Overfull \hbox (49.13522pt too wide) in paragraph at lines 63--66
-\T1/ptm/m/n/12 (-20) fig:cnn$[]\OML/ztmcm/m/it/12 ualshowstheROCcurveandconfusionmatrixfortheCNNtrainedonsyntheticspectra:$ 
- []
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
 
-<figures/cnn_rocfull.png, id=198, 722.7pt x 361.35pt>
+<figures/cnn_rocfull.png, id=176, 722.7pt x 361.35pt>
 File: figures/cnn_rocfull.png Graphic file (type png)
 <use figures/cnn_rocfull.png>
-Package pdftex.def Info: figures/cnn_rocfull.png  used on input line 71.
+Package pdftex.def Info: figures/cnn_rocfull.png  used on input line 64.
 (pdftex.def)             Requested size: 142.26378pt x 71.13289pt.
-<figures/cnn_cmfull.png, id=200, 722.7pt x 614.295pt>
+<figures/cnn_cmfull.png, id=178, 722.7pt x 614.295pt>
 File: figures/cnn_cmfull.png Graphic file (type png)
 <use figures/cnn_cmfull.png>
-Package pdftex.def Info: figures/cnn_cmfull.png  used on input line 73.
+Package pdftex.def Info: figures/cnn_cmfull.png  used on input line 66.
 (pdftex.def)             Requested size: 142.26378pt x 120.9259pt.
-<figures/cnn_max_ypred.png, id=201, 722.7pt x 361.35pt>
+<figures/cnn_max_ypred.png, id=180, 722.7pt x 361.35pt>
 File: figures/cnn_max_ypred.png Graphic file (type png)
 <use figures/cnn_max_ypred.png>
-Package pdftex.def Info: figures/cnn_max_ypred.png  used on input line 80.
+Package pdftex.def Info: figures/cnn_max_ypred.png  used on input line 74.
 (pdftex.def)             Requested size: 195.0pt x 97.49963pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-./chapters/02-background.tex:86: Undefined control sequence.
-\reserved@c ->\T@ref 
-                     
-l.86 ...best choice for this problem. Figure \ref{
-                                                  fig:cnn_max} shows
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./chapters/02-background.tex:86: Missing $ inserted.
-<inserted text> 
-                $
-l.86 ...ice for this problem. Figure \ref{fig:cnn_
-                                                  max} shows
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./chapters/02-background.tex:86: Extra }, or forgotten $.
-l.86 ...for this problem. Figure \ref{fig:cnn_max}
-                                                   shows
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-./chapters/02-background.tex:90: LaTeX Error: Not in outer par mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 \begin{figure}[h]
-                      
-You've lost some text.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./chapters/02-background.tex:90: Undefined control sequence.
-\latex@xfloat ...vf \fi \global \setbox \@currbox 
-                                                  \color@vbox \normalcolor \...
-l.90 \begin{figure}[h]
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./chapters/02-background.tex:90: Missing number, treated as zero.
-<to be read again> 
-                   \vbox 
-l.90 \begin{figure}[h]
-                      
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-<figures/cnn_roc99.png, id=202, 722.7pt x 361.35pt>
+[5]
+<figures/cnn_roc99.png, id=191, 722.7pt x 361.35pt>
 File: figures/cnn_roc99.png Graphic file (type png)
 <use figures/cnn_roc99.png>
-Package pdftex.def Info: figures/cnn_roc99.png  used on input line 92.
+Package pdftex.def Info: figures/cnn_roc99.png  used on input line 85.
 (pdftex.def)             Requested size: 142.26378pt x 71.13289pt.
-<figures/cnn_cm99.png, id=203, 722.7pt x 614.295pt>
+<figures/cnn_cm99.png, id=192, 722.7pt x 614.295pt>
 File: figures/cnn_cm99.png Graphic file (type png)
 <use figures/cnn_cm99.png>
-Package pdftex.def Info: figures/cnn_cm99.png  used on input line 94.
+Package pdftex.def Info: figures/cnn_cm99.png  used on input line 87.
 (pdftex.def)             Requested size: 142.26378pt x 120.9259pt.
-./chapters/02-background.tex:99: Undefined control sequence.
-\reserved@c ->\T@ref 
-                     
-l.99 ...C curve and confusion matrix (Figure \ref{
-                                                  fig:cnn_qual2}).
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ [6 <./figures/cnn_rocfull.png> <./figures/cnn_cmfull.png> <./figures/cnn_max_ypred.png>]
 
-./chapters/02-background.tex:104: Missing $ inserted.
-<inserted text> 
-                $
-l.104 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Package biblatex Warning: Bibliography string 'andothers' untranslated
+(biblatex)                at entry 'vaswani2017' on input line 108.
 
 
-Overfull \hbox (2797.77626pt too wide) in paragraph at lines 85--104
-\T1/ptm/m/n/12 (-20) class, which may not be the best choice for this prob-lem. Fig-ure fig:cnn$[]\OML/ztmcm/m/it/12 axshowsthedistributionofthemaximumvaluefound:Asshown; thereareapproximately\OT1/ztmcm/m/n/12 20\OML/ztmcm/m/it/12 thousandspectrathatareclassifiedveryconfidently; buttherearemanymorethatarenot:Ifwelookatthediagnosticsagain; butonlyforhighlyconfidentclassifications; weseeamuchbetterROCcurveandconfusionmatrix\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 Figure[]\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 :Thisbegsthequestion; whichismoreimportant\OT1/ztmcm/m/n/12 ?\OML/ztmcm/m/it/12 Theabilitytoclassifyalotofspectrawithlowconfidence; orafewspectrawithhighconfidence\OT1/ztmcm/m/n/12 ?\OML/ztmcm/m/it/12 Evenifacutwasmadeontheconfidenceoftheclassification; wouldtheoptimalsolutionyieldbetterresultsunderthesameconditions\OT1/ztmcm/m/n/12 ?$ 
- []
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
 
-) [5 <./figures/cnn_rocfull.png> <./figures/cnn_cmfull.png>] [6 <./figures/cnn_max_ypred.png>]
+[7 <./figures/cnn_roc99.png> <./figures/cnn_cm99.png>]
+
+Package biblatex Warning: Bibliography string 'andothers' untranslated
+(biblatex)                at entry 'dosovitskiy2020' on input line 121.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdateshort.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdateshort.
+
+[8]) [9]
 \openout2 = `chapters/03-ValTransformers.aux'.
 
- (./chapters/03-ValTransformers.tex
-Chapter 3.
+ (./chapters/03-ValTransformers.tex)
 
-Overfull \hbox (17.23006pt too wide) in paragraph at lines 1--1
-|[]\T1/phv/b/n/24.88 (-20) Validity of Trans-form-ers for Spec-
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'cybenko1989' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'pages' untranslated
+(biblatex)                at entry 'cybenko1989' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'andothers' untranslated
+(biblatex)                at entry 'dosovitskiy2020' on input line 64.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'dosovitskiy2020' on input line 64.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'fukushima1979' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'pages' untranslated
+(biblatex)                at entry 'fukushima1979' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'krizhevsky2012' on input line 64.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'krizhevsky2012' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'byeditor' untranslated
+(biblatex)                at entry 'krizhevsky2012' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'andothers' untranslated
+(biblatex)                at entry 'krizhevsky2012' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'volume' untranslated
+(biblatex)                at entry 'krizhevsky2012' on input line 64.
+
+
+Overfull \hbox (0.38641pt too wide) in paragraph at lines 65--65
+\T1/cmtt/m/n/12 files / paper / 2012 / file / c399862d3b9d6b76c8436e924a68c45b -[] Paper .
  []
 
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 12.
-./chapters/03-ValTransformers.tex:19: Undefined control sequence.
-\reserved@c ->\T@ref 
-                     
-l.19 ...s, and examples can be found in Fig.~\ref{
-                                                  fig:continuumoptions}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-File: figures/blackbox.jpeg Graphic file (type jpg)
-<use figures/blackbox.jpeg>
-Package pdftex.def Info: figures/blackbox.jpeg  used on input line 28.
-(pdftex.def)             Requested size: 195.0pt x 195.0054pt.
-) [7
+Package biblatex Warning: Bibliography string 'and' untranslated
+(biblatex)                at entry 'lecun2004' on input line 64.
 
 
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
 
 
-] [8]
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'lecun2004' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'volume' untranslated
+(biblatex)                at entry 'lecun2004' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'andothers' untranslated
+(biblatex)                at entry 'parks2018' on input line 64.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'january' untranslated
+(biblatex)                at entry 'parks2018' on input line 64.
+
 
 ./main.tex:65: LaTeX Error: Unicode character α (U+03B1)
                not set up for use with LaTeX.
@@ -1229,48 +1257,91 @@ l.65 \appendix
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[9
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'parks2018' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'pages' untranslated
+(biblatex)                at entry 'parks2018' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'andothers' untranslated
+(biblatex)                at entry 'vaswani2017' on input line 64.
+
+
+Package biblatex Warning: Using fallback definition for \mkbibdatelong.
+(biblatex)                The command should be defined in the .lbx file.
+(biblatex)                If you see this message, the .lbx file could not be
+(biblatex)                loaded, is faulty or does not contain a definition
+(biblatex)                for \mkbibdatelong.
+
+
+Package biblatex Warning: Bibliography string 'in' untranslated
+(biblatex)                at entry 'vaswani2017' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'byeditor' untranslated
+(biblatex)                at entry 'vaswani2017' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'andothers' untranslated
+(biblatex)                at entry 'vaswani2017' on input line 64.
+
+
+Package biblatex Warning: Bibliography string 'volume' untranslated
+(biblatex)                at entry 'vaswani2017' on input line 64.
+
+
+Overfull \hbox (12.5433pt too wide) in paragraph at lines 65--65
+\T1/ptm/m/it/12 (-20) Neu-ral In-for-ma-tion Pro-cess-ing Sys-tems\T1/ptm/m/n/12 (-20) : []I. Guyon []. [] 30.
+ []
+
+
+Overfull \hbox (0.38641pt too wide) in paragraph at lines 65--65
+\T1/cmtt/m/n/12 files / paper / 2017 / file / 3f5ee243547dee91fbd053c1c4a845aa -[] Paper .
+ []
+
+[10
 
 
 
 
-]
+
+
+
+] [11]
 \openout2 = `chapters/99-appendix.aux'.
 
  (./chapters/99-appendix.tex
 Appendix A.
-[10
+[12
 
 
 ]
 Appendix B.
-) [11
+) [13
 
 ] (build/main.aux (build/structure/title.aux) (build/structure/dedication.aux) (build/structure/acknowledgements.aux) (build/structure/abstract.aux) (build/structure/tablesfigures.aux) (build/chapters/01-introduction.aux) (build/chapters/02-background.aux) (build/chapters/03-ValTransformers.aux) (build/chapters/99-appendix.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A8E685A7C090B8F18517D166DB000805;3941.
+(rerunfilecheck)             Checksum: E9B6321CF65B52C828BE55B18B9C9C11;3092.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
- )
-(\end occurred inside a group at level 2)
-
-### simple group (level 2) entered at line 86 ({)
-### simple group (level 1) entered at line 64 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 23417 strings out of 478268
- 416486 string characters out of 5846346
- 1179370 words of memory out of 5000000
- 40864 multiletter control sequences out of 15000+600000
- 575649 words of font info for 320 fonts, out of 8000000 for 9000
+ 22833 strings out of 478268
+ 405540 string characters out of 5846346
+ 1154580 words of memory out of 5000000
+ 40251 multiletter control sequences out of 15000+600000
+ 574140 words of font info for 331 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,11n,91p,1941b,1992s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/main.pdf (18 pages, 927050 bytes).
+ 75i,12n,77p,1941b,1521s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on build/main.pdf (20 pages, 1409522 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
+ 303 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
  51 named destinations out of 1000 (max. 500000)
- 128215 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 129727 words of extra memory for PDF output out of 154059 (max. 10000000)
 
