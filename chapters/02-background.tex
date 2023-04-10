@@ -32,8 +32,7 @@ many fields, but also the reason why they are not the best choice for all proble
 The main issue with FCNs is that they are not invariant to translations, which is 
 essential for many problems such as image recognition, time series analysis, and 
 natural language processing. Therefore, alternative options have been proposed. 
-\section{Convolutional Neural Networks}
-\label{sec:CNN}
+\section{Convolutional Neural Networks}\label{sec:CNN}
 Convolutional neural networks (CNNs) were originally developed as a solution 
 to positional differences in the input data \parencite{fukushima1979}. This architecture 
 was shown to be effective in image recognition tasks by \textcite{lecun2004}, and 
@@ -61,9 +60,9 @@ a conversion to a 2D image. This 2D image was then fed to a more traditional vis
 CNN architecture (Appendix~\ref{app:CNN}). 
 \begin{figure}[h]
     \centering
-    \subfloat[\centering~ROC curve]{\includegraphics[width=5cm]{figures/cnn_rocfull.png}}
+    \subfloat[\centering~ROC curve]{\includegraphics[width=5cm]{figures/cnn/cnn_rocfull.png}}
     \qquad
-    \subfloat[\centering~Confusion Matrix]{\includegraphics[width=5cm]{figures/cnn_cmfull.png}}
+    \subfloat[\centering~Confusion Matrix]{\includegraphics[width=5cm]{figures/cnn/cnn_cmfull.png}}
     \caption{CNN Diagnostics\label{fig:cnn_qual}}
 \end{figure}
 This architecture was shown to train quickly (less than 1 hour on a single GPU), 
@@ -71,7 +70,7 @@ but was not able to achieve astonishingly high accuracy. Figure~\ref{fig:cnn_qua
 shows the ROC curve and confusion matrix for the CNN trained on synthetic spectra. 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{figures/cnn_max_ypred.png}
+    \includegraphics[width=0.5\textwidth]{figures/cnn/cnn_max_ypred.png}
     \caption{Max value of the output vector for the CNN.\label{fig:cnn_max}}
 \end{figure}
 
@@ -82,9 +81,9 @@ the distribution of the maximum value found. As shown, there are approximately
 more that are not.
 \begin{figure}[h]
     \centering
-    \subfloat[\centering~ROC curve]{\includegraphics[width=5cm]{figures/cnn_roc99.png}}
+    \subfloat[\centering~ROC curve]{\includegraphics[width=5cm]{figures/cnn/cnn_roc99.png}}
     \qquad
-    \subfloat[\centering~Confusion Matrix]{\includegraphics[width=5cm]{figures/cnn_cm99.png}}
+    \subfloat[\centering~Confusion Matrix]{\includegraphics[width=5cm]{figures/cnn/cnn_cm99.png}}
     \caption{CNN Diagnostics\label{fig:cnn_qual2}}
 \end{figure}
 
@@ -102,34 +101,26 @@ the overall accuracy of the networks, but also the number of confident classific
 % cut was made on the confidence of the classification, would the optimal solution
 % yield better results under the same conditions? 
 
-\section{Introduction of Transformers}
-\label{sec:transformers}
+\section{Introduction of Transformers}\label{sec:transformers}
 % Advantage of transformers in this field
 Transformers are a relatively new architecture, first introduced in 2017 by \textcite{vaswani2017}
 for natural language processing (NLP) tasks. The original architecture consists of 
 an encoder-decoder system. The encoder accepts a series of tokens, and via a series 
 of self-attention layers and feed-forward layers, produces a series of vectors
 representing the input data. The decoder then takes the output of the encoder, and
-produces a series of tokens, one for each input token. The revolutionary aspect 
-of this architecture is the presence of the multi-head attention layers. These layers 
-(explained in more detail in Appendix~\ref{app:MHA}) allow the model to 
-learn not only the importance of certain tokens, but there meaning in relation to 
-other tokens. This allows for a single token to take on different meanings, essential 
-for NLP tasks. 
+produces a series of tokens, one for each input token. 
 
 Once transformers were shown to have remarkable success in NLP tasks, they were 
 quickly adapted to other fields, such as vision. \textcite{dosovitskiy2020} developed 
 a vision transformer (ViT) architecture that differed from the original transformer 
-by replacing the token input with a more involved preprocessing step. In short, 
+encoder by replacing the tokenized input with a more involved preprocessing step. In short, 
 the input image is broken into a series of patches, which are then flattened into
 a vector. These vectors, along with positional encodings, are then fed into the
 transformer architecture. For classification tasks, the first input token is 
 replaced with a class token. After passing through the transformer, the class token 
 is then run through a fully connected layer to produce the final probabilities. 
-Further details on the ViT architecture can be found in Appendix~\ref{app:transformer}.
 
-\subsection{ViT on Spectroscopic Data}
-\label{sec:ViT}
+\subsection{ViT on Spectroscopic Data}\label{sec:ViT}
 Previous implementations of transformers have been shown to have characteristics 
 beneficial to the classification of spectral data. A transformer's 
 ability to learn contextual information is essential in spectral classification. 
@@ -145,6 +136,7 @@ would be difficult to learn with fixed filters in a CNN, but would be identified
 based on their positional importance by a transformer. In addition to this, ViTs 
 have been shown to outperform CNNs on vision tasks, which shows they are capable 
 of focusing on learned features. 
+
 
 * Include caveat about the fact that ViTs take longer to train than CNNs *
 

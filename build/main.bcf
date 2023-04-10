@@ -2356,14 +2356,18 @@
     <bcf:citekey order="9">parks2018</bcf:citekey>
     <bcf:citekey order="10">vaswani2017</bcf:citekey>
     <bcf:citekey order="11">dosovitskiy2020</bcf:citekey>
-    <bcf:citekey order="12">clarke1990rendezvous</bcf:citekey>
-    <bcf:citekey order="13">cybenko1989</bcf:citekey>
-    <bcf:citekey order="14">fukushima1979</bcf:citekey>
-    <bcf:citekey order="15">lecun2004</bcf:citekey>
-    <bcf:citekey order="16">krizhevsky2012</bcf:citekey>
-    <bcf:citekey order="17">parks2018</bcf:citekey>
-    <bcf:citekey order="18">vaswani2017</bcf:citekey>
-    <bcf:citekey order="19">dosovitskiy2020</bcf:citekey>
+    <bcf:citekey order="12">dosovitskiy2020</bcf:citekey>
+    <bcf:citekey order="13">dosovitskiy2020</bcf:citekey>
+    <bcf:citekey order="14">vaswani2017</bcf:citekey>
+    <bcf:citekey order="15">vaswani2017</bcf:citekey>
+    <bcf:citekey order="16">clarke1990rendezvous</bcf:citekey>
+    <bcf:citekey order="17">cybenko1989</bcf:citekey>
+    <bcf:citekey order="18">fukushima1979</bcf:citekey>
+    <bcf:citekey order="19">lecun2004</bcf:citekey>
+    <bcf:citekey order="20">krizhevsky2012</bcf:citekey>
+    <bcf:citekey order="21">parks2018</bcf:citekey>
+    <bcf:citekey order="22">vaswani2017</bcf:citekey>
+    <bcf:citekey order="23">dosovitskiy2020</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

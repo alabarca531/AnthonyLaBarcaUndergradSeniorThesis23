@@ -1,19 +1,19 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'build/main.blg'
-[52] biber-darwin:340> INFO - === Mon Apr  3, 2023, 13:36:05
-[64] Biber.pm:418> INFO - Reading 'build/main.bcf'
-[134] Biber.pm:972> INFO - Found 8 citekeys in bib section 0
-[147] Biber.pm:4383> INFO - Processing section 0
-[155] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
-[157] bibtex.pm:1713> INFO - LaTeX decoding ...
-[171] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
-[261] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[261] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[261] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[261] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[270] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[280] bbl.pm:757> INFO - Output to build/main.bbl
-[280] Biber.pm:130> WARN - Entry 'cybenko1989' (references.bib): Invalid format '1989/12/01' of date field 'date' - ignoring
-[280] Biber.pm:130> WARN - ISBN '1435-568X' in entry 'cybenko1989' is invalid - run biber with '--validate_datamodel' for details.
-[280] Biber.pm:130> WARN - I didn't find a database entry for 'clarke1990rendezvous' (section 0)
-[280] Biber.pm:132> INFO - WARNINGS: 3
+[55] biber-darwin:340> INFO - === Mon Apr 10, 2023, 14:06:36
+[67] Biber.pm:418> INFO - Reading 'build/main.bcf'
+[141] Biber.pm:972> INFO - Found 8 citekeys in bib section 0
+[154] Biber.pm:4383> INFO - Processing section 0
+[163] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[164] bibtex.pm:1713> INFO - LaTeX decoding ...
+[179] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[276] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[276] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[276] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[276] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[287] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[297] bbl.pm:757> INFO - Output to build/main.bbl
+[297] Biber.pm:130> WARN - Entry 'cybenko1989' (references.bib): Invalid format '1989/12/01' of date field 'date' - ignoring
+[297] Biber.pm:130> WARN - ISBN '1435-568X' in entry 'cybenko1989' is invalid - run biber with '--validate_datamodel' for details.
+[297] Biber.pm:130> WARN - I didn't find a database entry for 'clarke1990rendezvous' (section 0)
+[297] Biber.pm:132> INFO - WARNINGS: 3
