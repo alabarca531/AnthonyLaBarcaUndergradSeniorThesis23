@@ -27,28 +27,24 @@ that the input data belongs to, see Appendix~\ref{app:FCN}).
 This architecture, while simplistic, is very powerful. \textcite{cybenko1989} showed that for any boolean 
 function (i.e. 2 class classification), a FCN with a single hidden layer could 
 approximate any function arbitrarily well; this is known as the universal approximation
-theorem. This theorem is the basis for the success of FCNs in
-many fields, but also the reason why they are not the best choice for all problems.
+theorem. The theorem is the basis for the success of FCNs in
+many fields, but also the reason that FCNs are not the best choice for all problems.
 The main issue with FCNs is that they are not invariant to translations, which is 
-essential for many problems such as image recognition, time series analysis, and 
+essential for many problems, such as image recognition, time series analysis, and 
 natural language processing. Therefore, alternative options have been proposed. 
 \section{Convolutional Neural Networks}\label{sec:CNN}
 Convolutional neural networks (CNNs) were originally developed as a solution 
 to positional differences in the input data \parencite{fukushima1979}. This architecture 
-was shown to be effective in image recognition tasks by \textcite{lecun2004}, and 
-was popularized after the success of AlexNet in the 
-ImageNet challenge \textcite{krizhevsky2012}, and have since been applied for use in 
-many other vision tasks, as well as other fields such as NLP and audio processing. 
+was shown to be effective in image recognition tasks by \textcite{lecun2004} and then popularized after the success of AlexNet in the 
+ImageNet challenge \textcite{krizhevsky2012}. The networks have since been applied to
+many other vision tasks and various fields, such as NLP and audio processing. 
 CNNs are composed of a series of convolutional layers, usually followed by a 
-pooling layer, and then a fully connected layer (Appendix~\ref{app:CNN}). The convolutional layers are 
-composed of a series of convolutional filters (usually referred to as feature maps)
-which are applied across the entire input space. The application of the same filter 
-across the entire input space is what gives the CNN its invariance to translations.
+pooling layer and a fully connected layer (Appendix~\ref{app:CNN}). The convolutional layers are composed of a series of convolutional filters, which are commonly referred to as feature maps.
+The convolutional filters are applied across the entire input space giving the CNN its invariance to translations.
 
 \subsection{CNNs on Spectroscopic Data}
 \label{sec:CNNspectra}
-Due to their affinity for disregarding spacial invariance, CNNs theoretically should 
-translate to spectral classification quite well. In fact, CNNs have been applied 
+CNNs are especially good at identifying patterns throughout their input space, stemming from their spacial invariance. Theoretically, this should translate to spectral classification quite well. In fact, CNNs have been applied 
 to spectroscopic data in the past, even on the DESI dataset. 
 \textcite{parks2018} used a CNN to detect strong emission lines in DESI spectra with 
 great success. * Talk about 1D CNN currently running, and preprocessing used *
