@@ -20,18 +20,17 @@ flexibility and scalability that have been previously unattainable by manual
 methods. The simplest form of machine learning algorithms are the feed-forward 
 fully connected neural networks (FCNs). These networks apply a series of linear 
 transformations to the input data, followed by a bias and a non-linear activation 
-function. The output of the network is another vector tailored for whatever the 
-purpose of the FCN is (i.e. for classification, is a vector of probabilities 
+function. The output of the network is another vector tailored for the particular purpose of the FCN (i.e. for classification, the output is a vector of probabilities 
 that the input data belongs to, see Appendix~\ref{app:FCN}). 
 
-This architecture, while simplistic, is very powerful. \textcite{cybenko1989} showed that for any boolean 
+The FCN architecture, while simplistic, is very powerful. \textcite{cybenko1989} showed that for any boolean 
 function (i.e. 2 class classification), a FCN with a single hidden layer could 
 approximate any function arbitrarily well; this is known as the universal approximation
 theorem. The theorem is the basis for the success of FCNs in
-many fields, but also the reason that FCNs are not the best choice for all problems.
+many fields, but it is also the reason that FCNs are not the best choice for all problems.
 The main issue with FCNs is that they are not invariant to translations, which is 
-essential for many problems, such as image recognition, time series analysis, and 
-natural language processing. Therefore, alternative options have been proposed. 
+essential for many problems including image recognition, time series analysis, and 
+natural language processing. \textbf{Therefore, alternative options have been proposed }**** 
 \section{Convolutional Neural Networks}\label{sec:CNN}
 Convolutional neural networks (CNNs) were originally developed as a solution 
 to positional differences in the input data \parencite{fukushima1979}. This architecture 
@@ -44,13 +43,13 @@ The convolutional filters are applied across the entire input space giving the C
 
 \subsection{CNNs on Spectroscopic Data}
 \label{sec:CNNspectra}
-CNNs are especially good at identifying patterns throughout their input space, stemming from their spacial invariance. Theoretically, this should translate to spectral classification quite well. In fact, CNNs have been applied 
-to spectroscopic data in the past, even on the DESI dataset. 
+CNNs excel at identifying patterns throughout their input space, stemming from their spacial invariance. Theoretically, this should translate to spectral classification quite well. In fact, CNNs have been applied 
+to spectroscopic data in the past, including on the DESI dataset. 
 \textcite{parks2018} used a CNN to detect strong emission lines in DESI spectra with 
 great success. * Talk about 1D CNN currently running, and preprocessing used *
 
 This work provides a baseline for the use of CNNs on supernovae classification, 
-but leaves more to be desired. Therefore, an alternate architecture was proposed 
+\textbf{but leaves more to be desired.} Therefore, an alternate architecture was proposed 
 by * Cite Eddies work * which augments the preprocessing of the spectra with 
 a conversion to a 2D image. This 2D image was then fed to a more traditional vision 
 CNN architecture (Appendix~\ref{app:CNN}). 
@@ -62,7 +61,7 @@ CNN architecture (Appendix~\ref{app:CNN}).
     \caption{CNN Diagnostics\label{fig:cnn_qual}}
 \end{figure}
 This architecture was shown to train quickly (less than 1 hour on a single GPU), 
-but was not able to achieve astonishingly high accuracy. Figure~\ref{fig:cnn_qual}
+but it was not able to achieve astonishingly high accuracy. Figure~\ref{fig:cnn_qual}
 shows the ROC curve and confusion matrix for the CNN trained on synthetic spectra. 
 \begin{figure}[h]
     \centering
@@ -71,7 +70,7 @@ shows the ROC curve and confusion matrix for the CNN trained on synthetic spectr
 \end{figure}
 
 The maximum value of the output vector was used to determine the predicted class,
-which may not be the best choice for this problem. Figure~\ref{fig:cnn_max} shows
+\textbf{which may not be the best choice for this problem. why not?} Figure~\ref{fig:cnn_max} shows
 the distribution of the maximum value found. As shown, there are approximately 
 20 thousand spectra that are classified very confidently, but there are many
 more that are not.
@@ -83,14 +82,14 @@ more that are not.
     \caption{CNN Diagnostics\label{fig:cnn_qual2}}
 \end{figure}
 
-Taking a look at the diagnostics again, but only for highly confident classifications,
-a much better ROC curve and confusion matrix is produced (Figure~\ref{fig:cnn_qual2}). 
+A \textbf{much better ROC curve and confusion matrix }are produced by 
+evaluating the diagnostics for only highly confident classifications (Figure~\ref{fig:cnn_qual2}). 
 Therefore, it is clear that the CNN, when confident in its classification, produces 
 accurate results. This cut, however, is not ideal, removing *insert percent*\% of the 
 data. 
 
-The next step in training would be to either increase the confidence of the CNN, 
-or to move to a different architecture, with the hopes of increasing not only 
+The next step in training would be to either increase the confidence of the CNN 
+or move to a different architecture, with the hopes of increasing not only 
 the overall accuracy of the networks, but also the number of confident classifications.
 % This begs the question, which is more important? The ability to classify a lot of 
 % spectra with low confidence, or a few spectra with high confidence? Even if a 
@@ -99,11 +98,11 @@ the overall accuracy of the networks, but also the number of confident classific
 
 \section{Introduction of Transformers}\label{sec:transformers}
 % Advantage of transformers in this field
-Transformers are a relatively new architecture, first introduced in 2017 by \textcite{vaswani2017}
+Transformers are a relatively new architecture introduced in 2017 by \textcite{vaswani2017}
 for natural language processing (NLP) tasks. The original architecture consists of 
-an encoder-decoder system. The encoder accepts a series of tokens, and via a series 
-of self-attention layers and feed-forward layers, produces a series of vectors
-representing the input data. The decoder then takes the output of the encoder, and
+an encoder-decoder system. The encoder accepts a series of tokens and produces a series of vectors
+representing the input data via a series 
+of self-attention layers and feed-forward layers. The decoder then takes the output of the encoder, and
 produces a series of tokens, one for each input token. 
 
 Once transformers were shown to have remarkable success in NLP tasks, they were 
@@ -126,7 +125,7 @@ in another part of the spectrum. This contextual information is not easily learn
 by a CNN, as the convolutional layers are not able to learn the importance of
 certain parts of the input space. Attention can also play a role in identifying 
 the purpose of features that are not in a standard location. For example, a 
-non-k corrected spectrum might have a continuum pattern at different locations 
+\textbf{non-k corrected s}pectrum might have a continuum pattern at different locations 
 in the spectrum, but the overall shape would be similar. This change in sizing 
 would be difficult to learn with fixed filters in a CNN, but would be identified 
 based on their positional importance by a transformer. In addition to this, ViTs 
