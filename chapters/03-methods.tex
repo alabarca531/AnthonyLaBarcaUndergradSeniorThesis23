@@ -60,7 +60,7 @@ which was quickly found to be trainable on a synthetic dataset. Next, a syntheti
 using DESI spectra was created under a variety of preprocessing conditions. The previously 
 created CNN and new transformer architectures were trained on each variation of 
 preprocessed data. Finally, these training sessions were then used to determine 
-the optimal training conditions for non red-shift corrected data. 
+the optimal training conditions for non redshift corrected data. 
 \section{Creation of Spectral ViT}\label{sec:SpecViT}
 The Spectral ViT architecture was created to be a direct extension of the ViT architecture
 \cite{dosovitskiy2020} to be used for spectral classification, coded in the \texttt{PyTorch}
@@ -121,6 +121,7 @@ The classification token is passed through a linear layer to reduce the dimensio
 number of classes, and then passed through a softmax function to produce a probability distribution
 over the classes. Therefore, the resulting tensor is of size $N \times 1 \times 6$, for our 
 6 classifications of supernovae.
+
 \subsection{Validation of Spectral ViT Architecture}
 \label{ssec:validation}
 After the creation of the Spectral ViT architecture, ability to train effectively 
