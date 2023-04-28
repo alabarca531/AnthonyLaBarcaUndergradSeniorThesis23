@@ -2,7 +2,7 @@
 \label{chap:MLTechniques}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Outline 
-% Introduce Machine Learning, and why traiditonal FCN is not good enough
+% Introduce Machine Learning, and why traiditonal MLP is not good enough
 % 1. Convolutional Neural Networks
 % 1.1 Example architecture and sucess in vision tasks
 % 1.2 1D CNN implemented on DESI spectra
@@ -18,17 +18,19 @@
 To aid in the classification of supernovae, deep learning techniques can provide 
 flexibility and scalability that have been previously unattainable by manual 
 methods. The simplest form of machine learning algorithms are the feed-forward 
-fully connected neural networks (FCNs). These networks apply a series of linear 
-transformations to the input data, followed by a bias and a non-linear activation 
-function. The output of the network is another vector tailored for the particular purpose of the FCN (i.e. for classification, the output is a vector of probabilities 
-that the input data belongs to, see Appendix~\ref{app:FCN}). 
+fully connected neural networks, or multi-layer perceptrons (MLPs). 
+These networks apply a series of linear transformations to the input data, 
+followed by a bias and a non-linear activation function. The output of the 
+network is another vector tailored for the particular purpose of the MLP 
+(i.e. for classification, the output is a vector of probabilities 
+that the input data belongs to, see Appendix~\ref{app:MLP}). 
 
-The FCN architecture, while simplistic, is very powerful. \textcite{cybenko1989} showed that for any boolean 
-function (i.e. 2 class classification), a FCN with a single hidden layer could 
+The MLP architecture, while simplistic, is very powerful. \textcite{cybenko1989} showed that for any boolean 
+function (i.e. 2 class classification), a MLP with a single hidden layer could 
 approximate any function arbitrarily well; this is known as the universal approximation
-theorem. The theorem is the basis for the success of FCNs in
-many fields, but it is also the reason that FCNs are not the best choice for all problems.
-The main issue with FCNs is that they are not invariant to translations, which is 
+theorem. The theorem is the basis for the success of MLPs in
+many fields, but it is also the reason that MLPs are not the best choice for all problems.
+The main issue with MLPs is that they are not invariant to translations, which is 
 essential for many problems including image recognition, time series analysis, and 
 natural language processing. \textbf{Therefore, alternative options have been proposed }**** 
 
@@ -54,17 +56,17 @@ This work provides a baseline for the use of CNNs on supernovae classification,
 by * Cite Eddies work * which augments the preprocessing of the spectra with 
 a conversion to a 2D image. This 2D image was then fed to a more traditional vision 
 CNN architecture (Appendix~\ref{app:CNN}). 
-\begin{figure}[h]
+% TODO: Make into Subcaptions
+\begin{figure}[t]
     \centering
-    \subfloat[\centering~ROC curve]{\includegraphics[width=5cm]{figures/cnn/cnn_rocfull.png}}
-    \qquad
-    \subfloat[\centering~Confusion Matrix]{\includegraphics[width=5cm]{figures/cnn/cnn_cmfull.png}}
-    \caption{CNN Diagnostics\label{fig:cnn_qual}}
+    \includegraphics[width=.4\textwidth]{figures/cnn/cnn_rocfull.png}
+    \includegraphics[width=.4\textwidth]{figures/cnn/cnn_cmfull.png}
+    \caption{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right)\label{fig:cnn_qual}}
 \end{figure}
 This architecture was shown to train quickly (less than 1 hour on a single GPU), 
 but it was not able to achieve astonishingly high accuracy. Figure~\ref{fig:cnn_qual}
 shows the ROC curve and confusion matrix for the CNN trained on synthetic spectra. 
-\begin{figure}[h]
+\begin{figure}[b]
     \centering
     \includegraphics[width=0.5\textwidth]{figures/cnn/cnn_max_ypred.png}
     \caption{Max value of the output vector for the CNN.\label{fig:cnn_max}}
@@ -75,7 +77,8 @@ The maximum value of the output vector was used to determine the predicted class
 the distribution of the maximum value found. As shown, there are approximately 
 20 thousand spectra that are classified very confidently, but there are many
 more that are not.
-\begin{figure}[h]
+% TODO: Make into Subcaptions
+\begin{figure}[t]
     \centering
     \subfloat[\centering~ROC curve]{\includegraphics[width=5cm]{figures/cnn/cnn_roc99.png}}
     \qquad

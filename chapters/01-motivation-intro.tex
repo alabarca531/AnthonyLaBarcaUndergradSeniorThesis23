@@ -21,43 +21,13 @@
 
 These are the different citation styles for author-year.
 
-The standard \verb=\cite= command produces the following output: \cite{clarke1990rendezvous}.
+\noindent The standard \verb=\cite= command produces the following output: \cite{cybenko1989}.
 
-The \verb=\textcite= command produces the following output: \textcite{clarke1990rendezvous}.
+\noindent The \verb=\textcite= command produces the following output: \textcite{cybenko1989}.
 
 
-The \verb=\parencite= command produces the following output: \parencite{clarke1990rendezvous}.
+\noindent The \verb=\parencite= command produces the following output: \parencite{cybenko1989}.
 
-The \verb=\footcite= command produces a footnote citation \footcite{clarke1990rendezvous}.
+\noindent The \verb=\footcite= command produces a footnote citation \footcite{cybenko1989}.
 
-\clearpage          % To start a new page
-
-\section{Figures}
-
-Always prefer to float figures to the top of the page using the [t] option in the figure environment. This is 
-shown in Figure \ref{fig:fig_1}.
-
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=.4\textwidth]{figures/blackbox.jpeg}
-    \caption{This is a black box}
-    \label{fig:fig_1}
-\end{figure}
-
-\clearpage
-
-\section{Tables}
-
-Use vertical lines sparingly in tables. They're unnecessary bloat. Write the code for tables in a separate tex file, and include it in when required. 
-Also preferrably use sans serif font for tables (because of their information density) using \texttt{\\sffamily} in table definition.
-
-\begin{table}[!ht]
-\small
-\centering
-\sffamily
-\input{tables/table.tex}
-\caption{This is a table}
-\label{tab:table}
-\vspace{-5mm}
-\end{table}
 

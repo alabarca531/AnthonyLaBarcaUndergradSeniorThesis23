@@ -1,6 +1,145 @@
-\chapter{Chapter 4}
+\chapter{Results}
 \label{chap:chapter-4}
 
-\section{
+\section{V1}
 
-Lorem Ipsum
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.7\linewidth]{figures/v1/rocfull.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.7\linewidth]{figures/v1/cmfull.png}}
+    \caption{V1 - No cut\label{fig:synth_spectra}}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=.4\linewidth]{figures/v1/max_ypred.png}
+    \caption{Max Y}
+    \label{fig:maxy}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.7\linewidth]{figures/v1/roc99999.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.7\linewidth]{figures/v1/cm99999.png}}
+    \caption{V1 - 0.9999 \label{fig:synth_spectra}}
+\end{figure}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{V2}
+\subsection{Epoch 42}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2rocfulle_e42.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cmfull_e42.png}}
+    \caption{V2 - 42 - No cut\label{fig:synth_spectra}}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=.6\linewidth]{figures/v2/vit_model_V2max_ypred_42.png}
+    \caption{V2 - 42 -  Max pred}
+    \label{fig:Epoch42}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2roc99_e42.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cm99_e42.png}}
+    \caption{V2 -42 - 0.99999 \label{fig:synth_spectra}}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2roc99999_e42.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cm99999_e42.png}}
+    \caption{V2 - 42- 0.99999 \label{fig:synth_spectra}}
+\end{figure}
+\clearpage
+\subsection{Epoch49}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2rocfulle_e49.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cmfull_e49.png}}
+    \caption{V2 - 49 - No cut\label{fig:synth_spectra}}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=.6\linewidth]{figures/v2/vit_model_V2max_ypred_49.png}
+    \caption{V2 - 49 - maxy}
+    \label{fig:Epoch49}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2roc99_e49.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cm99_e49.png}}
+    \caption{V2 - 49 - .99\label{fig:synth_spectra}}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2roc99999_e49.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cm99999_e49.png}}
+    \caption{V2 - 49 -  0.99999\label{fig:synth_spectra}}
+\end{figure}
+\clearpage
+\section{Binary Classification}
+
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2rocfull_binary_e42.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cmfull_binary_e42.png}}
+    \caption{V2 - 42 - binary - no cut\label{fig:synth_spectra}}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=.6\linewidth]{figures/v2/vit_model_V2max_ypred_binary_42.png}
+    \caption{V2 - 42 - binary - maxy}
+    \label{fig:42Binary}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2roc99_binary_e42.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cm99_binary_e42.png}}
+    \caption{V2 - 42 - binary - .99 \label{fig:synth_spectra}}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2roc99999997_binary_e42.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cm99999997_binary_e42.png}}
+    \caption{V2 - 42 - binary - .99999997 \label{fig:synth_spectra}}
+\end{figure}
+\clearpage
+\subsection{Epoch49}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2rocfull_binary_e49.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cmfull_binary_e49.png}}
+    \caption{V2 - 49 - binary - no cut\label{fig:synth_spectra}}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=.6\linewidth]{figures/v2/vit_model_V2max_ypred_binary_49.png}
+    \caption{V2 - 49 - binary - maxy}
+    \label{fig:49Binary}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2roc99_binary_e49.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cm99_binary_e49.png}}
+    \caption{V2 - 49 - binary - .99\label{fig:synth_spectra}}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~ROC]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2roc99999997_binary_e49.png}}
+    \qquad
+    \subfloat[\centering~CM]{\includegraphics[width=.4\linewidth]{figures/v2/vit_model_V2cm99999997_binary_e49.png}}
+    \caption{V2 - 49 - binary - .99999997\label{fig:synth_spectra}}
+\end{figure}

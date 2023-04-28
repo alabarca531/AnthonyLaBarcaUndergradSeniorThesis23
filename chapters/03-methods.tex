@@ -1,54 +1,5 @@
-% \chapter{Validity of Transformers for Spectral Classification}
-% \label{chap:chapter-3}
-% \section{Creation of artificial spectra}
-% \label{sec:creation}
-% Creating large amounts of high signal-to-noise signals was essential to verifying 
-% the application of a Vision Transformer. These signals needed to include the 
-% basic features of supernova spectrum, such as the presence of a continuum, 
-% absorption lines, and emission lines. The locations of these spectral features 
-% in particular were not important, as long as each class of supernovae had consistent 
-% features. The \texttt{GenData} class was created to generate these signals. 
-
-% \subsection{Features of \texttt{GenData} class}
-% \label{ssec:features}
-% The \texttt{GenData} class must provide a means of generating a large number (order of $10^5$)
-% of random spectra. These spectra must exhibit a consistent continuum, variable noise, 
-% and a set of spectral features that are unique to arbitrary classes. In order to 
-% accomplish this, the \texttt{GenData} class must first identify a domain in which 
-% to place spectral features, noise, and the continuum. The continuum is a function across
-% the domain that remains consistent for all samples, and examples can be found in Fig.~\ref{fig:continuumoptions}.
-% A set number of spectral features are randomly placed within the domain. The number of spectral
-% features is determined by the user. Then, each class (or type) of spectra is assigned 
-% a random combination of these spectral features. This is to ensure that each class 
-% has a unique set of spectral features, while maintaining a consistent location of features. 
-% Once the different classes are specified, the creation of the spectra can begin.
-
-% \begin{figure}
-%     \centering
-%     \includegraphics[width=0.5\textwidth]{figures/blackbox.jpeg}
-%     \caption{Examples of different continuum options
-%     (from left to right: linear, linear increasing, linear decreasing, 
-% exponential increasing, and exponential decreasing).}
-%     \label{fig:continuumoptions}
-% \end{figure}
-
-% \subsection{Creation of spectra}
-% \label{ssec:creation}
-% Once the spectral features present in each class are determined, the spectra can 
-% be constructed from the ground up. First, the continuum is created 
-
-% The essential Some of the features of the \texttt{GenData} class are as follows:
-% \begin{itemize}
-%     \item The ability to generate a large number (order of $10^5$) of random spectra
-%     \item The ability to generate spectra with a continuum
-%     \item The ability to generate spectra with absorption lines
-%     \item The ability to generate spectra with emission lines
-%     \item The ability to generate spectra with a combination of all three
-%     \item The ability to generate spectra with a combination of all three, but with 
-%     different spectral features in each spectrum
-
-% \end{itemize}
-\chapter{Creation and Training of Spectral ViT}
+\chapter[Creation and Training of Spectral ViT]{Creation and Training of\newline Spectral ViT}
+%Ensure that the chapter title fits on the header lines, but doesn't hyphenate on the chapter title page
 \label{chap:methods}
 % Methods to validate transformers (fake spectra), create training data (fake spectra), 
 % train various models (V1.1, V1.2, V1.3, V2), to find optimal training for V2
@@ -130,17 +81,33 @@ Gaussian peaks placed at predetermined locations, was created. Certain combinati
 peak locations were chosen to represent an arbitrary `class' of supernovae. These peaks, 
 our synthetic emission lines, were given random amplitudes and widths, simulating  
 variability, with a maximum allowed value. This maximum allowed value was then used to add 
-Gaussian noise to the signal: either 2 or 5 times the signal to simulate noisy ($S/N=2$),
-or very good data ($S/N=5$). Examples of the synthetic spectra with different continuum profiles 
+Gaussian noise to the signal: either 2 or 10 times the signal to simulate noisy ($S/N=2$),
+or very good data ($S/N=10$). Examples of the synthetic spectra with different continuum profiles 
 are shown in Fig.~\ref{fig:synth_spectra}. 
 
-These datasets with a signal-to-noise of 5 trivially separable by a smaller Spectral ViT architecture, 
+These datasets with a signal-to-noise of 10 were trivially separable by a smaller Spectral ViT architecture, 
 which was able to achieve 100\% accuracy on the testing set. The lower quality data, however, 
-was more difficult to separate, only achieving an 82\% test accuracy.
+was more difficult to separate, only achieving an 33.975\% test accuracy.
 
-** PUT IN GRAPHS OF SYNTHETIC SPECTRA HERE **
-** PUT IN GRAPHS OF TRAINING SYNTHETIC SPECTRA HERE **
-** PUT IN TABLE OF TRAINING SYNTHETIC SPECTRA HERE - SN=2 and SN=5**
+
+% Make into subcaptions
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~SNR = 2]{\includegraphics[width=10cm]{figures/pre_testing/SN2_example.png}}
+    \qquad
+    \subfloat[\centering~SNR=10]{\includegraphics[width=10cm]{figures/pre_testing/SN10_example.png}}
+    \caption{Synthetic spectra used to verify performance of SpectralViT\label{fig:synth_spectra}}
+\end{figure}
+
+% Make into subcaptions
+\begin{figure}[h]
+    \centering
+    \subfloat[\centering~SNR = 2]{\includegraphics[width=10cm]{figures/pre_testing/SNR2_training_epoch.png}}
+    \qquad
+    \subfloat[\centering~SNR=10]{\includegraphics[width=10cm]{figures/pre_testing/SNR10_training_epoch.png}}
+    \caption{Synthetic spectra used to verify performance of SpectralViT\label{fig:synth_spectra}}
+\end{figure}
+
 
 \section{Creation of Synthetic DESI Spectra}
 \label{sec:synth_data}
@@ -179,6 +146,12 @@ This CNN was trained for a maximum of 50 epochs, with a batch size of 50, and
 non-variable hyperparameters (Table~\ref{tab:cnn_hyperparameters}). 
 The timeline of the training of the CNN architecture is shown in Fig.~\ref{fig:cnn_training}.
 
+\begin{figure}
+    \centering
+    \includegraphics[width = .4\linewidth]{figures/blackbox.jpeg}
+    \caption{Caption}
+    \label{fig:cnn_training}
+\end{figure}
 
 \subsection{Transformer Training}
 \label{sec:transformer_training}
@@ -190,3 +163,61 @@ value was chosen for non-rest-frame corrected spectra. The Spectral ViT architec
 was trained on DESI spectra downsampled to a resolution of 3600, 1800, and 900. 
 The Spectral ViT architecture was trained for a maximum of 100 epochs, with 
 batch sizes of 50, and non-variable hyperparameters (Table~\ref{tab:transformer_hyperparameters}).
+
+
+
+\begin{table}[!ht]
+\small
+\centering
+\sffamily
+\input{tables/table.tex}
+\caption{This is a table}
+\label{tab:cnn_architecture}
+\vspace{-5mm}
+\end{table}
+
+\begin{table}[!ht]
+\small
+\centering
+\sffamily
+\input{tables/table.tex}
+\caption{This is a table}
+\label{tab:cnn_hyperparameters}
+\vspace{-5mm}
+\end{table}
+
+\begin{table}[!ht]
+\small
+\centering
+\sffamily
+\input{tables/table.tex}
+\caption{This is a table}
+\label{tab:transformer_hyperparameters}
+\vspace{-5mm}
+\end{table}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width = \linewidth]{figures/v1/vit_model_V1_original_redotraining_after.png}
+    \caption{Training of V1}
+    \label{fig:vit1_training}
+\end{figure}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width = \linewidth]{figures/v1/vit_model_V1_bigtraining_after.png}
+    \caption{Training of V1 Big}
+    \label{fig:vit1_big_training}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width = \linewidth]{figures/v2/vit_model_V2training_after.png}
+    \caption{Training of V2}
+    \label{fig:vit2_training}
+\end{figure}

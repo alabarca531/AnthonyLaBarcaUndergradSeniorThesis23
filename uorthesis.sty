@@ -7,33 +7,41 @@
 \ProvidesPackage{uorthesis}
   [2018/01/18 v0.01 LaTeX package for UOR thesis]
 
+%Filetype Setup
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{microtype}
 \usepackage[english]{babel}
-\usepackage{graphicx}
+
+% Page Formatting 
+\usepackage{geometry}
+\usepackage[left]{lineno}
+
+
+
+
+
+\usepackage{microtype}
 \usepackage{enumitem}
-\setlist{nosep} % Removes too much vertical spacing in lists
+\setlist{nosep}                 % Removes too much vertical spacing in lists
 \usepackage{booktabs}           % makes tables look good
 \usepackage{fancyhdr}           % For page number in the upper right (required) and other running headers(optional)
 \usepackage{setspace}           % For double-spacing (required)
 \usepackage{titlesec}           % For keeping chapter/chapter titles single-spaced
 \usepackage{etoolbox}           % For the flag determining if front matter goes into the TOC
-\usepackage{float}              % Helps float images to the top
-\RequirePackage{xcolor}
+
 % Define custom colors
+\RequirePackage{xcolor}
 \definecolor{darkblue}{rgb}{0, 0, 0.5}
 \usepackage[colorlinks=true, allcolors=darkblue]{hyperref}           % Adds hyperlinks in the pdf
+
+
 \usepackage{csquotes}           % Makes quotes look good
 \usepackage[font=small,labelfont={bf,sf}, textfont={sf}, justification=centering]{caption}
-% \usepackage{caption}
 \usepackage{graphicx, subcaption, float}
 \usepackage{amsmath, amssymb, amsthm}
 
 %% Font setup
-\usepackage{mathptmx}
-% \usepackage{lmodern}
-\usepackage{helvet}
+\usepackage{mathptmx, lmodern, helvet}
 
 % Header height (to avoid fancyhdr error)
 \setlength{\headheight}{13.6pt}
@@ -55,12 +63,13 @@
 \usepackage{sectsty}
 \titleformat{\chapter}[hang]{\Huge\sffamily\bfseries}{\thechapter{. }}{0pt}{\Huge}
 \allsectionsfont{\normalfont\sffamily\bfseries}
-\usepackage{subfigure}
-\usepackage[subfigure]{tocloft} % subfigure option only if using subfigure package
+
+\usepackage{tocloft}
 \renewcommand{\cfttoctitlefont}{\Huge \bfseries \sffamily} % ToC title
+
 \addto\captionsenglish{
-\renewcommand{\listfigurename}{\textsf{List of Figures}}
-\renewcommand{\listtablename}{\textsf{List of Tables}}
+    \renewcommand{\listfigurename}{\textsf{List of Figures}}
+    \renewcommand{\listtablename}{\textsf{List of Tables}}
 }
 
 % Flag for whether to add front matter to TOC
