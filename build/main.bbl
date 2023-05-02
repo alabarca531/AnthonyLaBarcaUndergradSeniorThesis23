@@ -322,6 +322,60 @@
       \verb 10.1109/CVPR.2004.1315150
       \endverb
     \endentry
+    \entry{Naskath2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d6ef715a747635f419c9414746c3b6c8}{%
+           family={Naskath},
+           familyi={N\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d9b6f76b7229c088ce2563fdc30d92e}{%
+           family={Sivakamasundari},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca3b67bca3841481056453e3b647b575}{%
+           family={Begum},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi Alif\bibnamedelima Siddiqua},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b5c3127ab393a372c828142ce2d03af1}
+      \strng{fullhash}{b5c3127ab393a372c828142ce2d03af1}
+      \strng{bibnamehash}{b5c3127ab393a372c828142ce2d03af1}
+      \strng{authorbibnamehash}{b5c3127ab393a372c828142ce2d03af1}
+      \strng{authornamehash}{b5c3127ab393a372c828142ce2d03af1}
+      \strng{authorfullhash}{b5c3127ab393a372c828142ce2d03af1}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep learning is a wildly popular topic in machine learning and is structured as a series of nonlinear layers that learns various levels of data representations. Deep learning employs numerous layers to represent data abstractions to implement various computer models. Deep learning approaches like generative, discriminative models and model transfer have transformed information processing. This article proposes a comprehensive review of various deep learning algorithms Multi layer perception, Self-organizing map and deep belief networks algorithms. It first briefly introduces historical and recent state-of-the-art reviews with suitable architectures and implementation steps. Moreover, the various applications of those algorithms in various fields such as wireless networks, Adhoc networks, Mobile ad-hoc and vehicular ad-hoc networks, speech recognition engineering, medical applications, natural language processing, material science and remote sensing applications, etc. are classified.}
+      \field{isbn}{1572-834X}
+      \field{journaltitle}{Wireless Personal Communications}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{A Study on Different Deep Learning Algorithms Used in Deep Neural Nets: MLP SOM and DBN}
+      \field{volume}{128}
+      \field{year}{2022}
+      \field{pages}{2913\bibrangedash 2936}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1007/s11277-022-10079-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11277-022-10079-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11277-022-10079-4
+      \endverb
+      \warn{\item Entry 'Naskath2022' (references.bib): Invalid format '2023/02/01' of date field 'date' - ignoring}
+    \endentry
     \entry{neutelings2023}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=5633d6d7b9e8ceec9e0bbcb816c46dbb}{%

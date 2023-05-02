@@ -1,17 +1,20 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'build/main.blg'
-[53] biber-darwin:340> INFO - === Tue May  2, 2023, 15:51:14
+[53] biber-darwin:340> INFO - === Tue May  2, 2023, 16:59:56
 [64] Biber.pm:418> INFO - Reading 'build/main.bcf'
-[137] Biber.pm:972> INFO - Found 9 citekeys in bib section 0
-[149] Biber.pm:4383> INFO - Processing section 0
+[137] Biber.pm:972> INFO - Found 10 citekeys in bib section 0
+[150] Biber.pm:4383> INFO - Processing section 0
 [158] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
 [159] bibtex.pm:1713> INFO - LaTeX decoding ...
-[172] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
-[268] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[268] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[268] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[268] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[280] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[290] bbl.pm:757> INFO - Output to build/main.bbl
-[290] Biber.pm:130> WARN - ISBN '1435-568X' in entry 'cybenko1989' is invalid - run biber with '--validate_datamodel' for details.
-[290] Biber.pm:132> INFO - WARNINGS: 1
+[176] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[276] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[276] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[276] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[276] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[288] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[301] bbl.pm:757> INFO - Output to build/main.bbl
+[302] Biber.pm:130> WARN - ISBN '1435-568X' in entry 'cybenko1989' is invalid - run biber with '--validate_datamodel' for details.
+[302] Biber.pm:130> WARN - Entry 'Naskath2022' (references.bib): Invalid format '2023/02/01' of date field 'date' - ignoring
+[302] Biber.pm:130> WARN - ISBN '1572-834X' in entry 'Naskath2022' is invalid - run biber with '--validate_datamodel' for details.
+[302] Biber.pm:130> WARN - legacy month field 'October' in entry 'Naskath2022' is not an integer - this will probably not sort properly.
+[302] Biber.pm:132> INFO - WARNINGS: 4
