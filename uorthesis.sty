@@ -30,10 +30,9 @@
 \usepackage{etoolbox}           % For the flag determining if front matter goes into the TOC
 
 % Define custom colors
-\RequirePackage{xcolor}
+\usepackage{xcolor}
 \definecolor{darkblue}{rgb}{0, 0, 0.5}
-\usepackage[colorlinks=true, allcolors=darkblue]{{hyperref}           % Adds hyperlinks in the pdf
-
+\usepackage[colorlinks=true, allcolors=darkblue, draft=false]{hyperref}           % Adds hyperlinks in the pdf 
 
 \usepackage{csquotes}           % Makes quotes look good
 \usepackage[font=small,labelfont={bf,sf}, textfont={sf}, justification=centering]{caption}
