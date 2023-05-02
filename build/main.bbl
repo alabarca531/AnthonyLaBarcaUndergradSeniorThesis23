@@ -37,16 +37,19 @@
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper we demonstrate that finite linear combinations of compositions of a fixed, univariate function and a set of affine functionals can uniformly approximate any continuous function ofn real variables with support in the unit hypercube; only mild conditions are imposed on the univariate function. Our results settle an open question about representability in the class of single hidden layer neural networks. In particular, we show that arbitrary decision regions can be arbitrarily well approximated by continuous feedforward neural networks with only a single internal, hidden layer and any continuous sigmoidal nonlinearity. The paper discusses approximation properties of other possible types of nonlinearities that might be implemented by artificial neural networks.}
+      \field{day}{1}
       \field{isbn}{1435-568X}
       \field{journaltitle}{Mathematics of Control, Signals and Systems}
+      \field{month}{12}
       \field{number}{4}
       \field{title}{Approximation by superpositions of a sigmoidal function}
       \field{volume}{2}
       \field{year}{1989}
+      \field{dateera}{ce}
       \field{pages}{303\bibrangedash 314}
       \range{pages}{12}
       \verb{doi}
@@ -58,7 +61,6 @@
       \verb{url}
       \verb https://doi.org/10.1007/BF02551274
       \endverb
-      \warn{\item Entry 'cybenko1989' (references.bib): Invalid format '1989/12/01' of date field 'date' - ignoring}
     \endentry
     \entry{dosovitskiy2020}{article}{}
       \name{author}{12}{}{%
@@ -144,7 +146,7 @@
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -152,6 +154,7 @@
       \field{title}{An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale}
       \field{volume}{abs/2010.11929}
       \field{year}{2020}
+      \field{dateera}{ce}
       \verb{eprint}
       \verb 2010.11929
       \endverb
@@ -186,7 +189,7 @@
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper, I propose a new algorithm for self-organizing a multilayered neural network which has an ability to recognize patterns based on the geometrical similarity of their shapes. This network, whose nickname is "neo-cognitron", has a structure similar to the hierarchy model of the visual nervous system proposed by Hubel and Wiesel. The network consists of a photoreceptor layer followed by a cascade connection of a number of modular structures, each of which is composed of two layers of cells connected in a cascade. The first layer of each module consists of "S-cells", which show characteristics similar to simple cells or lower order hypercomplex cells, and the second layer consists of "C-cells" similar to complex cells or higher order hypercomplex cells. The input synapses to each S-cell have plasticity and are modifiable. The network has an ability of unsupervised learning: We don't need any "teacher" during the process of self-organization, and it is only needed to present a set of stimulus patterns repeatedly to the input layer. The network has been simulated on a digital computer. After completion of self-organization, the stimulus patterns has become to elicit their own response from the last C-cell layer. That is, the response of the last C-cell layer changes without fail, if a stimulus patterns of a different category is presented to the input layer. The response of that layer, however, is not affected by the pattern's position at all. Neither is it affected by a certain amount of changes of the pattern's shape or size.}
@@ -195,6 +198,7 @@
       \field{series}{IJCAI'79}
       \field{title}{Self-Organization of a Neural Network Which Gives Position-Invariant Response}
       \field{year}{1979}
+      \field{dateera}{ce}
       \field{pages}{291\bibrangedash 293}
       \range{pages}{3}
       \verb{doi}
@@ -259,13 +263,14 @@
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Neural Information Processing Systems}
       \field{title}{ImageNet Classification with Deep Convolutional Neural Networks}
       \field{volume}{25}
       \field{year}{2012}
+      \field{dateera}{ce}
       \verb{urlraw}
       \verb https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf
       \endverb
@@ -303,17 +308,55 @@
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2004. CVPR 2004.}
       \field{title}{Learning methods for generic object recognition with invariance to pose and lighting}
       \field{volume}{2}
       \field{year}{2004}
+      \field{dateera}{ce}
       \field{pages}{II\bibrangedash 104 Vol.2}
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1109/CVPR.2004.1315150
+      \endverb
+    \endentry
+    \entry{neutelings2023}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5633d6d7b9e8ceec9e0bbcb816c46dbb}{%
+           family={Neutelings},
+           familyi={N\bibinitperiod},
+           given={Izaak},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {TikZ.net}%
+      }
+      \strng{namehash}{5633d6d7b9e8ceec9e0bbcb816c46dbb}
+      \strng{fullhash}{5633d6d7b9e8ceec9e0bbcb816c46dbb}
+      \strng{bibnamehash}{5633d6d7b9e8ceec9e0bbcb816c46dbb}
+      \strng{authorbibnamehash}{5633d6d7b9e8ceec9e0bbcb816c46dbb}
+      \strng{authornamehash}{5633d6d7b9e8ceec9e0bbcb816c46dbb}
+      \strng{authorfullhash}{5633d6d7b9e8ceec9e0bbcb816c46dbb}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{journaltitle}{TikZ.net}
+      \field{month}{9}
+      \field{title}{Neural networks}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://tikz.net/neural_networks/
+      \endverb
+      \verb{url}
+      \verb https://tikz.net/neural_networks/
       \endverb
     \endentry
     \entry{parks2018}{article}{}
@@ -352,17 +395,18 @@
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{{We have designed, developed, and applied a convolutional neural network (CNN) architecture using multi-task learning to search for and characterize strong H i Lyα absorption in quasar spectra. Without any explicit modelling of the quasar continuum or application of the predicted line profile for Lyα from quantum mechanics, our algorithm predicts the presence of strong H i absorption and estimates the corresponding redshift zabs and H i column density \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\$, with emphasis on damped Lyα systems (DLAs, absorbers with \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\ge 2 \\times 10^\\{20\\} \\, \\{\\rm cm^\\{-2\\}\\}\\$). We tuned the CNN model using a custom training set of DLAs injected into DLA-free quasar spectra from the Sloan Digital Sky Survey (SDSS), data release 5 (DR5). Testing on a held-back validation set demonstrates a high incidence of DLAs recovered by the algorithm (97.4 per cent as DLAs and 99 per cent as an H i absorber with \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\&gt; 10^\\{19.5\\} \\, \\{\\rm cm^\\{-2\\}\\}\\$) and excellent estimates for zabs and \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\$. Similar results are obtained against a human-generated survey of the SDSS DR5 data set. The algorithm yields a low incidence of false positives and negatives but is challenged by overlapping DLAs and/or very high \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\$ systems. We have applied this CNN model to the quasar spectra of SDSS DR7 and the Baryon Oscillation Spectroscopic Survey (data release 12) and provide catalogues of 4913 and 50 969 DLAs, respectively (including 1659 and 9230 high-confidence DLAs that were previously unpublished). This work validates the application of deep learning techniques to astronomical spectra for both classification and quantitative measurements.}}
+      \field{abstract}{{We have designed, developed, and applied a convolutional neural network (CNN) architecture using multi-task learning to search for and characterize strong H i Ly$\alpha$ absorption in quasar spectra. Without any explicit modelling of the quasar continuum or application of the predicted line profile for Ly$\alpha$ from quantum mechanics, our algorithm predicts the presence of strong H i absorption and estimates the corresponding redshift zabs and H i column density \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\$, with emphasis on damped Ly$\alpha$ systems (DLAs, absorbers with \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\ge 2 \\times 10^\\{20\\} \\, \\{\\rm cm^\\{-2\\}\\}\\$). We tuned the CNN model using a custom training set of DLAs injected into DLA-free quasar spectra from the Sloan Digital Sky Survey (SDSS), data release 5 (DR5). Testing on a held-back validation set demonstrates a high incidence of DLAs recovered by the algorithm (97.4 per cent as DLAs and 99 per cent as an H i absorber with \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\&gt; 10^\\{19.5\\} \\, \\{\\rm cm^\\{-2\\}\\}\\$) and excellent estimates for zabs and \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\$. Similar results are obtained against a human-generated survey of the SDSS DR5 data set. The algorithm yields a low incidence of false positives and negatives but is challenged by overlapping DLAs and/or very high \\$N\_\\{\\rm H\\,\\small \\{I\\}\\}\\$ systems. We have applied this CNN model to the quasar spectra of SDSS DR7 and the Baryon Oscillation Spectroscopic Survey (data release 12) and provide catalogues of 4913 and 50 969 DLAs, respectively (including 1659 and 9230 high-confidence DLAs that were previously unpublished). This work validates the application of deep learning techniques to astronomical spectra for both classification and quantitative measurements.}}
       \field{issn}{0035-8711}
       \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
-      \field{month}{01}
+      \field{month}{1}
       \field{number}{1}
-      \field{title}{{Deep learning of quasar spectra to discover and characterize damped Lyα systems}}
+      \field{title}{{Deep learning of quasar spectra to discover and characterize damped Ly$\alpha$ systems}}
       \field{volume}{476}
       \field{year}{2018}
+      \field{dateera}{ce}
       \field{pages}{1151\bibrangedash 1168}
       \range{pages}{18}
       \verb{doi}
@@ -377,6 +421,52 @@
       \verb{url}
       \verb https://doi.org/10.1093/mnras/sty196
       \endverb
+    \endentry
+    \entry{popescu2009}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=bf4fa68cb9f8f1ba975d05579df55a24}{%
+           family={Popescu},
+           familyi={P\bibinitperiod},
+           given={Marius-Constantin},
+           giveni={M\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39f78b2e9fb5f4fd25e3cfe95e6e4ddf}{%
+           family={Balas},
+           familyi={B\bibinitperiod},
+           given={Valentina},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=093bf2334a35268b15941c1b392b6de4}{%
+           family={Perescu-Popescu},
+           familyi={P\bibinithyphendelim P\bibinitperiod},
+           given={Liliana},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49de31d5dd5b8c25c9f52eb5bbda73e7}{%
+           family={Mastorakis},
+           familyi={M\bibinitperiod},
+           given={Nikos},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{45d820345df58e427c3ffc00d4a53cc4}
+      \strng{fullhash}{f8e06efe442a21f0e5e8ee8bbbc4b06c}
+      \strng{bibnamehash}{45d820345df58e427c3ffc00d4a53cc4}
+      \strng{authorbibnamehash}{45d820345df58e427c3ffc00d4a53cc4}
+      \strng{authornamehash}{45d820345df58e427c3ffc00d4a53cc4}
+      \strng{authorfullhash}{f8e06efe442a21f0e5e8ee8bbbc4b06c}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{WSEAS Transactions on Circuits and Systems}
+      \field{month}{7}
+      \field{title}{Multilayer perceptron and neural networks}
+      \field{volume}{8}
+      \field{year}{2009}
+      \field{dateera}{ce}
     \endentry
     \entry{vaswani2017}{inproceedings}{}
       \name{author}{8}{}{%
@@ -481,13 +571,14 @@
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Neural Information Processing Systems}
       \field{title}{Attention is All you Need}
       \field{volume}{30}
       \field{year}{2017}
+      \field{dateera}{ce}
       \verb{urlraw}
       \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
       \endverb
@@ -496,7 +587,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{clarke1990rendezvous}
 \endrefsection
 \endinput
 

@@ -1,12 +1,37 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces This is a black box\relax }}{2}{figure.caption.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces CNN Diagnostics\relax }}{6}{figure.caption.5}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Max value of the output vector for the CNN.\relax }}{6}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces CNN Diagnostics\relax }}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A simple MLP with three hidden layers. Each node is connected to every node in the previous and next layer. The lines represent the weights, and each node has an associated bias. Figure adapted from \blx@tocontentsinit {0}\textcite {neutelings2023}.\relax }}{3}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right)\relax }}{5}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Max value of the output vector for the CNN.\relax }}{5}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces CNN Diagnostics\relax }}{6}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual representation of the embeddings for a sample of spectra split into 100 patches of length 300.\relax }}{12}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual representation of the embeddings for a sample of spectra split into 100 patches of length 300.\relax }}{11}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Synthetic spectra used to verify performance of SpectralViT\relax }}{13}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Synthetic spectra used to verify performance of SpectralViT\relax }}{14}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Caption\relax }}{16}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Training of V1\relax }}{17}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Training of V1 Big\relax }}{17}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Training of V2\relax }}{19}{}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces V1 - No cut\relax }}{21}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Max Y\relax }}{22}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces V1 - 0.9999 \relax }}{23}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces V2 - 42 - No cut\relax }}{24}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces V2 - 42 - Max pred\relax }}{24}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces V2 -42 - 0.99999 \relax }}{25}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces V2 - 42- 0.99999 \relax }}{25}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces V2 - 49 - No cut\relax }}{26}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces V2 - 49 - maxy\relax }}{26}{}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces V2 - 49 - .99\relax }}{27}{}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces V2 - 49 - 0.99999\relax }}{27}{}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces V2 - 42 - binary - no cut\relax }}{28}{}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces V2 - 42 - binary - maxy\relax }}{28}{}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces V2 - 42 - binary - .99 \relax }}{29}{}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces V2 - 42 - binary - .99999997 \relax }}{29}{}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces V2 - 49 - binary - no cut\relax }}{30}{}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces V2 - 49 - binary - maxy\relax }}{30}{}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces V2 - 49 - binary - .99\relax }}{31}{}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces V2 - 49 - binary - .99999997\relax }}{31}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

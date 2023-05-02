@@ -17,12 +17,38 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 To aid in the classification of supernovae, deep learning techniques can provide 
 flexibility and scalability that have been previously unattainable by manual 
-methods. The simplest form of machine learning algorithms are the feed-forward 
-fully connected neural networks, or multi-layer perceptrons (MLPs). 
-These networks apply a series of linear transformations to the input data, 
-followed by a bias and a non-linear activation function. The output of the 
-network is another vector tailored for the particular purpose of the MLP 
-(i.e. for classification, the output is a vector of probabilities 
+methods. The simplest and most widely used architecture in deep learning are the feed-forward 
+fully connected neural networks, or multi-layer perceptrons (MLPs) \parencite{popescu2009}.
+These networks are composed of series of ``layers'' of neurons, or nodes, that 
+are ``fully connected'' to the previous layer (Figure \ref{fig:MLP}).
+Given an input vector $\vec{x}$ with $n$ values, an MLP applies a series of weights to each 
+element, resulting in a linear transformation from $\vec{x}$ to $\vec{y}$, where
+$\vec{y}$ is a vector of length $m$. This transformation is then followed by a bias added 
+to each element of $\vec{y}$, and an activation function applied to each element.
+This can be represented mathematically as 
+\begin{equation}\label{eqn:MLP}
+    \vec{y} = \sigma(\mathbf{W}\vec{x} + \vec{b})
+\end{equation}
+where $\mathbf{W}$ is an $m \times n$ matrix of weights, $\vec{b}$ is a vector of length $m$
+representing the bias, and $\sigma$ is the activation function. The activation function can 
+be any function, but traditionally they are chosen to be continuous, non-linear, 
+monotonically increasing, and differentiable. The most common activation functions 
+are the sigmoid function, $\sigma(x) = \frac{1}{1 + e^{-x}}$, hyperbolic tangent, 
+$\sigma(x) = \tanh(x)$, and the rectified linear unit, or ReLU,
+$\sigma(x) = \max(0, x)$.
+
+\begin{figure}[t]
+    \centering
+    \input{tikz/MLP.tex}
+    \caption{A simple MLP with three hidden layers. Each node is connected to every 
+    node in the previous and next layer. The lines represent the weights, and each 
+    node has an associated bias. Figure adapted from \textcite{neutelings2023}.}
+    \label{fig:MLP}
+\end{figure}
+
+
+The output layer of the network is another vector tailored for the particular purpose
+of the MLP (i.e. for classification, the output is a vector of probabilities 
 that the input data belongs to, see Appendix~\ref{app:MLP}). 
 
 The MLP architecture, while simplistic, is very powerful. \textcite{cybenko1989} showed that for any boolean 
