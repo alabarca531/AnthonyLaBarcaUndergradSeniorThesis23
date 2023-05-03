@@ -2,9 +2,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Hyperparameters of the CNN used to classify DESI spectra. CNN adapted from \blx@tocontentsinit {0}\textcite {Sepeku2022}.\relax }}{18}{table.caption.13}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Hyperparameters of the smaller and larger Spectral ViT architecture used to classify DESI spectra.\relax }}{19}{table.caption.14}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Hyperparameters of the CNN used to classify DESI spectra. CNN adapted from \blx@tocontentsinit {0}\textcite {Sepeku2022}.\relax }}{21}{table.caption.14}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Hyperparameters of the smaller and larger Spectral ViT architecture used to classify DESI spectra.\relax }}{22}{table.caption.15}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Architecture of the CNN used to classify DESI spectra. CNN adapted from \blx@tocontentsinit {0}\textcite {Sepeku2022}.\relax }}{31}{table.caption.31}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces Architecture of the CNN used to classify DESI spectra. CNN adapted from \blx@tocontentsinit {0}\textcite {Sepeku2022}.\relax }}{35}{table.caption.32}%
 \addvspace {10\p@ }

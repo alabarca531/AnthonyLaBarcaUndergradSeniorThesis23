@@ -19,6 +19,171 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Baade1934}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bb84a8d216f69ac983d47c6c132121ca}{%
+           family={Baade},
+           familyi={B\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=74a07bd85cb93bc2eeeaf37e43e5aa60}{%
+           family={Zwicky},
+           familyi={Z\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {National Academy of Sciences}%
+      }
+      \strng{namehash}{783b0bd29d6d0067ca8df0e1cf65e2c1}
+      \strng{fullhash}{783b0bd29d6d0067ca8df0e1cf65e2c1}
+      \strng{bibnamehash}{783b0bd29d6d0067ca8df0e1cf65e2c1}
+      \strng{authorbibnamehash}{783b0bd29d6d0067ca8df0e1cf65e2c1}
+      \strng{authornamehash}{783b0bd29d6d0067ca8df0e1cf65e2c1}
+      \strng{authorfullhash}{783b0bd29d6d0067ca8df0e1cf65e2c1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00278424}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences of the United States of America}
+      \field{number}{5}
+      \field{title}{Cosmic Rays from Super-novae}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2023}
+      \field{volume}{20}
+      \field{year}{1934}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{259\bibrangedash 263}
+      \range{pages}{5}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/86841
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/86841
+      \endverb
+    \endentry
+    \entry{Barbon1999}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e7d33c4b115c2811a3c05ec2f6741183}{%
+           family={{Barbon}},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b3d5ae86149d8a9c72a98fcf6c56a45}{%
+           family={{Buondı́}},
+           familyi={B\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd482b58f8f2816d7b45e573e71684a9}{%
+           family={{Cappellaro}},
+           familyi={C\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=061eca07840cfa48165ac4e9a41722b4}{%
+           family={{Turatto}},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2ddbf7a2253a21ad68c15761b98e3dc6}
+      \strng{fullhash}{58c03585a5ea02297a27787d078a1d6c}
+      \strng{bibnamehash}{2ddbf7a2253a21ad68c15761b98e3dc6}
+      \strng{authorbibnamehash}{2ddbf7a2253a21ad68c15761b98e3dc6}
+      \strng{authornamehash}{2ddbf7a2253a21ad68c15761b98e3dc6}
+      \strng{authorfullhash}{58c03585a5ea02297a27787d078a1d6c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\aaps}
+      \field{month}{11}
+      \field{title}{{The Asiago Supernova Catalogue - 10 years after}}
+      \field{volume}{139}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{pages}{531\bibrangedash 536}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1051/aas:1999404
+      \endverb
+      \verb{eprint}
+      \verb astro-ph/9908046
+      \endverb
+      \keyw{SUPERNOVAE AND SUPERNOVA REMNANTS: GENERAL,SURVEYS,GALAXIES: GENERAL,GALAXIES: STELLAR CONTENTS OF,Astrophysics}
+    \endentry
+    \entry{Becker2021}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=549b47cce6454a76b652f9b560b002da}{%
+           family={{Becker}},
+           familyi={B\bibinitperiod},
+           given={Burger},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7dd08cb29c3098b29b934a92e58e0781}{%
+           family={{Vaccari}},
+           familyi={V\bibinitperiod},
+           given={Mattia},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3065552c7292ff955b575da65e3b4776}{%
+           family={{Prescott}},
+           familyi={P\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=422e1add4079040b01a0c2d6f8566aa9}{%
+           family={{Grobler}},
+           familyi={G\bibinitperiod},
+           given={Trienko},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{441438bfa02dfb6886087d2ae2d00898}
+      \strng{fullhash}{33ad372695be2e4637f7af908c9782eb}
+      \strng{bibnamehash}{441438bfa02dfb6886087d2ae2d00898}
+      \strng{authorbibnamehash}{441438bfa02dfb6886087d2ae2d00898}
+      \strng{authornamehash}{441438bfa02dfb6886087d2ae2d00898}
+      \strng{authorfullhash}{33ad372695be2e4637f7af908c9782eb}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph.GA}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\mnras}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{{CNN architecture comparison for radio galaxy classification}}
+      \field{volume}{503}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{1828\bibrangedash 1846}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1093/mnras/stab325
+      \endverb
+      \verb{eprint}
+      \verb 2102.03780
+      \endverb
+      \keyw{methods: statistical,techniques: image processing,surveys,radio continuum: galaxies,Astrophysics - Astrophysics of Galaxies}
+    \endentry
     \entry{cybenko1989}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=743aed8cb3e0d5dddafd15fc0421d6eb}{%
@@ -61,6 +226,49 @@
       \verb{url}
       \verb https://doi.org/10.1007/BF02551274
       \endverb
+    \endentry
+    \entry{deVaucouleurs1985}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d59e6da582f8676d2626b8fd80fced5c}{%
+           family={{de Vaucouleurs}},
+           familyi={d\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67347343bc3ae94e0539335e0c9bb42d}{%
+           family={{Corwin}},
+           familyi={C\bibinitperiod},
+           given={Jr.},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           suffix={H.\bibnamedelimi G.},
+           suffixi={H\bibinitperiod\bibinitdelim G\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{d89f9164538d7f4ff9852873820493de}
+      \strng{fullhash}{d89f9164538d7f4ff9852873820493de}
+      \strng{bibnamehash}{d89f9164538d7f4ff9852873820493de}
+      \strng{authorbibnamehash}{d89f9164538d7f4ff9852873820493de}
+      \strng{authornamehash}{d89f9164538d7f4ff9852873820493de}
+      \strng{authorfullhash}{d89f9164538d7f4ff9852873820493de}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\apj}
+      \field{month}{8}
+      \field{title}{{S Andromedae 1885: A Centennial Review}}
+      \field{volume}{295}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{pages}{287}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1086/163374
+      \endverb
+      \keyw{Andromeda Galaxy,Light Curve,Supernovae,Reference Stars,Stellar Color,Stellar Magnitude,Stellar Spectra,Supernova Remnants,Wavelengths,Astrophysics}
     \endentry
     \entry{dosovitskiy2020}{article}{}
       \name{author}{12}{}{%
@@ -165,6 +373,39 @@
       \verb https://arxiv.org/abs/2010.11929
       \endverb
     \endentry
+    \entry{Filippenko1997}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=84f028fc010e8033d8f0260e08773371}{%
+           family={{Filippenko}},
+           familyi={F\bibinitperiod},
+           given={Alexei\bibnamedelima V.},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{84f028fc010e8033d8f0260e08773371}
+      \strng{fullhash}{84f028fc010e8033d8f0260e08773371}
+      \strng{bibnamehash}{84f028fc010e8033d8f0260e08773371}
+      \strng{authorbibnamehash}{84f028fc010e8033d8f0260e08773371}
+      \strng{authornamehash}{84f028fc010e8033d8f0260e08773371}
+      \strng{authorfullhash}{84f028fc010e8033d8f0260e08773371}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\araa}
+      \field{month}{1}
+      \field{title}{{Optical Spectra of Supernovae}}
+      \field{volume}{35}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{pages}{309\bibrangedash 355}
+      \range{pages}{47}
+      \verb{doi}
+      \verb 10.1146/annurev.astro.35.1.309
+      \endverb
+    \endentry
     \entry{fukushima1979}{inproceedings}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=23d96062ed18321873ac4b8b6e2fc816}{%
@@ -204,6 +445,57 @@
       \verb{doi}
       \verb 10.5555/1624861.1624928
       \endverb
+    \endentry
+    \entry{Gauci2010}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d8f15ea3fb1384a3f4eb441ceb4de5b7}{%
+           family={{Gauci}},
+           familyi={G\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faab6dc9baf22ca0af0b4c0935af30b1}{%
+           family={{Zarb Adami}},
+           familyi={Z\bibinitperiod},
+           given={Kristian},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ef5f7e720a30a0baec51653c9c97191}{%
+           family={{Abela}},
+           familyi={A\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a8055aad8804caa9d0de0254594bb7ad}
+      \strng{fullhash}{a8055aad8804caa9d0de0254594bb7ad}
+      \strng{bibnamehash}{a8055aad8804caa9d0de0254594bb7ad}
+      \strng{authorbibnamehash}{a8055aad8804caa9d0de0254594bb7ad}
+      \strng{authornamehash}{a8055aad8804caa9d0de0254594bb7ad}
+      \strng{authorfullhash}{a8055aad8804caa9d0de0254594bb7ad}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:1005.0390}
+      \field{eprintclass}{astro-ph.GA}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{5}
+      \field{title}{{Machine Learning for Galaxy Morphology Classification}}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{arXiv:1005.0390}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.1005.0390
+      \endverb
+      \verb{eprint}
+      \verb 1005.0390
+      \endverb
+      \keyw{Astrophysics - Galaxy Astrophysics,Computer Science - Machine Learning}
     \endentry
     \entry{Guy2023}{article}{}
       \name{author}{58}{}{%
@@ -571,15 +863,16 @@
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Astronomical Journal}
-      \field{month}{03}
+      \field{month}{3}
       \field{number}{4}
       \field{title}{The Spectroscopic Data Processing Pipeline for the Dark Energy Spectroscopic Instrument}
       \field{volume}{165}
       \field{year}{2023}
+      \field{dateera}{ce}
       \field{pages}{144}
       \range{pages}{1}
       \verb{doi}
@@ -631,11 +924,12 @@
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Deep Residual Learning for Image Recognition}
       \field{year}{2015}
+      \field{dateera}{ce}
       \verb{doi}
       \verb 10.48550/ARXIV.1512.03385
       \endverb
@@ -689,11 +983,12 @@
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Densely Connected Convolutional Networks}
       \field{year}{2016}
+      \field{dateera}{ce}
       \verb{doi}
       \verb 10.48550/ARXIV.1608.06993
       \endverb
@@ -726,11 +1021,12 @@
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Convolutional Neural Networks for Sentence Classification}
       \field{year}{2014}
+      \field{dateera}{ce}
       \verb{doi}
       \verb 10.48550/ARXIV.1408.5882
       \endverb
@@ -790,7 +1086,7 @@
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{During the last decade, Convolutional Neural Networks (CNNs) have become the de facto standard for various Computer Vision and Machine Learning operations. CNNs are feed-forward Artificial Neural Networks (ANNs) with alternating convolutional and subsampling layers. Deep 2D CNNs with many hidden layers and millions of parameters have the ability to learn complex objects and patterns providing that they can be trained on a massive size visual database with ground-truth labels. With a proper training, this unique ability makes them the primary tool for various engineering applications for 2D signals such as images and video frames. Yet, this may not be a viable option in numerous applications over 1D signals especially when the training data is scarce or application specific. To address this issue, 1D CNNs have recently been proposed and immediately achieved the state-of-the-art performance levels in several applications such as personalized biomedical data classification and early diagnosis, structural health monitoring, anomaly detection and identification in power electronics and electrical motor fault detection. Another major advantage is that a real-time and low-cost hardware implementation is feasible due to the simple and compact configuration of 1D CNNs that perform only 1D convolutions (scalar multiplications and additions). This paper presents a comprehensive review of the general architecture and principals of 1D CNNs along with their major engineering applications, especially focused on the recent progress in this field. Their state-of-the-art performance is highlighted concluding with their unique properties. The benchmark datasets and the principal 1D CNN software used in those applications are also publicly shared in a dedicated website. While there has not been a paper on the review of 1D CNNs and its applications in the literature, this paper fulfills this gap.}
@@ -799,6 +1095,7 @@
       \field{title}{1D convolutional neural networks and applications: A survey}
       \field{volume}{151}
       \field{year}{2021}
+      \field{dateera}{ce}
       \field{pages}{107398}
       \range{pages}{1}
       \verb{doi}
@@ -906,13 +1203,14 @@
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Data Analytics}
-      \field{month}{04}
+      \field{month}{4}
       \field{title}{Different types of CNN Architectures explained: Examples}
       \field{year}{2022}
+      \field{dateera}{ce}
       \verb{urlraw}
       \verb https://vitalflux.com/different-types-of-cnn-architectures-explained-examples/
       \endverb
@@ -964,6 +1262,188 @@
       \verb 10.1109/CVPR.2004.1315150
       \endverb
     \endentry
+    \entry{Mikolov2013}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a2d359b12ca2fadf0b40136a73f021bb}{%
+           family={{Mikolov}},
+           familyi={M\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee3f7d7b96add98106db907e189d6c13}{%
+           family={{Chen}},
+           familyi={C\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d11e6f2a0d0a1183b2cf62996525afc}{%
+           family={{Corrado}},
+           familyi={C\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4aecfb0cc2e1e3b7899129fa2a94e2b8}{%
+           family={{Dean}},
+           familyi={D\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d4849f6d57e38d9b9846cfb360e45131}
+      \strng{fullhash}{f24c60896b6daa69474b40efb61f4e88}
+      \strng{bibnamehash}{d4849f6d57e38d9b9846cfb360e45131}
+      \strng{authorbibnamehash}{d4849f6d57e38d9b9846cfb360e45131}
+      \strng{authornamehash}{d4849f6d57e38d9b9846cfb360e45131}
+      \strng{authorfullhash}{f24c60896b6daa69474b40efb61f4e88}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:1301.3781}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{1}
+      \field{title}{{Efficient Estimation of Word Representations in Vector Space}}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{arXiv:1301.3781}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.48550/arXiv.1301.3781
+      \endverb
+      \verb{eprint}
+      \verb 1301.3781
+      \endverb
+      \keyw{Computer Science - Computation and Language}
+    \endentry
+    \entry{Minkowski1941}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e6afe64f45b28abdacdee2849f13b7a4}{%
+           family={{Minkowski}},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e6afe64f45b28abdacdee2849f13b7a4}
+      \strng{fullhash}{e6afe64f45b28abdacdee2849f13b7a4}
+      \strng{bibnamehash}{e6afe64f45b28abdacdee2849f13b7a4}
+      \strng{authorbibnamehash}{e6afe64f45b28abdacdee2849f13b7a4}
+      \strng{authornamehash}{e6afe64f45b28abdacdee2849f13b7a4}
+      \strng{authorfullhash}{e6afe64f45b28abdacdee2849f13b7a4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\pasp}
+      \field{month}{8}
+      \field{number}{314}
+      \field{title}{{Spectra of Supernovae}}
+      \field{volume}{53}
+      \field{year}{1941}
+      \field{dateera}{ce}
+      \field{pages}{224}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1086/125315
+      \endverb
+    \endentry
+    \entry{Mller2016}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=76731c77b96766dd20ff160cf3cf4e01}{%
+           family={Möller},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d35d438f323e0d99093b9131d7a5445}{%
+           family={Ruhlmann-Kleider},
+           familyi={R\bibinithyphendelim K\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa30d272e404c64d0626a2b118181c0a}{%
+           family={Leloup},
+           familyi={L\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a823f4a8a8a883db9dbbb13effd9acd3}{%
+           family={Neveu},
+           familyi={N\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7baec801a29e9cc266f75debe565c258}{%
+           family={Palanque-Delabrouille},
+           familyi={P\bibinithyphendelim D\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4443aca9b47698268d5ecbe5d6464aca}{%
+           family={Rich},
+           familyi={R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44a39b6ce7eebb201f3450f182a99528}{%
+           family={Carlberg},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca3777f4da5ded00a550468d3cf5d03f}{%
+           family={Lidman},
+           familyi={L\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a11e9763e0832c092a934550daaae87d}{%
+           family={Pritchet},
+           familyi={P\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{afe1d15858fc863962211f4995897953}
+      \strng{fullhash}{2fc47b33cbf755cbaed341a57d20946d}
+      \strng{bibnamehash}{afe1d15858fc863962211f4995897953}
+      \strng{authorbibnamehash}{afe1d15858fc863962211f4995897953}
+      \strng{authornamehash}{afe1d15858fc863962211f4995897953}
+      \strng{authorfullhash}{2fc47b33cbf755cbaed341a57d20946d}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Cosmology and Astroparticle Physics}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Photometric classification of type Ia supernovae in the {SuperNova} Legacy Survey with supervised learning}
+      \field{volume}{2016}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{008\bibrangedash 008}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1475-7516/2016/12/008
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/1475-7516/2016/12/008
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/1475-7516/2016/12/008
+      \endverb
+    \endentry
     \entry{Naskath2022}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=d6ef715a747635f419c9414746c3b6c8}{%
@@ -994,7 +1474,7 @@
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Deep learning is a wildly popular topic in machine learning and is structured as a series of nonlinear layers that learns various levels of data representations. Deep learning employs numerous layers to represent data abstractions to implement various computer models. Deep learning approaches like generative, discriminative models and model transfer have transformed information processing. This article proposes a comprehensive review of various deep learning algorithms Multi layer perception, Self-organizing map and deep belief networks algorithms. It first briefly introduces historical and recent state-of-the-art reviews with suitable architectures and implementation steps. Moreover, the various applications of those algorithms in various fields such as wireless networks, Adhoc networks, Mobile ad-hoc and vehicular ad-hoc networks, speech recognition engineering, medical applications, natural language processing, material science and remote sensing applications, etc. are classified.}
@@ -1005,6 +1485,7 @@
       \field{title}{A Study on Different Deep Learning Algorithms Used in Deep Neural Nets: MLP SOM and DBN}
       \field{volume}{128}
       \field{year}{2022}
+      \field{dateera}{ce}
       \field{pages}{2913\bibrangedash 2936}
       \range{pages}{24}
       \verb{doi}
@@ -1016,7 +1497,62 @@
       \verb{url}
       \verb https://doi.org/10.1007/s11277-022-10079-4
       \endverb
-      \warn{\item Entry 'Naskath2022' (references.bib): Invalid format '2023/02/01' of date field 'date' - ignoring}
+    \endentry
+    \entry{Nassif2019}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=915767c19b555ab6694960d4a53e14a3}{%
+           family={Nassif},
+           familyi={N\bibinitperiod},
+           given={Ali\bibnamedelima Bou},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=160ac7a7a337245857b4290ce90c4e06}{%
+           family={Shahin},
+           familyi={S\bibinitperiod},
+           given={Ismail},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7d9831126ac1228afa799779d99c2a46}{%
+           family={Attili},
+           familyi={A\bibinitperiod},
+           given={Imtinan},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a14d985e12b4f57c7cf438233f734c51}{%
+           family={Azzeh},
+           familyi={A\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f1f56d75a6774e20d0300c9dc245d9a6}{%
+           family={Shaalan},
+           familyi={S\bibinitperiod},
+           given={Khaled},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e3e865d4d48efaaf19930d5c88d3aa8e}
+      \strng{fullhash}{b5314a3351d0871db5064fdaff058651}
+      \strng{bibnamehash}{e3e865d4d48efaaf19930d5c88d3aa8e}
+      \strng{authorbibnamehash}{e3e865d4d48efaaf19930d5c88d3aa8e}
+      \strng{authornamehash}{e3e865d4d48efaaf19930d5c88d3aa8e}
+      \strng{authorfullhash}{b5314a3351d0871db5064fdaff058651}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Speech Recognition Using Deep Neural Networks: A Systematic Review}
+      \field{volume}{7}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{19143\bibrangedash 19165}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2019.2896880
+      \endverb
     \endentry
     \entry{neutelings2021_nn}{misc}{}
       \name{author}{1}{}{%
@@ -1184,7 +1720,7 @@
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{A\&A}
@@ -1192,6 +1728,7 @@
       \field{title}{Definition of the Flexible Image Transport System (FITS), version 3.0}
       \field{volume}{524}
       \field{year}{2010}
+      \field{dateera}{ce}
       \field{pages}{A42}
       \range{pages}{-1}
       \verb{doi}
@@ -1203,6 +1740,177 @@
       \verb{url}
       \verb https://doi.org/10.1051/0004-6361/201015362
       \endverb
+    \endentry
+    \entry{Perlmutter1999}{article}{}
+      \name{author}{23}{}{%
+        {{un=0,uniquepart=base,hash=c3414afdf50b2debb6712d74ff0a9a6e}{%
+           family={{Perlmutter}},
+           familyi={P\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=977c5a06e527af5e996fae582e0d3137}{%
+           family={{Pennypacker}},
+           familyi={P\bibinitperiod},
+           given={C.\bibnamedelimi R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2b195cb896fa9fdf138b99cd3602d57}{%
+           family={{Goldhaber}},
+           familyi={G\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea273ba21163ae6e29e3ec359f510563}{%
+           family={{Goobar}},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=adfbdee5282359f68792a40438043be2}{%
+           family={{Muller}},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c67dc695c3f20996567cc986f5b50e8}{%
+           family={{Newberg}},
+           familyi={N\bibinitperiod},
+           given={H.\bibnamedelimi J.\bibnamedelimi M.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36bfe9ead3c34eb7c6a2a261484839e3}{%
+           family={{Desai}},
+           familyi={D\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbd3b0e76ef2a9bf5cc97916caa62a5e}{%
+           family={{Kim}},
+           familyi={K\bibinitperiod},
+           given={A.\bibnamedelimi G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=626cce7da7a79526124c873848748fa8}{%
+           family={{Kim}},
+           familyi={K\bibinitperiod},
+           given={M.\bibnamedelimi Y.},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=07832273c3df17de2d3c25022d44745d}{%
+           family={{Small}},
+           familyi={S\bibinitperiod},
+           given={I.\bibnamedelimi A.},
+           giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4badc3d044ffb6316e02e7a21790150c}{%
+           family={{Boyle}},
+           familyi={B\bibinitperiod},
+           given={B.\bibnamedelimi J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=386ba3b9749ea2795a05ffdf35398639}{%
+           family={{Crawford}},
+           familyi={C\bibinitperiod},
+           given={C.\bibnamedelimi S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9650e951439a5f389bc426519a825018}{%
+           family={{McMahon}},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4afe7789d04be2a5961763f2244f752a}{%
+           family={{Bunclark}},
+           familyi={B\bibinitperiod},
+           given={P.\bibnamedelimi S.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=61909c1a256fd35983a7792c0f42adc0}{%
+           family={{Carter}},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=124f20903e2d9fa81beb791c3b50939b}{%
+           family={{Irwin}},
+           familyi={I\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dff863874b17077ff22575de46039399}{%
+           family={{Terlevich}},
+           familyi={T\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c912c05fa246fc10f74e88ad1757b468}{%
+           family={{Ellis}},
+           familyi={E\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d86951531a81af234b135e25e4c6c30e}{%
+           family={{Glazebrook}},
+           familyi={G\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd366afa58011d9cf3f3d8d118ef3a09}{%
+           family={{Couch}},
+           familyi={C\bibinitperiod},
+           given={W.\bibnamedelimi J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95594b9a16d41b92bebcc78d3f046e61}{%
+           family={{Mould}},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34dfdf878085e3230f9c6740dcf5c67e}{%
+           family={{Small}},
+           familyi={S\bibinitperiod},
+           given={T.\bibnamedelimi A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=615f82ab088a955ed5de70b789e1216a}{%
+           family={{Abraham}},
+           familyi={A\bibinitperiod},
+           given={R.\bibnamedelimi G.},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{13c08f4b314bde9107bf949ed56bf418}
+      \strng{fullhash}{72e8bdcd0ed0ab7e0ddde328273bc3f8}
+      \strng{bibnamehash}{13c08f4b314bde9107bf949ed56bf418}
+      \strng{authorbibnamehash}{13c08f4b314bde9107bf949ed56bf418}
+      \strng{authornamehash}{13c08f4b314bde9107bf949ed56bf418}
+      \strng{authorfullhash}{72e8bdcd0ed0ab7e0ddde328273bc3f8}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{astro-ph}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{\apjl}
+      \field{month}{2}
+      \field{title}{{A Supernova at Z = 0.458 and Implications for Measuring the Cosmological Deceleration}}
+      \field{volume}{440}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{pages}{L41}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1086/187756
+      \endverb
+      \verb{eprint}
+      \verb astro-ph/9505023
+      \endverb
+      \keyw{Cosmology,Deceleration,Error Analysis,Red Shift,Supernovae,Charge Coupled Devices,Dark Matter,Light Curve,Stellar Spectrophotometry,Astrophysics,Astrophysics}
     \endentry
     \entry{popescu2009}{article}{}
       \name{author}{4}{}{%
@@ -1250,6 +1958,40 @@
       \field{year}{2009}
       \field{dateera}{ce}
     \endentry
+    \entry{Schaefer1995}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c010a8ff808b6d47bc1e548ef74dbf5e}{%
+           family={{Schaefer}},
+           familyi={S\bibinitperiod},
+           given={Bradley\bibnamedelima E.},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c010a8ff808b6d47bc1e548ef74dbf5e}
+      \strng{fullhash}{c010a8ff808b6d47bc1e548ef74dbf5e}
+      \strng{bibnamehash}{c010a8ff808b6d47bc1e548ef74dbf5e}
+      \strng{authorbibnamehash}{c010a8ff808b6d47bc1e548ef74dbf5e}
+      \strng{authornamehash}{c010a8ff808b6d47bc1e548ef74dbf5e}
+      \strng{authorfullhash}{c010a8ff808b6d47bc1e548ef74dbf5e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\apjl}
+      \field{month}{7}
+      \field{title}{{The Peak Brightness of SN 1895B in NGC 5253 and the Hubble Constant}}
+      \field{volume}{447}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{pages}{L13}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1086/309549
+      \endverb
+      \keyw{COSMOLOGY: OBSERVATIONS,COSMOLOGY: DISTANCE SCALE,GALAXIES: INDIVIDUAL NGC NUMBER: NGC 5253,STARS: SUPERNOVAE: INDIVIDUAL ALPHANUMERIC: SN 1895B}
+    \endentry
     \entry{Sepeku2022}{jurthesis}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=baae34a73d8160325e769e8135ecd1c8}{%
@@ -1274,13 +2016,14 @@
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{5}
       \field{title}{--}
       \field{type}{Senior Thesis}
       \field{year}{2022}
+      \field{dateera}{ce}
     \endentry
     \entry{Shelhamer2016}{misc}{}
       \name{author}{3}{}{%
@@ -1315,11 +2058,12 @@
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Fully Convolutional Networks for Semantic Segmentation}
       \field{year}{2016}
+      \field{dateera}{ce}
       \verb{doi}
       \verb 10.48550/ARXIV.1605.06211
       \endverb
@@ -1355,12 +2099,56 @@
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International Conference on Learning Representations}
       \field{title}{Very Deep Convolutional Networks for Large-Scale Image Recognition}
       \field{year}{2015}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Turatto2003}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=061eca07840cfa48165ac4e9a41722b4}{%
+           family={{Turatto}},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=9d571d0a14fc3c38ec34cd9bb2b90c1f}{%
+           family={{Weiler}},
+           familyi={W\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{061eca07840cfa48165ac4e9a41722b4}
+      \strng{fullhash}{061eca07840cfa48165ac4e9a41722b4}
+      \strng{bibnamehash}{061eca07840cfa48165ac4e9a41722b4}
+      \strng{authorbibnamehash}{061eca07840cfa48165ac4e9a41722b4}
+      \strng{authornamehash}{061eca07840cfa48165ac4e9a41722b4}
+      \strng{authorfullhash}{061eca07840cfa48165ac4e9a41722b4}
+      \strng{editorbibnamehash}{9d571d0a14fc3c38ec34cd9bb2b90c1f}
+      \strng{editornamehash}{9d571d0a14fc3c38ec34cd9bb2b90c1f}
+      \strng{editorfullhash}{9d571d0a14fc3c38ec34cd9bb2b90c1f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Supernovae and Gamma-Ray Bursters}
+      \field{title}{{Classification of Supernovae}}
+      \field{volume}{598}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{pages}{21\bibrangedash 36}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1007/3-540-45863-8_3
+      \endverb
+      \keyw{Astrophysics}
     \endentry
     \entry{vaswani2017}{inproceedings}{}
       \name{author}{8}{}{%

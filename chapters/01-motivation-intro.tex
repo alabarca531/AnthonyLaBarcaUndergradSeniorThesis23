@@ -17,17 +17,99 @@
     % 5.1. What is the structure of the thesis?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Citation styles}
+%% Segev Outline for Introduction
+% 
+% SN classification & Identification: Why important?
+% Spectra as "gold standard" for classifiers 
+% Attempt at spectroscopic classification
+% Madgwich et al, Gravr et al (2013), Bovan et al, Mathukrishna et al (2019)
+% AI/ ML approach: why better, possibly? 
+% What problems does it solve
+% what will you be looking at 
+% i.e. de-redshifted vs not, subtypeclassification vs none, etc.
+% "We will explore the following questions:
 
-These are the different citation styles for author-year.
+When observing the night sky, astronomers frequently encounter objects that 
+were unexpected. This occured quite frequently in the 19th century, as astronomers 
+armed with more powerful telescopes were probing the cosmos for the first time. 
+In 1885 and 1895, two objects were observed in galaxies outside of our own with unique 
+properties \parencite{deVaucouleurs1985, Schaefer1995}. These objects were very 
+bright, outshining their host galaxies, and faded away over the course of a few months.
+These objects were eventually named `supernovae' (SNe) by Walter Baade and Fritz Zwicky, who were the first to suggest that
+these objects were the result of the death of a star, and predict the resulting 
+object to be a cold, neutron star\parencite{Baade1934}. Since then, astronomers 
+have observed thousands of SNe~\parencite{Barbon1999}, and have
+developed a classification scheme for these objects.  
 
-\noindent The standard \verb=\cite= command produces the following output: \cite{cybenko1989}.
+\section{Supernova Classification}
+\label{sec:supernova-classification}
+SNe have been traditionally classified based on their spectra since 
+\textcite{Minkowski1941} first classified SNe into two groups based on the
+presence or absence of hydrogen in their spectra. This classification provided 
+the basis for the current classification scheme, which is based on the presence
+or absence of hydrogen and silicon in the spectra of SNe. This classification 
+scheme is shown in Figure~\ref{fig:sn-classification}. 
 
-\noindent The \verb=\textcite= command produces the following output: \textcite{cybenko1989}.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/sn-classification.png}
+    \caption[Supernova Classification]{Supernova Classification. The 
+    classification scheme is based on the presence or absence of hydrogen and 
+    silicon in the spectra of SNe. Figure from \textcite{Turatto2003}.}
+    \label{fig:sn-classification}
+\end{figure}
 
+The classification scheme in Figure~\ref{fig:sn-classification} is based on
+the presence or absence of hydrogen and silicon in the spectra of SNe.
+SNe with hydrogen in their spectra are classified as Type II SNe, while those
+without hydrogen are classified as Type I SNe. Type I SNe are further
+subdivided into Type Ia, Ib, and Ic~\parencite{Turatto2003}. 
 
-\noindent The \verb=\parencite= command produces the following output: \parencite{cybenko1989}.
+Although divided into three subtypes, Type I SNe are caused by two 
+different mechanisms. Type Ia SNe are caused by the thermonuclear explosion
+of a white dwarf star, while Type Ib and Ic SNe are caused by the core-collapse
+of a massive star~\parencite{Filippenko1997}. Type Ib and Ic SNe, because of this, 
+are related to Type II SNe, and are collectively referred to as core-collapse
+SNe. Stars stripped of their hydrogen envelope are classified as Type Ib SNe, 
+while those stripped of both their hydrogen and helium envelopes are classified
+as Type Ic SNe. 
 
-\noindent The \verb=\footcite= command produces a footnote citation \footcite{cybenko1989}.
+\section{Supernova Identification}
+\label{sec:supernova-identification}
+The different types of SNe are caused by different mechanisms, and therefore 
+knowing the type of a SN can provide insight into the mechanism that caused it.
+Detecting an SNe is therefore not enough, and astronomers must also identify the
+type of the SN. Traditionally, the supernova would be observed by alternative 
+means, followed up by photometric and spectroscopic observations, as presented by 
+\textcite{Perlmutter1999}. This process is time-consuming, requiring not only 
+the initial discovery of the SN, but also follow-up observations to determine
+the type of the SN before it fades away. 
 
+\section{Dark Energy Spectroscopic Instrument}
+\label{sec: DESI}
+* Write a section about DESI
+* What is it?
+* Why is it important?
+* Why do we care about SNe here
+
+\section{Supernova Classification with Machine Learning}
+\label{sec:supernova-classification-with-machine-learning}
+Machine learning (ML) has been applied to many different fields for its flexibility 
+and ability to find patterns in data. The emergence of Deep Learning (DL) has
+allowed ML to be applied to more and more mundane tasks, such as image
+classification~\parencite{krizhevsky2012}, speech recognition~\parencite{Nassif2019},
+and natural language processing~\parencite{Mikolov2013}. ML and DL 
+has also been applied to astronomy, with some success. \textcite{Gauci2010} used 
+a random forest algorithm  to distinguish between spiral, elliptical, and irregular galaxies, 
+and \textcite{Becker2021} used a convolutional neural network (CNN) to classify the morphology of
+radio galaxies. CNNs found success in working within the DESI collaboration, with 
+\textcite{parks2018} using the architecture to detect strong emission lines.  
+These techniques have also been applied to the classification of SNe. 
+\textcite{Mller2016} used a CNN to classify SNe into Type Ia and non-Type Ia SNe. 
+
+\section{Problem Statement}
+This work will explore the following questions: how can we adapt novel deep learning 
+techniques to classify SNe in the DESI dataset? How can we use this architecture to 
+classify SNe into their respective subtypes accurately? And how can we decrease the amount of 
+pre-processing required to classify these SNe accurately? 
 
