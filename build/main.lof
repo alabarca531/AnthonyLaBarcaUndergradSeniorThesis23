@@ -1,0 +1,32 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A simple MLP with an input dimension of 4 (green nodes), three hidden layers (blue nodes), and an output dimension of 3 (red nodes). Each node is connected to every node in the previous and next layer. The lines represent the weights, and each node has an associated bias. Figure adapted from \blx@tocontentsinit {0}\textcite {neutelings2021_nn}.\relax }}{3}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A convolutional filter and a $2\times 2$ pooling applied to a 2D input. As the filter is passed over the input space, the kernel is applied. The input is padded with zeros to preserve dimensionality, which is then reduced by the max pooling. Figure adapted from \blx@tocontentsinit {0}\textcite {neutelings2022_conv}.\relax }}{5}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces A convolutional network archeticture designed for classification (adapted from \blx@tocontentsinit {0}\cite {kumar2022_cnn}). Only one convolutional/pooling layer is shown, but there can be multiple depending on the application. \relax }}{6}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right)\relax }}{7}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Max value of the output vector from the CNN.\relax }}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut\relax }}{8}{figure.caption.8}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual representation of the embeddings for a sample of spectra. The x-axis represents the index of the patch, the y-axis represents the index of the hidden dimension, and the color represents the value of the embedding.\relax }}{13}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Synthetic spectra used to verify performance of SpectralViT. Red and green vertical lines represent features used to seperate the data into disticnt classes for SNR=2 and SNR=10, respectively. Two classes are shown for each SNR.\relax }}{15}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Training of Spectral ViT on synthetic datasets. The model was able to reach 100\% accuracy on the test set of SNR=10 (top), but failed to reach an accuracy of 50\% on the test set of SNR=2 (bottom).\relax }}{16}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Training of the CNN on synthetic DESI spectra.\relax }}{17}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Training of the small architecture on redshift-corrected spectra downsampled to 3600 bins. Over-fitting was determined to have occurred by Epoch 31.\relax }}{19}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Training of the large architecture on Redshift-corrected spectra downsampled to 3600 bins. No convergence above random guessing was observed. \relax }}{20}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Training of the small architecture on Redshift-corrected spectra downsampled to 1800 bins. No convergence above random guessing was observed. \relax }}{20}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Training of the small architecture on Redshift-corrected spectra downsampled to 900 bins. No convergence above random guessing was observed. \relax }}{20}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Training of the small architecture on non Redshift-corrected data downsampled to 3600 bins. Over fitting was determined to have occurred by Epoch 26.\relax }}{21}{figure.caption.19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral ViT V1 Diagnostics: ROC Curve (left) and Confusion Matrix (right)\relax }}{22}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Max value of the output vector from the Spectral ViT V1.\relax }}{23}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectral ViT V1 Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut \relax }}{23}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Spectral ViT V1 Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99.9999\% confidence cut \relax }}{23}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Spectral ViT V2 Diagnostics: ROC Curve (left) and Confusion Matrix (right)\relax }}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Max value of the output vector from the Spectral ViT V2.\relax }}{24}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Spectral ViT V2 Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut\relax }}{25}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Spectral ViT V2 Binary Diagnostics: ROC Curve (left) and Confusion Matrix (right)\relax }}{26}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Max value of the output vector from the Spectral ViT V2 Binary Classification.\relax }}{26}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Spectral ViT V2 Binary Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99.99\% confidence cut \relax }}{27}{figure.caption.29}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }

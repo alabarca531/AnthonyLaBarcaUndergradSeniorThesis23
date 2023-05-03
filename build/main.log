@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.10)  2 MAY 2023 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.10)  3 MAY 2023 01:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1011,7 +1011,13 @@ File: contour.cfg 2004/11/18 v2.14 Print contoured text (HH, MH)
 contour: Using driver file `pdftex.cnt'.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/contour/pdftex.cnt
 File: pdftex.cnt 2004/11/18 v2.14 Print contoured text (HH, MH)
-))) (/usr/local/texlive/2022/texmf-dist/tex/latex/comment/comment.sty
+)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@layerbox@background=\box77
+\pgf@layerboxsaved@background=\box78
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write5
  Excluding comment 'comment')
 Package csquotes Info: Checking for multilingual support...
@@ -1021,52 +1027,15 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 19.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (build/main.aux (build/structure/title.aux) (build/structure/dedication.aux) (build/structure/acknowledgements.aux) (build/structure/abstract.aux) (build/structure/tablesfigures.aux) (build/chapters/01-motivation-intro.aux) (build/chapters/02-background.aux) (build/chapters/03-methods.aux
+) (build/main.aux (build/structure/title.aux) (build/structure/dedication.aux) (build/structure/acknowledgements.aux) (build/structure/abstract.aux) (build/structure/tablesfigures.aux) (build/chapters/01-motivation-intro.aux) (build/chapters/02-background.aux) (build/chapters/03-methods.aux) (build/chapters/04-results.aux
 
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-) (build/chapters/04-results.aux
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
+LaTeX Warning: Label `fig:cnn_qual' multiply defined.
 
 
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
+LaTeX Warning: Label `fig:cnn_max' multiply defined.
 
 
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
-
-
-LaTeX Warning: Label `fig:synth_spectra' multiply defined.
+LaTeX Warning: Label `fig:cnn_qual' multiply defined.
 
 ) (build/chapters/99-appendix.aux))
 \openout1 = `main.aux'.
@@ -1147,7 +1116,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count473
 \scratchdimen=\dimen306
-\scratchbox=\box77
+\scratchbox=\box79
 \nofMPsegments=\count474
 \nofMParguments=\count475
 \everyMPshowfont=\toks51
@@ -1300,13 +1269,17 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
  (build/main.lof [7
 
 ]
+Overfull \hbox (2.605pt too wide) in paragraph at lines 6--6
+ [][] [][][]\T1/lmr/m/n/12 (-20) A con-vo-lu-tional net-work archet-ic-ture de-signed for clas-si-fi-ca-tion (adapted |
+ []
+
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 28.
- [8])
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+[8] [9])
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
-) [9]
+) [10]
 \openout2 = `chapters/01-motivation-intro.aux'.
 
  (./chapters/01-motivation-intro.tex
@@ -1348,125 +1321,144 @@ l.54 \include{chapters/01-motivation-intro}
  (./chapters/02-background.tex
 Chapter 2.
 (./tikz/MLP.tex 
-Neural network without text 
  Layer 1, 2, 3, 4, 5,) [2
 
 
 
 
-] [3] (./tikz/convfilter.tex) (./tikz/maxpool.tex)
+] [3] (./tikz/conn_unit.tex)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 96.
+(Font)              <10.95> on input line 90.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 96.
+(Font)              <8> on input line 90.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
-
-
-LaTeX Warning: Reference `sec:MLP' on page 4 undefined on input line 102.
-
-
-LaTeX Warning: Reference `fig:CNN' on page 4 undefined on input line 105.
-
-[4] [5]
-<figures/cnn/cnn_rocfull.png, id=363, 722.7pt x 361.35pt>
-<figures/cnn/cnn_cmfull.png, id=365, 722.7pt x 614.295pt>
-<figures/cnn/cnn_max_ypred.png, id=367, 722.7pt x 361.35pt>
-<figures/cnn/cnn_roc99.png, id=369, 722.7pt x 361.35pt>
-<figures/cnn/cnn_cm99.png, id=370, 722.7pt x 614.295pt>
- [6] [7] [8]) [9]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
+ [4]
+<figures/Typical-CNN-architecture.png, id=368, 634.37pt x 206.7725pt>
+ [5] [6]
+<figures/cnn/cnn_rocfull.png, id=403, 722.7pt x 361.35pt>
+<figures/cnn/cnn_cmfull.png, id=404, 722.7pt x 614.295pt>
+<figures/cnn/cnn_max_ypred.png, id=406, 722.7pt x 361.35pt>
+<figures/cnn/cnn_roc99.png, id=408, 722.7pt x 361.35pt>
+<figures/cnn/cnn_cm99.png, id=409, 722.7pt x 614.295pt>
+ [7] [8] [9]) [10]
 \openout2 = `chapters/03-methods.aux'.
 
  (./chapters/03-methods.tex
 Chapter 3.
-[10
+
+LaTeX Warning: Command \r invalid in math mode on input line 26.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 26.
+
+[11
 
 
 
 
 ]
-<figures/embeddings.png, id=405, 289.08pt x 289.08pt>
- [11] [12] [13]
-<figures/pre_testing/SN2_example.png, id=426, 1156.32pt x 578.16pt>
-<figures/pre_testing/SN10_example.png, id=427, 1156.32pt x 578.16pt>
-<figures/pre_testing/SNR2_training_epoch.png, id=428, 1084.05pt x 433.62pt>
-<figures/pre_testing/SNR10_training_epoch.png, id=429, 1084.05pt x 433.62pt>
+<figures/embeddings_new.png, id=442, 701.5008pt x 181.6386pt>
+ [12] [13] [14]
+<figures/synth_data_new.png, id=467, 1051.5285pt x 203.8014pt>
+<figures/pre_testing/SNR2_training_epoch.png, id=468, 1084.05pt x 433.62pt>
+<figures/pre_testing/SNR10_training_epoch.png, id=469, 1084.05pt x 433.62pt>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] [15]
-<figures/blackbox.jpeg, id=441, 321.2pt x 321.2pt>
- [16] (./tables/table.tex) (./tables/table.tex) (./tables/table.tex)
-<figures/v1/vit_model_V1_original_redotraining_after.png, id=448, 722.7pt x 361.35pt>
-<figures/v1/vit_model_V1_bigtraining_after.png, id=449, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2training_after.png, id=450, 722.7pt x 361.35pt>
-) [17] [18] [19] [20]
+[15] [16]
+<figures/cnn/cnn_training_history.jpg, id=481, 1170.3725pt x 466.74374pt>
+ [17] (./tables/cnn_hyperparameters.tex) (./tables/transformer_hyperparameters.tex) [18]
+<figures/v1_real/vit_model_V1_original_redotraining_new.png, id=501, 1045.2651pt x 335.0919pt>
+<figures/v1_real/vit_model_V1_bigtraining_new.png, id=502, 1045.2651pt x 335.0919pt>
+<figures/vit_model_V1.2training_new.png, id=505, 1045.2651pt x 335.0919pt>
+<figures/vit_model_V1.3_muchsmallermodeltraining_new.png, id=506, 1045.2651pt x 335.0919pt>
+<figures/v2_real/vit_model_V2training_new.png, id=508, 1033.7019pt x 335.0919pt>
+) [19] [20] [21]
 \openout2 = `chapters/04-results.aux'.
 
  (./chapters/04-results.tex
 Chapter 4.
-<figures/v1/rocfull.png, id=468, 722.7pt x 361.35pt>
-<figures/v1/cmfull.png, id=469, 722.7pt x 614.295pt>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/v1/max_ypred.png, id=470, 722.7pt x 361.35pt>
-<figures/v1/roc99999.png, id=471, 722.7pt x 361.35pt>
-<figures/v1/cm99999.png, id=472, 722.7pt x 614.295pt>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[21
+<figures/v1_real/vit_model_V1_original_redorocfulle_e31.png, id=522, 682.9515pt x 328.3467pt>
+<figures/v1_real/vit_model_V1_original_redocmfull_e31.png, id=523, 711.1368pt x 575.751pt>
+<figures/v1_real/vit_model_V1_original_redomax_ypred_binary_31.png, id=524, 683.4333pt x 177.5433pt>
+<figures/v1_real/vit_model_V1_original_redoroc99_e31.png, id=525, 682.9515pt x 328.3467pt>
+<figures/v1_real/vit_model_V1_original_redocm99_e31.png, id=526, 711.1368pt x 575.751pt>
+<figures/v1_real/vit_model_V1_original_redoroc999999_e31.png, id=527, 682.9515pt x 328.3467pt>
+<figures/v1_real/vit_model_V1_original_redocm999999_e31.png, id=528, 711.1368pt x 575.751pt>
+[22
 
 
 
 
-] [22] [23] [24]
-<figures/v2/vit_model_V2rocfulle_e42.png, id=490, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2cmfull_e42.png, id=491, 722.7pt x 614.295pt>
-<figures/v2/vit_model_V2max_ypred_42.png, id=492, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2roc99_e42.png, id=493, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2cm99_e42.png, id=494, 722.7pt x 614.295pt>
+] [23]
+<figures/v2_real/vit_model_V2rocfulle_e26.png, id=537, 677.6517pt x 322.5651pt>
+<figures/v2_real/vit_model_V2cmfull_e26.png, id=538, 711.3777pt x 569.2467pt>
+<figures/v2_real/vit_model_V2max_ypred_26.png, id=539, 683.4333pt x 177.5433pt>
+<figures/v2_real/vit_model_V2roc99_e26.png, id=540, 677.6517pt x 322.5651pt>
+<figures/v2_real/vit_model_V2cm99_e26.png, id=541, 711.3777pt x 569.2467pt>
+ [24
+
+] [25]
+<figures/v2_real/vit_model_V2rocfull_binary_e26.png, id=550, 677.6517pt x 322.5651pt>
+<figures/v2_real/vit_model_V2cmfull_binary_e26.png, id=551, 718.8456pt x 532.8708pt>
+<figures/v2_real/vit_model_V2max_ypred_binary_26.png, id=552, 683.6742pt x 177.5433pt>
+<figures/v2_real/vit_model_V2roc9999_binary_e26.png, id=553, 677.6517pt x 322.5651pt>
+<figures/v2_real/vit_model_V2cm9999_binary_e26.png, id=554, 718.8456pt x 532.8708pt>
+) [26
+
+] [27]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
+ [28
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/v2/vit_model_V2roc99999_e42.png, id=495, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2cm99999_e42.png, id=496, 722.7pt x 614.295pt>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[25
-
-] [26]
-<figures/v2/vit_model_V2rocfulle_e49.png, id=505, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2cmfull_e49.png, id=506, 722.7pt x 614.295pt>
-<figures/v2/vit_model_V2max_ypred_49.png, id=507, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2roc99_e49.png, id=508, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2cm99_e49.png, id=509, 722.7pt x 614.295pt>
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+]
 
-<figures/v2/vit_model_V2roc99999_e49.png, id=510, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2cm99999_e49.png, id=511, 722.7pt x 614.295pt>
+Package biblatex Warning: No driver for entry type 'jurthesis'.
+(biblatex)                Using fallback driver on input line 71.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[29]
+\openout2 = `chapters/99-appendix.aux'.
 
-[27
-
-] [28]
-<figures/v2/vit_model_V2rocfull_binary_e42.png, id=521, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2cmfull_binary_e42.png, id=522, 722.7pt x 614.295pt>
-<figures/v2/vit_model_V2max_ypred_binary_42.png, id=523, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2roc99_binary_e42.png, id=524, 722.7pt x 361.35pt>
-<figures/v2/vit_model_V2cm99_binary_e42.png, id=525, 722.7pt x 614.295pt>
+ (./chapters/99-appendix.tex
+Appendix A.
+(./tables/cnn_architecture.tex) [30
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+] [31]
+Appendix B.
+) [32
 
-<figures/v2/vit_model_V2roc99999997_binary_e42.png, id=526, 722.7pt x 361.35pt>
-<figures/v2
+] (build/main.aux (build/structure/title.aux) (build/structure/dedication.aux) (build/structure/acknowledgements.aux) (build/structure/abstract.aux) (build/structure/tablesfigures.aux) (build/chapters/01-motivation-intro.aux) (build/chapters/02-background.aux) (build/chapters/03-methods.aux) (build/chapters/04-results.aux) (build/chapters/99-appendix.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 1D5E4630C172E5DB15C52967C588357F;5350.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 38158 strings out of 478268
+ 728551 string characters out of 5846346
+ 1472081 words of memory out of 5000000
+ 55144 multiletter control sequences out of 15000+600000
+ 630566 words of font info for 315 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 84i,17n,80p,2010b,2904s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on build/main.pdf (42 pages, 396547 bytes).
+PDF statistics:
+ 757 PDF objects out of 1000 (max. 8388607)
+ 624 compressed objects within 7 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 117674 words of extra memory for PDF output out of 128383 (max. 10000000)
+
