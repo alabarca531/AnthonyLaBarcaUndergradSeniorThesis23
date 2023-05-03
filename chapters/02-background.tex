@@ -15,33 +15,34 @@
 % 2.4 Adjected ViT architecture for DESI
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Multi-Layer Perceptrons}\label{sec:MLP}
 To aid in the classification of supernovae, deep learning techniques can provide 
 flexibility and scalability that have been previously unattainable by manual 
 methods. The simplest and most widely used architecture in deep learning are the feed-forward 
 fully connected neural networks, or multi-layer perceptrons (MLPs) \parencite{popescu2009}.
 These networks are composed of series of ``layers'' of neurons, or nodes, that 
 are ``fully connected'' to the previous layer (Figure \ref{fig:MLP}).
-Given an input vector $\vec{x_0}$ with $n$ values, an MLP applies a series of weights to each 
-element, resulting in a linear transformation from $\vec{x}$ to $\vec{x_1}$, where
-$\vec{x_1}$ is a vector of length $m$. This transformation is then followed by a bias added 
+Given an input vector $\vec{x}^{(0)}$ with $n$ values, an MLP applies a series of weights to each 
+element, resulting in a linear transformation from $\vec{x}^{(0)}$ to $\vec{x}^{(1)}$, where
+$\vec{x}_{(1)}$ is a vector of length $m$. This transformation is then followed by a bias added 
 to each element, and an activation function applied to each element.
 The transition from layer $i$ to $i+1$ can be represented mathematically as 
 \begin{equation}\label{eqn:MLP}
-    \vec{x_{i+1}} = \sigma(\mathbf{W}\vec{x_i} + \vec{b}),
+    \vec{x}^{(i+1)} = \sigma(\mathbf{W}\vec{x}^{(i)} + \vec{b}^{(i+1)}),
 \end{equation}
-where $\mathbf{W}$ is an $m \times n$ matrix of weights, $\vec{b_{i+1}}$ is a vector of length $m$
+where $\mathbf{W}$ is an $m \times n$ matrix of weights, $\vec{b}^{(i+1)}$ is a vector of length $m$
 representing the bias, and $\sigma$ is the activation function. The activation function can 
 be any function, but traditionally they are chosen to be continuous, non-linear, 
 monotonically increasing, and differentiable. The most common activation functions 
-are the sigmoid function, $\sigma(x) = \frac{1}{1 + e^{-x}}$, hyperbolic tangent, 
-$\sigma(x) = \tanh(x)$, and the rectified linear unit, or ReLU,
-$\sigma(x) = \max(0, x)$.
+are the sigmoid function, $\sigma(x_i) = \frac{1}{1 + e^{-x_i}}$, hyperbolic tangent, 
+$\sigma(x_i) = \tanh(x_i)$, and the rectified linear unit, or ReLU,
+$\sigma(x_i) = \max(0,x_i)$, all of which are applied element-wise.
 \begin{figure}[t]
     \centering
     \input{tikz/MLP.tex}
-    \caption{A simple MLP with three hidden layers. Each node is connected to every 
+    \caption{A simple MLP with an input dimension of 4 (green nodes), three hidden layers (blue nodes), and an output dimension of 3 (red nodes). Each node is connected to every 
     node in the previous and next layer. The lines represent the weights, and each 
-    node has an associated bias. Figure adapted from \textcite{neutelings2023}.}
+    node has an associated bias. Figure adapted from \textcite{neutelings2021_nn}.}
     \label{fig:MLP}
 \end{figure}
 The output layer of the network is a vector tailored for the particular purpose
@@ -65,38 +66,31 @@ transformers.
 \section{Convolutional Neural Networks}\label{sec:CNN}
 Convolutional neural networks (CNNs) were originally developed
 to address the lack of invariance under translation in input data \parencite{fukushima1979}.
-CNNs are composed of a series of convolutional layers, usually followed by a 
-pooling layer and a fully connected layer (Appendix~\ref{app:CNN}). The convolutional 
+CNNs designed for classification are traditionally composed of a series of convolutional layers, 
+usually followed by a pooling layer, and a fully connected layer. The convolutional 
 layers are composed of a series of filters, which take a certain 
-number of inputs from the previous layer, and apply a kernel to them, resulting in 
+number of inputs from the previous layer and apply a kernel to them, resulting in 
 a single output. These filters are across the entire input space, and are 
-commonly referred to as feature maps. An example of a convolutional filter 
-is shown in Figure~\ref{fig:convolution}. Because multiple filters are applied 
-on the same input, the output of a convolutional layer is a 3D tensor. 
+commonly referred to as feature maps. Inputs are traditionally padded to preserve 
+the dimensionality of the original tensor size. Multiple filters are applied in 
+each convolutional layer, resulting in a tensor of shape $N\times x$, where 
+$x$ is the shape of the original input (which can be one or multi-dimensional). 
 To reduce the dimensionality of the output, a pooling layer is applied.
 The pooling layer takes a certain number of inputs from the previous layer, and 
 reduces them to a single output, similar to the convolutional filters, but 
 without the kernel application. The most common pooling layer is the max-pooling
-layer, which is shown in Figure~\ref{fig:maxpool}. These convolution and pooling 
-layers are applied in series until the desired output dimensionality is reached.
-\begin{figure}
+layer, which takes the maximum value in each set as the reduced value. 
+The process of passing an input through a convolutional filter, and then pooled is shown in Figure~\ref{fig:convolution}. 
+These convolution and pooling layers are applied in series until the desired output dimensionality is reached.
+\begin{figure}[t]
     \centering 
-    \input{tikz/convfilter.tex}
-    \caption{A convolutional filter applied to a 2D input. The filter is passed 
-        over the input space, and the kernel is applied to each element. The
-        output is a single value. Figure adapted from \textcite{neutelings2023}.}
+    \input{tikz/conn_unit}
+    \caption{A convolutional filter and a $2\times2$ pooling applied to a 2D input. As the filter is passed 
+        over the input space, the kernel is applied. The input is padded with zeros to preserve dimensionality, 
+        which is then reduced by the max pooling. Figure adapted from \textcite{neutelings2022_conv}.}
     \label{fig:convolution}
 \end{figure}
 
-\begin{figure}
-    \centering 
-    \input{tikz/maxpool.tex}
-    \caption{A max-pooling layer applied to a 2D input. The input is divided into
-        a grid of $2 \times 2$ squares, and the maximum value in each square is 
-        taken as the output}
-    \label{fig:maxpool}
-\end{figure}
-hi
 From here, depending on the task, the output of the pooling layer can be fed
 into a fully connected layer, which is the same as the MLP architecture described
 in Section~\ref{sec:MLP}, or it can be fed into another convolutional layer. An
@@ -104,15 +98,28 @@ MLP is usually applied for classification tasks, while another convolutional lay
 is applied for segmentation tasks. An example of a CNN architecture used for 
 classification is shown in Figure~\ref{fig:CNN}.
 
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=.8\linewidth]{figures/Typical-CNN-architecture.png}
+    \caption{A convolutional network archeticture designed for classification (adapted from \cite{kumar2022_cnn}). Only
+    one convolutional/pooling layer is shown, but there can be multiple depending on the application. }
+    \label{fig:CNN}
+\end{figure}
+
 
 This architecture was shown to be effective in image recognition tasks by
 \textcite{lecun2004} and then popularized after the success of AlexNet in the 
-ImageNet challenge \textcite{krizhevsky2012}. The networks have since been applied to
-many other vision tasks and various fields, such as NLP and audio processing. 
+ImageNet challenge \textcite{krizhevsky2012}. AlexNet was the first of many CNN 
+architectures popularized in the 2010s for vision classification, such as VGG \parencite{Simonyan15}, 
+ResNet\parencite{he2016deep}, and DenseNet \parencite{Huang2016}. This also spurred a sudden increase in deep networks designed 
+for segmentation tasks as well, such as the FCN architecture by \textcite{Shelhamer2016}. In addition to vision tasks, it also found 
+great succes in applications such as natural language processing \parencite{Kim2014}, engineering, and 
+medicine \parencite{Kiranyaz2021}. 
 
-\subsection{CNNs on Spectroscopic Data}
+\subsection{CNNs on Spectroscopic Data in Astronomy}
 \label{sec:CNNspectra}
-CNNs excel at identifying patterns throughout their input space, stemming from their spacial invariance. Theoretically, this should translate to spectral classification quite well. In fact, CNNs have been applied 
+CNNs excel at identifying patterns throughout their input space, stemming from their spacial invariance. 
+Theoretically, this should translate to spectral classification quite well. In fact, CNNs have been applied 
 to spectroscopic data in the past, including on the DESI dataset. 
 \textcite{parks2018} used a CNN to detect strong emission lines in DESI spectra with 
 great success. * Talk about 1D CNN currently running, and preprocessing used *
@@ -125,8 +132,9 @@ CNN architecture (Appendix~\ref{app:CNN}).
 % TODO: Make into Subcaptions
 \begin{figure}[t]
     \centering
-    \includegraphics[width=.4\textwidth]{figures/cnn/cnn_rocfull.png}
-    \includegraphics[width=.4\textwidth]{figures/cnn/cnn_cmfull.png}
+    \includegraphics[height=4.55cm]{figures/cnn/cnn_rocfull.png}
+    \quad
+    \includegraphics[height=4.55cm]{figures/cnn/cnn_cmfull.png}
     \caption{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right)\label{fig:cnn_qual}}
 \end{figure}
 This architecture was shown to train quickly (less than 1 hour on a single GPU), 
@@ -134,8 +142,8 @@ but it was not able to achieve astonishingly high accuracy. Figure~\ref{fig:cnn_
 shows the ROC curve and confusion matrix for the CNN trained on synthetic spectra. 
 \begin{figure}[b]
     \centering
-    \includegraphics[width=0.5\textwidth]{figures/cnn/cnn_max_ypred.png}
-    \caption{Max value of the output vector for the CNN.\label{fig:cnn_max}}
+    \includegraphics[width=0.6\textwidth]{figures/cnn/cnn_max_ypred.png}
+    \caption{Max value of the output vector from the CNN.\label{fig:cnn_max}}
 \end{figure}
 
 The maximum value of the output vector was used to determine the predicted class,
@@ -146,10 +154,10 @@ more that are not.
 % TODO: Make into Subcaptions
 \begin{figure}[t]
     \centering
-    \subfloat[\centering~ROC curve]{\includegraphics[width=5cm]{figures/cnn/cnn_roc99.png}}
-    \qquad
-    \subfloat[\centering~Confusion Matrix]{\includegraphics[width=5cm]{figures/cnn/cnn_cm99.png}}
-    \caption{CNN Diagnostics\label{fig:cnn_qual2}}
+    \includegraphics[height=4.55cm]{figures/cnn/cnn_roc99.png}
+    \quad
+    \includegraphics[height=4.55cm]{figures/cnn/cnn_cm99.png}
+    \caption{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut\label{fig:cnn_qual2}}
 \end{figure}
 
 A \textbf{much better ROC curve and confusion matrix }are produced by 

@@ -39,7 +39,7 @@ A visual representation of the embeddings for the sample is shown in Fig.~\ref{f
 embeddings are added element-wise to the patches, the resulting tensor (of size $N\times101\times300$) is then passed through the encoder. 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=.4\linewidth]{figures/embeddings.png}
+    \includegraphics[width=.4\linewidth]{figures/embeddings_new.png}
     \caption{Visual representation of the embeddings for a sample of spectra split into 100 patches of length 300.}
     \label{fig:embedding}
 \end{figure}
@@ -90,13 +90,19 @@ which was able to achieve 100\% accuracy on the testing set. The lower quality d
 was more difficult to separate, only achieving an 33.975\% test accuracy.
 
 
-% Make into subcaptions
-\begin{figure}[h]
+% % Make into subcaptions
+% \begin{figure}[h]
+%     \centering
+%     \subfloat[\centering~SNR = 2]{\includegraphics[width=10cm]{figures/pre_testing/SN2_example.png}}
+%     \qquad
+%     \subfloat[\centering~SNR=10]{\includegraphics[width=10cm]{figures/pre_testing/SN10_example.png}}
+%     \caption{Synthetic spectra used to verify performance of SpectralViT\label{fig:synth_spectra}}
+% \end{figure}
+\begin{figure}
     \centering
-    \subfloat[\centering~SNR = 2]{\includegraphics[width=10cm]{figures/pre_testing/SN2_example.png}}
-    \qquad
-    \subfloat[\centering~SNR=10]{\includegraphics[width=10cm]{figures/pre_testing/SN10_example.png}}
-    \caption{Synthetic spectra used to verify performance of SpectralViT\label{fig:synth_spectra}}
+    \includegraphics[width=\textwidth]{figures/synth_data_new.png}
+    \caption{Synthetic spectra used to verify performance of SpectralViT.}
+    \label{fig:synth_spectra}
 \end{figure}
 
 % Make into subcaptions
@@ -107,6 +113,7 @@ was more difficult to separate, only achieving an 33.975\% test accuracy.
     \subfloat[\centering~SNR=10]{\includegraphics[width=10cm]{figures/pre_testing/SNR10_training_epoch.png}}
     \caption{Synthetic spectra used to verify performance of SpectralViT\label{fig:synth_spectra}}
 \end{figure}
+
 
 
 \section{Creation of Synthetic DESI Spectra}
@@ -148,8 +155,8 @@ The timeline of the training of the CNN architecture is shown in Fig.~\ref{fig:c
 
 \begin{figure}
     \centering
-    \includegraphics[width = .4\linewidth]{figures/blackbox.jpeg}
-    \caption{Caption}
+    \includegraphics[width=.7\linewidth]{figures/cnn/cnn_training_history.jpg}
+    \caption{Training of the CNN on synthetic DESI spectra.}
     \label{fig:cnn_training}
 \end{figure}
 
@@ -200,8 +207,8 @@ batch sizes of 50, and non-variable hyperparameters (Table~\ref{tab:transformer_
 
 \begin{figure}
     \centering
-    \includegraphics[width = \linewidth]{figures/v1/vit_model_V1_original_redotraining_after.png}
-    \caption{Training of V1}
+    \includegraphics[width=.8\linewidth]{figures/v1_real/vit_model_V1_original_redotraining_new.png}
+    \caption{Training of the small architecture on redshift-corrected spectra downsampled to 3600 bins. Over-fitting was determined to have occurred by Epoch 31.}
     \label{fig:vit1_training}
 \end{figure}
 
@@ -209,15 +216,29 @@ batch sizes of 50, and non-variable hyperparameters (Table~\ref{tab:transformer_
 
 \begin{figure}
     \centering
-    \includegraphics[width = \linewidth]{figures/v1/vit_model_V1_bigtraining_after.png}
-    \caption{Training of V1 Big}
+    \includegraphics[width=.8\linewidth]{figures/v1_real/vit_model_V1_bigtraining_new.png}
+    \caption{Training of the large architecture on Redshift-corrected spectra downsampled to 3600 bins. No convergence above random guessing was observed. }
+    \label{fig:vit1_big_training}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\linewidth]{figures/vit_model_V1.2training_new.png}
+    \caption{Training of the small architecture on Redshift-corrected spectra downsampled to 1800 bins. No convergence above random guessing was observed. }
+    \label{fig:vit1_big_training}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\linewidth]{figures/vit_model_V1.3_muchsmallermodeltraining_new.png}
+    \caption{Training of the small architecture on Redshift-corrected spectra downsampled to 900 bins. No convergence above random guessing was observed. }
     \label{fig:vit1_big_training}
 \end{figure}
 
 
 \begin{figure}
     \centering
-    \includegraphics[width = \linewidth]{figures/v2/vit_model_V2training_after.png}
-    \caption{Training of V2}
+    \includegraphics[width=.8\linewidth]{figures/v2_real/vit_model_V2training_new.png}
+    \caption{Training of the small architecture on non Redshift-corrected data downsampled to 3600 bins. Over fitting was determined to have occurred by Epoch 26.}
     \label{fig:vit2_training}
 \end{figure}

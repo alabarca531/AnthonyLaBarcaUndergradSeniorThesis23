@@ -28,3 +28,18 @@
 }
 \def\nstyle{int(\lay<\Nnodlen?min(2,\lay):3)} % map layer number onto 1, 2, or 3
 
+
+\usetikzlibrary{matrix}
+\usetikzlibrary{positioning}
+\usetikzlibrary{backgrounds}
+
+\newcommand\numRowsK{3}
+\newcommand\numColsK{3}
+\newcommand{\K}[2]{% #1: row, #2: col
+    \edef\Kcol##1##2##3{###2}%
+    \edef\Krow##1##2##3{\noexpand\Kcol###1}%
+    \Krow
+        {1 0 1}
+        {0 1 0}
+        {1 0 1}%
+}

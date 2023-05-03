@@ -1,0 +1,55 @@
+\begin{tikzpicture}[
+    2d-arr/.style={matrix of nodes, row sep=-\pgflinewidth, column sep=-\pgflinewidth, nodes={draw}}
+  ]
+
+  \matrix (mtr) [2d-arr] {
+  |[fill=red!30]| 0  & |[fill=red!30]| 0  & |[fill=red!30]| 0  & |[fill=red!30]| 0  & |[fill=red!30]| 0  & |[fill=red!30]| 0 \\
+  |[fill=red!30]| 0  & |[fill=orange!30]| 1 & |[fill=orange!30]| 1 & |[fill=orange!30]| 1 &  0 & |[fill=red!30]| 0 \\
+  |[fill=red!30]| 0  & |[fill=orange!30]| 0 & |[fill=orange!30]| 1 & |[fill=orange!30]| 1 &  1 & |[fill=red!30]| 0 \\
+  |[fill=red!30]| 0  & |[fill=orange!30]| 0 & |[fill=orange!30]| 1 & |[fill=orange!30]| 1 & 0 & |[fill=red!30]| 0 \\
+  |[fill=red!30]| 0  & 1 & 1 & 0 & 0 & |[fill=red!30]| 0 \\
+  |[fill=red!30]| 0  & |[fill=red!30]| 0  & |[fill=red!30]| 0  & |[fill=red!30]| 0  & |[fill=red!30]| 0  & |[fill=red!30]| 0 \\
+  };
+
+  \node[below=of mtr-5-4] {$4\times4$ input with padding};
+
+  \node[right=0.2em of mtr] (str) {$*$};
+
+  \matrix (K) [2d-arr, right=0.2em of str, nodes={draw, fill=teal!30}] {
+    1 & 0 &1\\
+    0 & 1 &0\\
+    1 & 0 & 1\\
+  };
+  \node[below=of K-2-2] {$3\times3$ filter};
+
+  \node[right=0.2em of K] (eq) {$=$};
+
+  \matrix (ret) [2d-arr, right=0.2em of eq] {
+  2 & 2 & 3 &  1\\
+  2 & |[fill=blue!80!black!30]| 4 & 3 & 3\\
+  2 & 3 & |[fill=orange!30]| 4 & |[fill=orange!30]| 1 \\
+  2 & 2 & |[fill=orange!30]| 1 & |[fill=orange!30]| 1 \\
+  };
+  \node[below=of ret-4-3] {$4\times4$ tensor};
+
+  \node[right=0.2em of ret] (ra) {$\xrightarrow[]{\text{Max Pooling}}$};
+
+\matrix (pool) [2d-arr, right=0.2em of ra] {
+  4 & 3 \\
+  3 & |[fill=blue!80!black!30]| 4 \\
+  };
+  \node[below=of pool-2-2] {$2\times2$ tensor};
+
+  \draw[dashed, teal] (mtr-2-4.north east) -- (K-1-1.north west);
+  \draw[dashed, teal] (mtr-4-4.south east) -- (K-3-1.south west);
+
+  \draw[dashed, blue!80!green] (K-1-3.north east) -- (ret-2-2.north west);
+  \draw[dashed, blue!80!black] (K-3-3.south east) -- (ret-2-2.south west);
+
+  \draw[dashed, blue!80!green] (K-1-3.north east) -- (ret-2-2.north west);
+  \draw[dashed, blue!80!black] (K-3-3.south east) -- (ret-2-2.south west);
+
+\draw[dashed, blue!80!green] (ret-3-4.north east) -- (pool-2-2.north west);
+  \draw[dashed, blue!80!black] (ret-4-4.south east) -- (pool-2-2.south west);
+
+\end{tikzpicture}
