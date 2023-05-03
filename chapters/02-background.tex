@@ -18,8 +18,8 @@
 \section{Multi-Layer Perceptrons}\label{sec:MLP}
 To aid in the classification of supernovae, deep learning techniques can provide 
 flexibility and scalability that have been previously unattainable by manual 
-methods. The simplest and most widely used architecture in deep learning are the feed-forward 
-fully connected neural networks, or multi-layer perceptrons (MLPs) \parencite{popescu2009}.
+methods. The simplest and most widely used architecture in deep learning are feed-forward 
+fully connected neural networks, also known as multi-layer perceptrons (MLPs) \parencite{popescu2009}.
 These networks are composed of series of ``layers'' of neurons, or nodes, that 
 are ``fully connected'' to the previous layer (Figure \ref{fig:MLP}).
 Given an input vector $\vec{x}^{(0)}$ with $n$ values, an MLP applies a series of weights to each 
@@ -28,15 +28,15 @@ $\vec{x}_{(1)}$ is a vector of length $m$. This transformation is then followed 
 to each element, and an activation function applied to each element.
 The transition from layer $i$ to $i+1$ can be represented mathematically as 
 \begin{equation}\label{eqn:MLP}
-    \vec{x}^{(i+1)} = \sigma(\mathbf{W}\vec{x}^{(i)} + \vec{b}^{(i+1)}),
+    \vec{x}^{(i+1)} = f(\mathbf{W}\vec{x}^{(i)} + \vec{b}^{(i+1)}),
 \end{equation}
 where $\mathbf{W}$ is an $m \times n$ matrix of weights, $\vec{b}^{(i+1)}$ is a vector of length $m$
-representing the bias, and $\sigma$ is the activation function. The activation function can 
+representing the bias, and $f$ is the activation function. The activation function can 
 be any function, but traditionally they are chosen to be continuous, non-linear, 
 monotonically increasing, and differentiable. The most common activation functions 
-are the sigmoid function, $\sigma(x_i) = \frac{1}{1 + e^{-x_i}}$, hyperbolic tangent, 
-$\sigma(x_i) = \tanh(x_i)$, and the rectified linear unit, or ReLU,
-$\sigma(x_i) = \max(0,x_i)$, all of which are applied element-wise.
+are the sigmoid function, $f(x_i) = \sigma(x_i) = 1/(1 + e^{-x_i})$, hyperbolic tangent, 
+$f(x_i) = \tanh(x_i)$, and the rectified linear unit,
+$f(x_i) = \mathrm{ReLU}(x_i) \equiv \max(0,x_i)$, all of which are applied element-wise.
 \begin{figure}[t]
     \centering
     \input{tikz/MLP.tex}
@@ -46,21 +46,19 @@ $\sigma(x_i) = \max(0,x_i)$, all of which are applied element-wise.
     \label{fig:MLP}
 \end{figure}
 The output layer of the network is a vector tailored for the particular purpose
-of the MLP. I.e. for classification, the output is a vector of normalized probabilities 
-that the input data belongs to. 
+of the MLP. For example, if the network is used to classify input data $\vec{x}$ into a set of classes, the output is a vector of normalized probabilities of each class. 
 
 The MLP architecture, while simplistic, is very powerful. \textcite{cybenko1989} showed that for any boolean 
 function (i.e. 2-class classification), an MLP with a single hidden layer could 
 approximate any function arbitrarily well; this is known as the Universal Approximation
 Theorem. The theorem is the basis for the success of MLPs in
 many fields, but it is also the reason that MLPs are not the best choice for all problems.
-MLPs begin to show many complications during training large models, such as the 
-exploding/vanishing gradient problem, a lack of invariance under translation, 
-and extremely expensive backpropagation \parencite{Naskath2022}. These problems inhibit this architecture's 
-abilities to scale to larger datasets and more complex problems, such as 
+MLPs begin to show many complications when training large models, such as the 
+exploding/vanishing gradient problem that makes them difficult to train (CITE Nielsen?), a lack of invariance under translation (important for many types of data, such as images), 
+and exponential growth of the number of trainable parameters \parencite{Naskath2022}. These problems inhibit the use of MLPs on larger datasets and in more complex problems, including 
 image recognition, time series analysis, and natural language processing. Since 
-the mid-2000s, these problems have been addressed by the continued development of 
-alternative architectures, such as convolutional neural networks (CNNs) and
+the mid-2000s, the weaknesses of MLPs have been addressed by the adoption of 
+alternative network architectures such as convolutional neural networks (CNNs) and
 transformers.
 
 \section{Convolutional Neural Networks}\label{sec:CNN}
@@ -68,19 +66,21 @@ Convolutional neural networks (CNNs) were originally developed
 to address the lack of invariance under translation in input data \parencite{fukushima1979}.
 CNNs designed for classification are traditionally composed of a series of convolutional layers, 
 usually followed by a pooling layer, and a fully connected layer. The convolutional 
-layers are composed of a series of filters, which take a certain 
+layers are composed of a series of filters that take a certain 
 number of inputs from the previous layer and apply a kernel to them, resulting in 
-a single output. These filters are across the entire input space, and are 
-commonly referred to as feature maps. Inputs are traditionally padded to preserve 
-the dimensionality of the original tensor size. Multiple filters are applied in 
-each convolutional layer, resulting in a tensor of shape $N\times x$, where 
-$x$ is the shape of the original input (which can be one or multi-dimensional). 
+a single output. These filters are applied across the entire input space, and are 
+commonly referred to as feature maps. 
+%Inputs are traditionally padded to preserve 
+%the dimensionality of the original tensor size.
+If $N$ filters are applied in 
+each convolutional layer, the result is a tensor of shape $N\times x$, where 
+$x$ is the shape of the original input (which can be 1D or multi-dimensional). 
 To reduce the dimensionality of the output, a pooling layer is applied.
 The pooling layer takes a certain number of inputs from the previous layer, and 
 reduces them to a single output, similar to the convolutional filters, but 
 without the kernel application. The most common pooling layer is the max-pooling
 layer, which takes the maximum value in each set as the reduced value. 
-The process of passing an input through a convolutional filter, and then pooled is shown in Figure~\ref{fig:convolution}. 
+The process of passing an input through a convolutional filter and pooling layer is shown in Figure~\ref{fig:convolution}. 
 These convolution and pooling layers are applied in series until the desired output dimensionality is reached.
 \begin{figure}[t]
     \centering 
@@ -92,7 +92,7 @@ These convolution and pooling layers are applied in series until the desired out
 \end{figure}
 
 From here, depending on the task, the output of the pooling layer can be fed
-into a fully connected layer, which is the same as the MLP architecture described
+into a fully connected layer, similar to the MLP architecture described
 in Section~\ref{sec:MLP}, or it can be fed into another convolutional layer. An
 MLP is usually applied for classification tasks, while another convolutional layer
 is applied for segmentation tasks. An example of a CNN architecture used for 
@@ -107,7 +107,7 @@ classification is shown in Figure~\ref{fig:CNN}.
 \end{figure}
 
 
-This architecture was shown to be effective in image recognition tasks by
+The CNN architecture was shown to be effective in image recognition tasks by
 \textcite{lecun2004} and then popularized after the success of AlexNet in the 
 ImageNet challenge \textcite{krizhevsky2012}. AlexNet was the first of many CNN 
 architectures popularized in the 2010s for vision classification, such as VGG \parencite{Simonyan15}, 
