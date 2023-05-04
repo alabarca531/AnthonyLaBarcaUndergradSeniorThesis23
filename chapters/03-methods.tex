@@ -170,7 +170,7 @@ comprised 60\%, 20\%, and 20\% of the total dataset, respectively.
 
 \subsection{CNN Training}
 \label{ssec:cnn_training}
-The CNN architecture was developed by ** Cite eddies paper **, and has properties 
+The CNN architecture was developed by \textcite{Sepeku2022}, and has properties 
 shown in Table~\ref{tab:cnn_architecture}.
 This CNN was trained for a maximum of 50 epochs, with a batch size of 50, and 
 non-variable hyperparameters (Table~\ref{tab:cnn_hyperparameters}). 
@@ -245,8 +245,11 @@ neither variation was able to train as effectively as the original binning.
     \label{fig:vit1.3_training}
 \end{figure}
 
-The smaller architecture, with a resolution of 3600 bins, was then trained on the non redshift-corrected spectra. 
-As shown in Figure~\ref{fig:vit2_training}, the model was able to train effectively, reaching a test accuracy of 49.82\%. 
+The smaller architecture, with a resolution of 3600 bins, was then trained on the
+non redshift-corrected spectra. As shown in Figure~\ref{fig:vit2_training},
+the model was able to train effectively, reaching a test accuracy of 49.82\%. 
+This lack of dependence on DESI redshift fitting is promising, as it means that 
+the model can be used to classify spectra without the need for the redshift fit. 
 
 
 \begin{figure}

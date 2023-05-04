@@ -40,7 +40,7 @@ $f(x_i) = \mathrm{ReLU}(x_i) \equiv \max(0,x_i)$, all of which are applied eleme
 \begin{figure}[t]
     \centering
     \input{tikz/MLP.tex}
-    \caption{A simple MLP with an input dimension of 4 (green nodes), three hidden layers (blue nodes), and an output dimension of 3 (red nodes). Each node is connected to every 
+    \caption[Diagram of a Multi-Layered Perceptron]{A simple MLP with an input dimension of 4 (green nodes), three hidden layers (blue nodes), and an output dimension of 3 (red nodes). Each node is connected to every 
     node in the previous and next layer. The lines represent the weights, and each 
     node has an associated bias. Figure adapted from \textcite{neutelings2021_nn}.}
     \label{fig:MLP}
@@ -85,7 +85,7 @@ These convolution and pooling layers are applied in series until the desired out
 \begin{figure}[t]
     \centering 
     \input{tikz/conn_unit}
-    \caption{A convolutional filter and a $2\times2$ pooling applied to a 2D input. As the filter is passed 
+    \caption[Example of a CNN Unit]{A convolutional filter and a $2\times2$ pooling applied to a 2D input. As the filter is passed 
         over the input space, the kernel is applied. The input is padded with zeros to preserve dimensionality, 
         which is then reduced by the max pooling. Figure adapted from \textcite{neutelings2022_conv}.}
     \label{fig:convolution}
@@ -101,7 +101,7 @@ classification is shown in Figure~\ref{fig:CNN}.
 \begin{figure}[t]
     \centering
     \includegraphics[width=.8\linewidth]{figures/Typical-CNN-architecture.png}
-    \caption{A convolutional network archeticture designed for classification (adapted from \cite{kumar2022_cnn}). Only
+    \caption[Traditional CNN Architecture for Classification]{A convolutional network archeticture designed for classification (adapted from \cite{kumar2022_cnn}). Only
     one convolutional/pooling layer is shown, but there can be multiple depending on the application. }
     \label{fig:CNN}
 \end{figure}
@@ -135,7 +135,7 @@ CNN architecture (Appendix~\ref{app:CNN}).
     \includegraphics[height=4.55cm]{figures/cnn/cnn_rocfull.png}
     \quad
     \includegraphics[height=4.55cm]{figures/cnn/cnn_cmfull.png}
-    \caption{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right)\label{fig:cnn_qual}}
+    \caption[CNN diagnostics]{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right)\label{fig:cnn_qual}}
 \end{figure}
 This architecture was shown to train quickly (less than 1 hour on a single GPU), 
 but it was not able to achieve astonishingly high accuracy. Figure~\ref{fig:cnn_qual}
@@ -143,27 +143,25 @@ shows the ROC curve and confusion matrix for the CNN trained on synthetic spectr
 \begin{figure}[b]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/cnn/cnn_max_ypred.png}
-    \caption{Max value of the output vector from the CNN.\label{fig:cnn_max}}
+    \caption[CNN's Confidence in Classification]{Max value of the output vector from the CNN.\label{fig:cnn_max}}
 \end{figure}
 
 The maximum value of the output vector was used to determine the predicted class,
 \textbf{which may not be the best choice for this problem. why not?} Figure~\ref{fig:cnn_max} shows
-the distribution of the maximum value found. As shown, there are approximately 
-20 thousand spectra that are classified very confidently, but there are many
-more that are not.
+the distribution of the maximum value found. 
 % TODO: Make into Subcaptions
 \begin{figure}[t]
     \centering
     \includegraphics[height=4.55cm]{figures/cnn/cnn_roc99.png}
     \quad
     \includegraphics[height=4.55cm]{figures/cnn/cnn_cm99.png}
-    \caption{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut\label{fig:cnn_qual2}}
+    \caption[CNN diagnostics with a confidence cut]{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut\label{fig:cnn_qual2}}
 \end{figure}
 
 A \textbf{much better ROC curve and confusion matrix }are produced by 
 evaluating the diagnostics for only highly confident classifications (Figure~\ref{fig:cnn_qual2}). 
 Therefore, it is clear that the CNN, when confident in its classification, produces 
-accurate results. This cut, however, is not ideal, removing *insert percent*\% of the 
+accurate results. This cut, however, is not ideal, with only 28.8\% of the 
 data. 
 
 The next step in training would be to either increase the confidence of the CNN 

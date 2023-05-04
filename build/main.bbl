@@ -1226,11 +1226,11 @@
            given={Y.},
            giveni={Y\bibinitperiod},
            givenun=0}}%
-        {{un=1,uniquepart=given,hash=a128f901f27089486fa73ef3c8ef4528}{%
+        {{un=1,uniquepart=given,hash=ef77e7504555b19034ce0cdc3d562665}{%
            family={Huang},
            familyi={H\bibinitperiod},
-           given={Fu\bibnamedelima Jie},
-           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
            givenun=1}}%
         {{un=0,uniquepart=base,hash=bbfb0f3936c83b7b099561e6f0e32ef3}{%
            family={Bottou},
@@ -1239,12 +1239,12 @@
            giveni={L\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{51d17054567366d5d38f2d2c149ea226}
-      \strng{fullhash}{51d17054567366d5d38f2d2c149ea226}
-      \strng{bibnamehash}{51d17054567366d5d38f2d2c149ea226}
-      \strng{authorbibnamehash}{51d17054567366d5d38f2d2c149ea226}
-      \strng{authornamehash}{51d17054567366d5d38f2d2c149ea226}
-      \strng{authorfullhash}{51d17054567366d5d38f2d2c149ea226}
+      \strng{namehash}{7a6f9a1dde3c2ea9b680225601f8a3d2}
+      \strng{fullhash}{7a6f9a1dde3c2ea9b680225601f8a3d2}
+      \strng{bibnamehash}{7a6f9a1dde3c2ea9b680225601f8a3d2}
+      \strng{authorbibnamehash}{7a6f9a1dde3c2ea9b680225601f8a3d2}
+      \strng{authornamehash}{7a6f9a1dde3c2ea9b680225601f8a3d2}
+      \strng{authorfullhash}{7a6f9a1dde3c2ea9b680225601f8a3d2}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
@@ -1992,7 +1992,7 @@
       \endverb
       \keyw{COSMOLOGY: OBSERVATIONS,COSMOLOGY: DISTANCE SCALE,GALAXIES: INDIVIDUAL NGC NUMBER: NGC 5253,STARS: SUPERNOVAE: INDIVIDUAL ALPHANUMERIC: SN 1895B}
     \endentry
-    \entry{Sepeku2022}{jurthesis}{}
+    \entry{Sepeku2022}{thesis}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=baae34a73d8160325e769e8135ecd1c8}{%
            family={Sepeku},
@@ -2021,7 +2021,7 @@
       \field{labeltitlesource}{title}
       \field{month}{5}
       \field{title}{--}
-      \field{type}{Senior Thesis}
+      \field{type}{Bachelor's Thesis}
       \field{year}{2022}
       \field{dateera}{ce}
     \endentry

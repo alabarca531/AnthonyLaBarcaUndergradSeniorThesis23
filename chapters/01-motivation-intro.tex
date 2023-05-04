@@ -36,7 +36,7 @@
 % - You can work these facts in, with sufficient citations.
 
 When observing the night sky, astronomers frequently encounter objects that 
-were unexpected. This occurred quite frequently in the 19th century, as astronomers 
+are unexpected. This occurred quite frequently in the 19th century, as astronomers 
 armed with more powerful telescopes were probing the cosmos for the first time. 
 In 1885 and 1895, two objects were observed in galaxies outside of our own with unique 
 properties \parencite{deVaucouleurs1985, Schaefer1995}. These objects were very 
@@ -69,7 +69,15 @@ scheme is shown in Figure~\ref{fig:sn-classification}.
 % the presence or absence of hydrogen and silicon emission and absorption lines in the spectra of SNe.
 SNe with hydrogen in their spectra are classified as Type II SNe, while those
 without hydrogen are classified as Type I SNe. Type I SNe are further
-subdivided into Type Ia, Ib, and Ic~\parencite{Turatto2003}. Although divided into three subtypes, Type I SNe are caused by two different mechanisms. Type Ia SNe are caused by the thermonuclear explosionof a white dwarf star, while Type Ib and Ic SNe are caused by the core-collapseof a massive star~\parencite{Filippenko1997}. Type Ib and Ic SNe, because of this, are actually more related to Type II SNe, and are collectively referred to as core-collapse SNe. We now know the physical origin of the spectral differences between the subtypes: stars stripped of their hydrogen envelopes are appear as Type Ib SNe, while those stripped of both their hydrogen and helium envelopes are classified as Type Ic SNe.
+subdivided into Type Ia, Ib, and Ic~\parencite{Turatto2003}. Although divided into three 
+subtypes, Type I SNe are caused by two different mechanisms. Type Ia SNe are 
+caused by the thermonuclear explosion of a white dwarf star, while Type Ib and Ic 
+SNe are caused by the core-collapse of a massive star~\parencite{Filippenko1997}.
+Type Ib and Ic SNe, because of this, are actually more related to Type II SNe,
+and are collectively referred to as core-collapse SNe. We now know the physical
+origin of the spectral differences between the subtypes: stars stripped of their 
+hydrogen envelopes are appear as Type Ib SNe, while those stripped of both their 
+hydrogen and helium envelopes are classified as Type Ic SNe.
 
 \section{Supernova Identification}
 \label{sec:supernova-identification}
@@ -89,7 +97,11 @@ the type before it fades away. Today, due to the large volume of new discoveries
 * Why is it important?
 * Why do we care about SNe here
 
-See the intro and instrument sections of this paper: https://arxiv.org/pdf/2209.14482.pdf. You don't need to copy everything. I think 2 paragraphs should be sufficient for this section. One thing you want to emphasize is the Bright Galaxy Survey, which is where most of these transients are being observed. A question you should be able to answer: at what redshifts are we looking for these transients? (Basically anything with $z<0.25$.
+See the intro and instrument sections of this paper: https://arxiv.org/pdf/2209.14482.pdf.
+You don't need to copy everything. I think 2 paragraphs should be sufficient for this section.
+One thing you want to emphasize is the Bright Galaxy Survey, which is where most of these transients
+are being observed. A question you should be able to answer: at what redshifts are we looking for 
+these transients? (Basically anything with $z<0.25$.
 
 % https://docs.google.com/presentation/d/14i0USbCQ93Mkn1T9aUK5pG24bi5bRfBhM3aVsL1Ya0U/edit?usp=sharing
 % -- Look at spectra examples
@@ -113,7 +125,8 @@ See the intro and instrument sections of this paper: https://arxiv.org/pdf/2209.
 % 1) Because spectroscopic follow-up is tough, it's worthwhile to try to discover SNe serendipitously in spectra rather than only wait for discoveries in imaging surveys.
 % 2) The issue with spectroscopic discovery is that you have potentially thousands of templates to compare against (all the different subtypes * all the variants of the subtypes * the spectral evolution of each variant * convolution vs redshift). Very computationally expensive!
 
-I suggest you give some background on previous approaches before jumping right into AI/ML. See the early slides in \href{https://docs.google.com/presentation/d/1zqoEVMrWbBP5k41gdjUEKioLE4J0vhu0vAzKEg4pROM/edit?usp=sharing}{this Google slideshow}.
+I suggest you give some background on previous approaches before jumping right into AI/ML.
+See the early slides in \href{https://docs.google.com/presentation/d/1zqoEVMrWbBP5k41gdjUEKioLE4J0vhu0vAzKEg4pROM/edit?usp=sharing}{this Google slideshow}.
 
 Machine learning (ML) has been applied to many different fields for its flexibility 
 and ability to find patterns in data. The emergence of Deep Learning (DL) has
@@ -132,4 +145,9 @@ These techniques have also been applied to the classification of SNe.
 This work will explore the following questions: how can we adapt novel deep learning 
 techniques to classify SNe in the DESI dataset? Can we use this architecture to 
 classify SNe into their respective subtypes accurately? And how can we decrease the amount of 
-pre-processing required to classify these SNe accurately? In the following chapters, we describe the Deep Learning techniques adopted to answer this problem (Ch. 2); the training procedure for building our classification network (Ch. 3); and the results using simulated DESI spectra that were resampled from actual DESI measurements performed in 2021 and 2022 (Ch. 4).
+pre-processing required to classify these SNe accurately? In the following chapters,
+we describe the Deep Learning techniques adopted to answer this problem (Ch. 2);
+the training procedure for building our classification network (Ch. 3);
+and the results using simulated DESI spectra that were resampled from actual 
+DESI measurements performed in 2021 and 2022 (Ch. 4).
+
