@@ -2268,6 +2268,39 @@
       \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
       \endverb
     \endentry
+    \entry{wasserman2021}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=07366f8472547d8a5949280cc30aaed4}{%
+           family={Wasserman},
+           familyi={W\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {University of Rochester}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{07366f8472547d8a5949280cc30aaed4}
+      \strng{fullhash}{07366f8472547d8a5949280cc30aaed4}
+      \strng{bibnamehash}{07366f8472547d8a5949280cc30aaed4}
+      \strng{authorbibnamehash}{07366f8472547d8a5949280cc30aaed4}
+      \strng{authornamehash}{07366f8472547d8a5949280cc30aaed4}
+      \strng{authorfullhash}{07366f8472547d8a5949280cc30aaed4}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Using Machine Learning to Identify Transients in the DESI Survey}
+      \field{type}{Bachelor's Thesis}
+      \field{year}{2021}
+      \field{dateera}{ce}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

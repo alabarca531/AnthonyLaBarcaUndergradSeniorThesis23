@@ -119,16 +119,24 @@ medicine \parencite{Kiranyaz2021}.
 \subsection{CNNs on Spectroscopic Data in Astronomy}
 \label{sec:CNNspectra}
 CNNs excel at identifying patterns throughout their input space, stemming from their spacial invariance. 
-Theoretically, this should translate to spectral classification quite well. In fact, CNNs have been applied 
-to spectroscopic data in the past, including on the DESI dataset. 
-\textcite{parks2018} used a CNN to detect strong emission lines in DESI spectra with 
-great success. * Talk about 1D CNN currently running, and preprocessing used *
+Theoretically, this should translate to spectral classification quite well. 
+Currently running at the National Energy Reserach Scientific Computing Center (NERSC)
+is a 1D CNN developed by \textcite{wasserman2021} for DESI transient detection.  This model, while
+proven to be effective on training data, is limited by the number of false 
+positivies it produces. In order to perform well on DESI data, \textcite{wasserman2021} 
+created a preprocessing pipeline that converts the spectra into a format 
+that is more easily interpretable by the CNN. This preprocessing pipeline includes 
+de-redshifting the spectra into the observed galaxies rest frame, applying a 
+log-binning to the spectra, normalizing the flux such that the maximum flux is 1, 
+and padding the spectra to a fixed length. 
 
-This work provides a baseline for the use of CNNs on supernovae classification, 
-\textbf{but leaves more to be desired.} Therefore, an alternate architecture was proposed 
-by * Cite Eddies work * which augments the preprocessing of the spectra with 
-a conversion to a 2D image. This 2D image was then fed to a more traditional vision 
-CNN architecture (Appendix~\ref{app:CNN}). 
+
+This work provides a baseline for the use of CNNs on supernovae classification 
+which was continued by \textcite{Sepeku2022}, who introduced the use of a
+2D CNN for SNe classification, adding a second dimension to the spectra by
+re-shaping the spectra from an array of size $N$ to an array of size $N/2\times N/2$. 
+The resulting 2D `image' was then fed to a more traditional vision 
+CNN architecture (see Appendix~\ref{app:CNN} for a complete diagram of the architecture). 
 % TODO: Make into Subcaptions
 \begin{figure}[t]
     \centering
@@ -138,17 +146,24 @@ CNN architecture (Appendix~\ref{app:CNN}).
     \caption[CNN diagnostics]{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right)\label{fig:cnn_qual}}
 \end{figure}
 This architecture was shown to train quickly (less than 1 hour on a single GPU), 
-but it was not able to achieve astonishingly high accuracy. Figure~\ref{fig:cnn_qual}
-shows the ROC curve and confusion matrix for the CNN trained on synthetic spectra. 
+and was able to classify a validation set of 12888 spectra with an average precision of 0.872
+via 6-way categorical classification. 
+
+Figure~\ref{fig:cnn_qual} shows the ROC curve and confusion matrix for the 
+CNN trained on synthetic spectra. 
 \begin{figure}[b]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/cnn/cnn_max_ypred.png}
     \caption[CNN's Confidence in Classification]{Max value of the output vector from the CNN.\label{fig:cnn_max}}
 \end{figure}
 
-The maximum value of the output vector was used to determine the predicted class,
-\textbf{which may not be the best choice for this problem. why not?} Figure~\ref{fig:cnn_max} shows
-the distribution of the maximum value found. 
+The maximum value of the output vector varied greatly between 1, which indicates a 
+confident classification, and 0.2, which indicates a random guess. Figure~\ref{fig:cnn_max} shows
+the distribution of the maximum value found. To ensure that the CNN is not
+misclassifying spectra with low confidence, a cut on the maximum value of the
+output vector can be applied. Figure~\ref{fig:cnn_qual2} shows the ROC curve and confusion matrix
+for the CNN trained on synthetic spectra with a 99\% confidence cut, resulting in 
+28.8\% of the original validation set. 
 % TODO: Make into Subcaptions
 \begin{figure}[t]
     \centering
@@ -158,38 +173,55 @@ the distribution of the maximum value found.
     \caption[CNN diagnostics with a confidence cut]{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut\label{fig:cnn_qual2}}
 \end{figure}
 
-A \textbf{much better ROC curve and confusion matrix }are produced by 
-evaluating the diagnostics for only highly confident classifications (Figure~\ref{fig:cnn_qual2}). 
-Therefore, it is clear that the CNN, when confident in its classification, produces 
-accurate results. This cut, however, is not ideal, with only 28.8\% of the 
-data. 
+A nearly perfect ROC curve and confusion matrix are produced by the CNN when
+evaluated on only highly confident classifications. This indicates that the CNN
+is able to remedy the issue of false positives by only classifying spectra that
+it is confident in. However, this cut is not ideal, with only 28.8\% of the
+data, sacrificing efficiency for purity.
 
-The next step in training would be to either increase the confidence of the CNN 
+
+The next step in training would be to either further increase the accuracy of the CNN 
 or move to a different architecture, with the hopes of increasing not only 
 the overall accuracy of the networks, but also the number of confident classifications.
-% This begs the question, which is more important? The ability to classify a lot of 
-% spectra with low confidence, or a few spectra with high confidence? Even if a 
-% cut was made on the confidence of the classification, would the optimal solution
-% yield better results under the same conditions? 
 
-\section{Introduction of Transformers}\label{sec:transformers}
+\section{From CNNs to Transformers}\label{sec:transformers}
 % Advantage of transformers in this field
+\begin{figure}[t]
+    \centering
+    \includegraphics[height=8cm]{figures/transformer_paper/Transformer_Original.png}
+    \caption[Transformer Architecture]{Traditional transformer architecture consisting of an enocoder and decoder. 
+        Image from \textcite{vaswani2017}
+    \label{fig:transformer_orig}}
+\end{figure}
 Transformers are a relatively new architecture introduced in 2017 by \textcite{vaswani2017}
 for natural language processing (NLP) tasks. The original architecture consists of 
-an encoder-decoder system. The encoder accepts a series of tokens and produces a series of vectors
+an encoder-decoder system (Figure~\ref{fig:transformer_orig}). The encoder accepts a series of tokens and produces a series of vectors
 representing the input data via a series 
 of self-attention layers and feed-forward layers. The decoder then takes the output of the encoder, and
-produces a series of tokens, one for each input token. 
+produces a series of output tokens, one for each input token. 
+
 
 Once transformers were shown to have remarkable success in NLP tasks, they were 
-quickly adapted to other fields, such as vision. \textcite{dosovitskiy2020} developed 
-a vision transformer (ViT) architecture that differed from the original transformer 
-encoder by replacing the tokenized input with a more involved preprocessing step. In short, 
-the input image is broken into a series of patches, which are then flattened into
+quickly adapted to other fields, such as vision and image classification.
+\textcite{dosovitskiy2020} developed a vision transformer (ViT) architecture 
+that differed from the original transformer encoder by replacing the tokenized 
+input with a more image-appropriate alternative. In short, 
+the input $n\times n$ image is broken into a series of $m\times m$ patches where 
+$m<n$ and $m|n$, which are then flattened into
 a vector. These vectors, along with positional encodings, are then fed into the
-transformer architecture. For classification tasks, the first input token is 
+transformer architecture, as shown in Figure~\ref{fig:ViT_orig}. For classification tasks, the first input token is 
 replaced with a class token. After passing through the transformer, the class token 
-is then run through a fully connected layer to produce the final probabilities. 
+is then run through a fully connected layer to produce the final categorization probabilities. 
+Further details are provided in Section~\ref{sec:SpecViT}. 
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/transformer_paper/ViT_Original.png}
+    \caption[ViT Architecture]{Traditional ViT architecture. Purple ovals indicated 
+        positional embeddings, while pink ovals indicate the resulting tokens from 
+        the patches. Image from \textcite{dosovitskiy2020}
+    \label{fig:ViT_orig}}
+\end{figure}
 
 \subsection{ViT on Spectroscopic Data}\label{sec:ViT}
 Previous implementations of transformers have been shown to have characteristics 
@@ -201,8 +233,8 @@ in another part of the spectrum. This contextual information is not easily learn
 by a CNN, as the convolutional layers are not able to learn the importance of
 certain parts of the input space. Attention can also play a role in identifying 
 the purpose of features that are not in a standard location. For example, a 
-\textbf{non-k corrected s}pectrum might have a continuum pattern at different locations 
-in the spectrum, but the overall shape would be similar. This change in sizing 
+spectrum in the observers rest frame might have a continuum pattern at different locations 
+along the spectrum, but the overall shape would be similar. This change in sizing 
 would be difficult to learn with fixed filters in a CNN, but would be identified 
 based on their positional importance by a transformer. In addition to this, ViTs 
 have been shown to outperform CNNs on vision tasks, which shows they are capable 

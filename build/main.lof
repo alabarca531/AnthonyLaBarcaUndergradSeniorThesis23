@@ -8,25 +8,27 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces CNN diagnostics}}{11}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces CNN's Confidence in Classification}}{12}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces CNN diagnostics with a confidence cut}}{13}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Transformer Architecture}}{14}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces ViT Architecture}}{15}{figure.caption.11}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual representation of the embeddings for a sample of spectra. The x-axis represents the index of the patch, the y-axis represents the index of the hidden dimension, and the color represents the value of the embedding.\relax }}{17}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Synthetic spectra used to verify performance of SpectralViT. Red and green vertical lines represent features used to seperate the data into disticnt classes for SNR=2 and SNR=10, respectively. Two classes are shown for each SNR.\relax }}{19}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Training of Spectral ViT on synthetic datasets. The model was able to reach 100\% accuracy on the test set of SNR=10 (top), but failed to reach an accuracy of 50\% on the test set of SNR=2 (bottom).\relax }}{20}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Training of the CNN on synthetic DESI spectra.\relax }}{21}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Training of the small architecture on redshift-corrected spectra downsampled to 3600 bins. Over-fitting was determined to have occurred by Epoch 31.\relax }}{23}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Training of the large architecture on Redshift-corrected spectra downsampled to 3600 bins. No convergence above random guessing was observed. \relax }}{24}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Training of the small architecture on Redshift-corrected spectra downsampled to 1800 bins. No convergence above random guessing was observed. \relax }}{24}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Training of the small architecture on Redshift-corrected spectra downsampled to 900 bins. No convergence above random guessing was observed. \relax }}{24}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Training of the small architecture on non Redshift-corrected data downsampled to 3600 bins. Over fitting was determined to have occurred by Epoch 26.\relax }}{25}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual representation of the embeddings for a sample of spectra. The x-axis represents the index of the patch, the y-axis represents the index of the hidden dimension, and the color represents the value of the embedding.\relax }}{18}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Synthetic spectra used to verify performance of SpectralViT. Red and green vertical lines represent features used to seperate the data into disticnt classes for SNR=2 and SNR=10, respectively. Two classes are shown for each SNR.\relax }}{20}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Training of Spectral ViT on synthetic datasets. The model was able to reach 100\% accuracy on the test set of SNR=10 (top), but failed to reach an accuracy of 50\% on the test set of SNR=2 (bottom).\relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Training of the CNN on synthetic DESI spectra.\relax }}{22}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Training of the small architecture on redshift-corrected spectra downsampled to 3600 bins. Over-fitting was determined to have occurred by Epoch 31.\relax }}{24}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Training of the large architecture on Redshift-corrected spectra downsampled to 3600 bins. No convergence above random guessing was observed. \relax }}{25}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Training of the small architecture on Redshift-corrected spectra downsampled to 1800 bins. No convergence above random guessing was observed. \relax }}{25}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Training of the small architecture on Redshift-corrected spectra downsampled to 900 bins. No convergence above random guessing was observed. \relax }}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Training of the small architecture on non Redshift-corrected data downsampled to 3600 bins. Over fitting was determined to have occurred by Epoch 26.\relax }}{26}{figure.caption.22}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral ViT V1 Diagnostics: ROC Curve (left) and Confusion Matrix (right)\relax }}{26}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Max value of the output vector from the Spectral ViT V1.\relax }}{27}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectral ViT V1 Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut \relax }}{27}{figure.caption.23}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Spectral ViT V1 Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99.9999\% confidence cut \relax }}{28}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Spectral ViT V2 Diagnostics: ROC Curve (left) and Confusion Matrix (right)\relax }}{28}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Max value of the output vector from the Spectral ViT V2.\relax }}{29}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Spectral ViT V2 Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut\relax }}{29}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Spectral ViT V2 Binary Diagnostics: ROC Curve (left) and Confusion Matrix (right)\relax }}{30}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Max value of the output vector from the Spectral ViT V2 Binary Classification.\relax }}{30}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral ViT V1 Diagnostics: ROC Curve (left) and Confusion Matrix (right)\relax }}{27}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Max value of the output vector from the Spectral ViT V1.\relax }}{28}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectral ViT V1 Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut \relax }}{28}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Spectral ViT V1 Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99.9999\% confidence cut \relax }}{29}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Spectral ViT V2 Diagnostics: ROC Curve (left) and Confusion Matrix (right)\relax }}{29}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Max value of the output vector from the Spectral ViT V2.\relax }}{30}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Spectral ViT V2 Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut\relax }}{30}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Spectral ViT V2 Binary Diagnostics: ROC Curve (left) and Confusion Matrix (right)\relax }}{31}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Max value of the output vector from the Spectral ViT V2 Binary Classification.\relax }}{31}{figure.caption.31}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

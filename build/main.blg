@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'build/main.blg'
-[56] biber-darwin:340> INFO - === Wed May  3, 2023, 22:55:49
-[68] Biber.pm:418> INFO - Reading 'build/main.bcf'
-[147] Biber.pm:972> INFO - Found 34 citekeys in bib section 0
-[160] Biber.pm:4383> INFO - Processing section 0
-[168] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
-[171] bibtex.pm:1713> INFO - LaTeX decoding ...
-[212] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
-[504] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[504] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[504] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[504] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[539] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[604] bbl.pm:757> INFO - Output to build/main.bbl
-[604] Biber.pm:130> WARN - ISBN '1435-568X' in entry 'cybenko1989' is invalid - run biber with '--validate_datamodel' for details.
-[604] Biber.pm:130> WARN - ISBN '1572-834X' in entry 'Naskath2022' is invalid - run biber with '--validate_datamodel' for details.
-[604] Biber.pm:132> INFO - WARNINGS: 2
+[59] biber-darwin:340> INFO - === Thu May  4, 2023, 13:30:21
+[72] Biber.pm:418> INFO - Reading 'build/main.bcf'
+[151] Biber.pm:972> INFO - Found 35 citekeys in bib section 0
+[163] Biber.pm:4383> INFO - Processing section 0
+[172] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[174] bibtex.pm:1713> INFO - LaTeX decoding ...
+[215] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[494] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[494] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[494] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[494] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[532] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[595] bbl.pm:757> INFO - Output to build/main.bbl
+[595] Biber.pm:130> WARN - ISBN '1435-568X' in entry 'cybenko1989' is invalid - run biber with '--validate_datamodel' for details.
+[595] Biber.pm:130> WARN - ISBN '1572-834X' in entry 'Naskath2022' is invalid - run biber with '--validate_datamodel' for details.
+[595] Biber.pm:132> INFO - WARNINGS: 2
