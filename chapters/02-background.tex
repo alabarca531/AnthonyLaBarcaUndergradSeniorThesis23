@@ -1,5 +1,5 @@
 \chapter{Deep Learning Techniques}
-\label{chap:MLTechniques}
+\label{chap:DLTechniques}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Outline 
 % Introduce Machine Learning, and why traiditonal MLP is not good enough
@@ -16,6 +16,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Multi-Layer Perceptrons}\label{sec:MLP}
+
 To aid in the classification of supernovae, deep learning techniques can provide 
 flexibility and scalability that have been previously unattainable by manual 
 methods. The simplest and most widely used architecture in deep learning are feed-forward 
@@ -54,7 +55,7 @@ approximate any function arbitrarily well; this is known as the Universal Approx
 Theorem. The theorem is the basis for the success of MLPs in
 many fields, but it is also the reason that MLPs are not the best choice for all problems.
 MLPs begin to show many complications when training large models, such as the 
-exploding/vanishing gradient problem that makes them difficult to train (CITE Nielsen?), a lack of invariance under translation (important for many types of data, such as images), 
+exploding/vanishing gradient problem that makes them difficult to train \parencite{nielsen2015}, a lack of invariance under translation (important for many types of data, such as images), 
 and exponential growth of the number of trainable parameters \parencite{Naskath2022}. These problems inhibit the use of MLPs on larger datasets and in more complex problems, including 
 image recognition, time series analysis, and natural language processing. Since 
 the mid-2000s, the weaknesses of MLPs have been addressed by the adoption of 
@@ -109,9 +110,9 @@ classification is shown in Figure~\ref{fig:CNN}.
 
 The CNN architecture was shown to be effective in image recognition tasks by
 \textcite{lecun2004} and then popularized after the success of AlexNet in the 
-ImageNet challenge \textcite{krizhevsky2012}. AlexNet was the first of many CNN 
-architectures popularized in the 2010s for vision classification, such as VGG \parencite{Simonyan15}, 
-ResNet\parencite{he2016deep}, and DenseNet \parencite{Huang2016}. This also spurred a sudden increase in deep networks designed 
+ImageNet challenge \parencite{krizhevsky2012}. AlexNet was the first of many CNN 
+architectures popularized in the 2010s for vision classification, such as VGG~\parencite{Simonyan15}, 
+ResNet~\parencite{he2016deep}, and DenseNet~\parencite{Huang2016}. This also spurred a sudden increase in deep networks designed 
 for segmentation tasks as well, such as the FCN architecture by \textcite{Shelhamer2016}. In addition to vision tasks, it also found 
 great succes in applications such as natural language processing \parencite{Kim2014}, engineering, and 
 medicine \parencite{Kiranyaz2021}. 
@@ -151,7 +152,7 @@ via 6-way categorical classification.
 
 Figure~\ref{fig:cnn_qual} shows the ROC curve and confusion matrix for the 
 CNN trained on synthetic spectra. 
-\begin{figure}[b]
+\begin{figure}[t]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/cnn/cnn_max_ypred.png}
     \caption[CNN's Confidence in Classification]{Max value of the output vector from the CNN.\label{fig:cnn_max}}
@@ -165,7 +166,7 @@ output vector can be applied. Figure~\ref{fig:cnn_qual2} shows the ROC curve and
 for the CNN trained on synthetic spectra with a 99\% confidence cut, resulting in 
 28.8\% of the original validation set. 
 % TODO: Make into Subcaptions
-\begin{figure}[t]
+\begin{figure}[b]
     \centering
     \includegraphics[height=4.55cm]{figures/cnn/cnn_roc99.png}
     \quad
@@ -186,13 +187,6 @@ the overall accuracy of the networks, but also the number of confident classific
 
 \section{From CNNs to Transformers}\label{sec:transformers}
 % Advantage of transformers in this field
-\begin{figure}[t]
-    \centering
-    \includegraphics[height=8cm]{figures/transformer_paper/Transformer_Original.png}
-    \caption[Transformer Architecture]{Traditional transformer architecture consisting of an enocoder and decoder. 
-        Image from \textcite{vaswani2017}
-    \label{fig:transformer_orig}}
-\end{figure}
 Transformers are a relatively new architecture introduced in 2017 by \textcite{vaswani2017}
 for natural language processing (NLP) tasks. The original architecture consists of 
 an encoder-decoder system (Figure~\ref{fig:transformer_orig}). The encoder accepts a series of tokens and produces a series of vectors
@@ -200,6 +194,13 @@ representing the input data via a series
 of self-attention layers and feed-forward layers. The decoder then takes the output of the encoder, and
 produces a series of output tokens, one for each input token. 
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[height=8cm]{figures/transformer_paper/Transformer_Original.png}
+    \caption[Transformer Architecture]{Traditional transformer architecture consisting of an enocoder and decoder. 
+        Image from \textcite{vaswani2017}
+    \label{fig:transformer_orig}}
+\end{figure}
 
 Once transformers were shown to have remarkable success in NLP tasks, they were 
 quickly adapted to other fields, such as vision and image classification.

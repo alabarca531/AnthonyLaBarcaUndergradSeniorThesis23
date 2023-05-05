@@ -11,7 +11,8 @@
 \usepackage{tikz}     % For drawing
 \input{tikzconfig}    % Configuration for drawing
 \usepackage{comment}  % For commenting out block text
-
+\usepackage{lineno}
+% \preto{\chapter}{\resetlinenumber}
 
 
 
@@ -51,6 +52,7 @@
 \pagenumbering{arabic}
 
 % Bodyl
+% \linenumbers
 \include{chapters/01-motivation-intro}
 
 
@@ -61,6 +63,10 @@
 
 
 \include{chapters/04-results}
+
+
+\include{chapters/05-conclusions}
+% \nolinenumbers
 
 
 % References

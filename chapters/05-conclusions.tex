@@ -1,0 +1,46 @@
+\chapter{Conclusions}
+\label{chap:conclusions}
+
+% * paragraph about supernovae + transiet detection *
+
+% *paragraph about deep learning explosion in different applications * 
+
+% * paragraph abotu creation of spectral ViT *
+
+% * Paragraph about performance of ViT * 
+
+% * Paragraph about future research *
+This work set out to create a machine learning-based supernova classifier to improve 
+the 1D CNN developed by \textcite{wasserman2021} that showed comparable 
+precision to the 2D CNN developed by \textcite{Sepeku2022} with an increased recall rate. 
+The Spectral ViT proposed was trained in a variety of means, and as such, can be applied in different ways.  
+
+% Take citations out 
+
+Using the same prepossessing methodology as its predecessors, the Spectra ViT V1 is able to recall 
+26\% more correctly classified targets than the 2D CNN on a harder accuracy cut, while seeing a decrease 
+of only 13.3\% in average precision. This performance hit is as a result of mis-classification of supernova types, 
+as both architectures are able to differentiate between SNe and non-SNe spectra almost perfectly. This 
+network, due to its higher recall, could be used as a replacement on NERSC, given further testing 
+on visually confirmed, non-synthetic, DESI SNe. 
+
+Super bright supernovae are capable of outshining the galaxies they originate in, so it is possible that 
+erroneous fits by the DESI pipeline could occur in these targets, rendering the classifier, and most downstream tasks, 
+impaired. The Spectral ViT V2 was trained for the purpose of eliminating dependence on this fit.
+While unable to match the raw subtype classification power of the Spectral ViT V1, the 
+model shows promise in high recall, high precision binary, progenitor, and type classification tasks. 
+This could be implemented as a quick filter on top of an existing classification scheme,
+supplemented by a new DL framework. This network would be trained on pure classification of 
+supernovae, rather than a detector-classifier joint network. This solution could offer the best performance at the cost 
+of utilizing two neural networks instead of one. This solution, however, would still more efficient than running alternative 
+autonomous SNe detection solutions, such as template comparisons. 
+
+
+While the Spectral ViT V1 and V2 transformers show promising performance, 
+training on a larger dataset with more specialized architectures could
+lead to a better multi-purpose classifier capable of a high volume of precise observations. In addition, as mentioned 
+by \textcite{Sepeku2022}, heat maps of convolutional layers are an effective method of 
+determining what exactly a CNN is identifying as 
+key elements in a samples classification. Heat maps of the final attention layer of a transformer 
+have been shown by \textcite{dosovitskiy2020} to yield insightful information as to the parts of the image `brought
+to attention'. 
