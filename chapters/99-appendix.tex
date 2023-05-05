@@ -1,28 +1,17 @@
 \chapter{Diagrams of Neural Networks}
-\label{chap:NN_Architecture}
+\label{app:NN_Architecture}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{\textcite{Sepeku2022} CNN Architecture}
-\label{app:CNN}
-
-\begin{table}
-    % \small
+\begin{figure}[h!]
     \centering
-    \sffamily
-    % \input{tables/cnn_architecture.tex}
-    \resizebox{\linewidth}{!}{\input{tables/cnn_architecture.tex}}
-    \caption{Architecture of the CNN used to classify DESI spectra. CNN adapted 
-from \textcite{Sepeku2022}.} 
-    \label{tab:cnn_architecture}
-\end{table}
+    \includegraphics[height=.4\pdfpageheight]{figures/EddieCNN.png}
+    \caption{CNN architecture. Figure from \textcite{Sepeku2022}.}
+    \label{fig:Sepeku2022_CNN}
+\end{figure}
 
-\section{Transformers}
-\label{app:transformer}
-
-\subsection{Spectral ViT}
-\label{app:SpecViT}
-
-\subsection{Multi-Head Attention}
-\label{app:MHA}
-
-
-% \chapter{Title of Appendix B}
+\clearpage
+\begin{figure}
+    \centering
+    \includegraphics[height=.5\pdfpageheight]{figures/blackbox.jpeg}
+    \caption{AJ's VIT}
+    \label{fig:SpectralViTDiag}
+\end{figure}

@@ -1,52 +1,58 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Creation and Training of Spectral ViT}{16}{chapter.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Creation and Training of Spectral ViT}{18}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:methods}{{3}{16}{Creation and Training of Spectral ViT}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Creation of Spectral ViT}{16}{section.3.1}\protected@file@percent }
-\newlabel{sec:SpecViT}{{3.1}{16}{Creation of Spectral ViT}{section.3.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Visual representation of the embeddings for a sample of spectra. The x-axis represents the index of the patch, the y-axis represents the index of the hidden dimension, and the color represents the value of the embedding.\relax }}{18}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:embedding}{{3.1}{18}{Visual representation of the embeddings for a sample of spectra. The x-axis represents the index of the patch, the y-axis represents the index of the hidden dimension, and the color represents the value of the embedding.\relax }{figure.caption.12}{}}
-\newlabel{eq:mhsa}{{3.2}{18}{Creation of Spectral ViT}{equation.3.1.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Validation of Spectral ViT Architecture}{19}{subsection.3.1.1}\protected@file@percent }
-\newlabel{ssec:validation}{{3.1.1}{19}{Validation of Spectral ViT Architecture}{subsection.3.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Synthetic spectra used to verify performance of SpectralViT. Red and green vertical lines represent features used to seperate the data into disticnt classes for SNR=2 and SNR=10, respectively. Two classes are shown for each SNR.\relax }}{20}{figure.caption.13}\protected@file@percent }
-\newlabel{fig:synth_spectra}{{3.2}{20}{Synthetic spectra used to verify performance of SpectralViT. Red and green vertical lines represent features used to seperate the data into disticnt classes for SNR=2 and SNR=10, respectively. Two classes are shown for each SNR.\relax }{figure.caption.13}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Creation of Synthetic DESI Spectra}{20}{section.3.2}\protected@file@percent }
-\newlabel{sec:synth_data}{{3.2}{20}{Creation of Synthetic DESI Spectra}{section.3.2}{}}
-\newlabel{fig:snr2}{{3.3a}{21}{\centering ~SNR = 2\caption@thelabel \relax }{figure.caption.14}{}}
-\newlabel{sub@fig:snr2}{{a}{21}{\centering ~SNR = 2\caption@thelabel \relax }{figure.caption.14}{}}
-\newlabel{fig:snr10}{{3.3b}{21}{\centering ~SNR = 10\caption@thelabel \relax }{figure.caption.14}{}}
-\newlabel{sub@fig:snr10}{{b}{21}{\centering ~SNR = 10\caption@thelabel \relax }{figure.caption.14}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Training of Spectral ViT on synthetic datasets. The model was able to reach 100\% accuracy on the test set of SNR=10 (top), but failed to reach an accuracy of 50\% on the test set of SNR=2 (bottom).\relax }}{21}{figure.caption.14}\protected@file@percent }
-\newlabel{fig:synth_spectra_training}{{3.3}{21}{Training of Spectral ViT on synthetic datasets. The model was able to reach 100\% accuracy on the test set of SNR=10 (top), but failed to reach an accuracy of 50\% on the test set of SNR=2 (bottom).\relax }{figure.caption.14}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Pre-Processing of DESI Spectra}{21}{subsection.3.2.1}\protected@file@percent }
-\newlabel{ssec:preprocess}{{3.2.1}{21}{Pre-Processing of DESI Spectra}{subsection.3.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Training of the CNN on synthetic DESI spectra.\relax }}{22}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:cnn_training}{{3.4}{22}{Training of the CNN on synthetic DESI spectra.\relax }{figure.caption.15}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Training of Neural Networks}{23}{section.3.3}\protected@file@percent }
-\newlabel{sec:training}{{3.3}{23}{Training of Neural Networks}{section.3.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}CNN Training}{23}{subsection.3.3.1}\protected@file@percent }
-\newlabel{ssec:cnn_training}{{3.3.1}{23}{CNN Training}{subsection.3.3.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Transformer Training}{23}{subsection.3.3.2}\protected@file@percent }
-\newlabel{sec:transformer_training}{{3.3.2}{23}{Transformer Training}{subsection.3.3.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Hyperparameters of the CNN used to classify DESI spectra. CNN adapted from \blx@tocontentsinit {0}\textcite {Sepeku2022}.\relax }}{23}{table.caption.16}\protected@file@percent }
-\newlabel{tab:cnn_hyperparameters}{{3.1}{23}{Hyperparameters of the CNN used to classify DESI spectra. CNN adapted from \textcite {Sepeku2022}.\relax }{table.caption.16}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Hyperparameters of the smaller and larger Spectral ViT architecture used to classify DESI spectra.\relax }}{24}{table.caption.17}\protected@file@percent }
-\newlabel{tab:t_hyper}{{3.2}{24}{Hyperparameters of the smaller and larger Spectral ViT architecture used to classify DESI spectra.\relax }{table.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Training of the small architecture on redshift-corrected spectra downsampled to 3600 bins. Over-fitting was determined to have occurred by Epoch 31.\relax }}{24}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:vit1_training}{{3.5}{24}{Training of the small architecture on redshift-corrected spectra downsampled to 3600 bins. Over-fitting was determined to have occurred by Epoch 31.\relax }{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Training of the large architecture on Redshift-corrected spectra downsampled to 3600 bins. No convergence above random guessing was observed. \relax }}{25}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:vit1_big_training}{{3.6}{25}{Training of the large architecture on Redshift-corrected spectra downsampled to 3600 bins. No convergence above random guessing was observed. \relax }{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Training of the small architecture on Redshift-corrected spectra downsampled to 1800 bins. No convergence above random guessing was observed. \relax }}{25}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:vit1.2_training}{{3.7}{25}{Training of the small architecture on Redshift-corrected spectra downsampled to 1800 bins. No convergence above random guessing was observed. \relax }{figure.caption.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Training of the small architecture on Redshift-corrected spectra downsampled to 900 bins. No convergence above random guessing was observed. \relax }}{25}{figure.caption.21}\protected@file@percent }
-\newlabel{fig:vit1.3_training}{{3.8}{25}{Training of the small architecture on Redshift-corrected spectra downsampled to 900 bins. No convergence above random guessing was observed. \relax }{figure.caption.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Training of the small architecture on non Redshift-corrected data downsampled to 3600 bins. Over fitting was determined to have occurred by Epoch 26.\relax }}{26}{figure.caption.22}\protected@file@percent }
-\newlabel{fig:vit2_training}{{3.9}{26}{Training of the small architecture on non Redshift-corrected data downsampled to 3600 bins. Over fitting was determined to have occurred by Epoch 26.\relax }{figure.caption.22}{}}
+\newlabel{chap:methods}{{3}{18}{Creation and Training of Spectral ViT}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Creation of Spectral ViT}{18}{section.3.1}\protected@file@percent }
+\newlabel{sec:SpecViT}{{3.1}{18}{Creation of Spectral ViT}{section.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Positional Embeddings for ViT}}{19}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:embedding}{{3.1}{19}{Positional Embeddings for ViT}{figure.caption.14}{}}
+\newlabel{eq:mhsa}{{3.2}{21}{Creation of Spectral ViT}{equation.3.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Validation of Spectral ViT Architecture}{22}{subsection.3.1.1}\protected@file@percent }
+\newlabel{ssec:validation}{{3.1.1}{22}{Validation of Spectral ViT Architecture}{subsection.3.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Transformer Attention}}{22}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:attention}{{3.2}{22}{Transformer Attention}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Synthetic spectra}}{23}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:synth_spectra}{{3.3}{23}{Synthetic spectra}{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Creation of Synthetic DESI Spectra}{23}{section.3.2}\protected@file@percent }
+\newlabel{sec:synth_data}{{3.2}{23}{Creation of Synthetic DESI Spectra}{section.3.2}{}}
+\newlabel{fig:snr2}{{3.4a}{24}{\centering ~SNR = 2\caption@thelabel \relax }{figure.caption.17}{}}
+\newlabel{sub@fig:snr2}{{a}{24}{\centering ~SNR = 2\caption@thelabel \relax }{figure.caption.17}{}}
+\newlabel{fig:snr10}{{3.4b}{24}{\centering ~SNR = 10\caption@thelabel \relax }{figure.caption.17}{}}
+\newlabel{sub@fig:snr10}{{b}{24}{\centering ~SNR = 10\caption@thelabel \relax }{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Verification of ViT: Synthetic Dataset}}{24}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:synth_spectra_training}{{3.4}{24}{Verification of ViT: Synthetic Dataset}{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Spectra Pre-Processing -- Redshift Corrected}}{25}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:spectra_preproc}{{3.5}{25}{Spectra Pre-Processing -- Redshift Corrected}{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Pre-Processing of DESI Spectra}{25}{subsection.3.2.1}\protected@file@percent }
+\newlabel{ssec:preprocess}{{3.2.1}{25}{Pre-Processing of DESI Spectra}{subsection.3.2.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Hyperparameters of the CNN used to classify DESI spectra. CNN adapted from \blx@tocontentsinit {0}\textcite {Sepeku2022}.\relax }}{26}{table.caption.20}\protected@file@percent }
+\newlabel{tab:cnn_hyperparameters}{{3.1}{26}{Hyperparameters of the CNN used to classify DESI spectra. CNN adapted from \textcite {Sepeku2022}.\relax }{table.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Spectra Pre-Processing -- Not Redshift Corrected}}{26}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:sepctra_preproc_nored}{{3.6}{26}{Spectra Pre-Processing -- Not Redshift Corrected}{figure.caption.19}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Hyperparameters of the smaller and larger Spectral ViT architecture used to classify DESI spectra.\relax }}{27}{table.caption.22}\protected@file@percent }
+\newlabel{tab:t_hyper}{{3.2}{27}{Hyperparameters of the smaller and larger Spectral ViT architecture used to classify DESI spectra.\relax }{table.caption.22}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Training of Neural Networks}{27}{section.3.3}\protected@file@percent }
+\newlabel{sec:training}{{3.3}{27}{Training of Neural Networks}{section.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}CNN Training}{27}{subsection.3.3.1}\protected@file@percent }
+\newlabel{ssec:cnn_training}{{3.3.1}{27}{CNN Training}{subsection.3.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces CNN Training}}{27}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:cnn_training}{{3.7}{27}{CNN Training}{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Transformer Training}{28}{subsection.3.3.2}\protected@file@percent }
+\newlabel{sec:transformer_training}{{3.3.2}{28}{Transformer Training}{subsection.3.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Training of Spectral ViT: V1}}{28}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:vit1_training}{{3.8}{28}{Training of Spectral ViT: V1}{figure.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Training of Spectral ViT: V1 Big}}{29}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:vit1_big_training}{{3.9}{29}{Training of Spectral ViT: V1 Big}{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Training of Spectral ViT: V1.2}}{29}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:vit1.2_training}{{3.10}{29}{Training of Spectral ViT: V1.2}{figure.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Training of Spectral ViT: V1.3}}{30}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:vit1.3_training}{{3.11}{30}{Training of Spectral ViT: V1.3}{figure.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Training of Spectral ViT: V2}}{30}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:vit2_training}{{3.12}{30}{Training of Spectral ViT: V2}{figure.caption.27}{}}
 \@setckpt{chapters/03-methods}{
-\setcounter{page}{27}
+\setcounter{page}{31}
 \setcounter{equation}{3}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
@@ -61,13 +67,13 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{9}
+\setcounter{figure}{12}
 \setcounter{table}{2}
 \setcounter{linenumber}{1}
-\setcounter{LN@truepage}{35}
+\setcounter{LN@truepage}{38}
 \setcounter{Item}{0}
 \setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{24}
+\setcounter{bookmark@seq@number}{23}
 \setcounter{caption@flags}{2}
 \setcounter{continuedfloat}{0}
 \setcounter{subfigure}{0}
@@ -85,7 +91,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{55}
+\setcounter{instcount}{75}
 \setcounter{maxnames}{3}
 \setcounter{minnames}{1}
 \setcounter{maxitems}{3}
@@ -109,7 +115,7 @@
 \setcounter{parenlevel}{0}
 \setcounter{blx@maxsection}{0}
 \setcounter{blx@maxsegment@0}{0}
-\setcounter{blx@sectionciteorder@0}{53}
+\setcounter{blx@sectionciteorder@0}{70}
 \setcounter{mincomprange}{10}
 \setcounter{maxcomprange}{100000}
 \setcounter{mincompwidth}{1}
