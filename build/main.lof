@@ -2,41 +2,43 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Supernova Classification}}{2}{figure.caption.3}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Publicly Classified SNe captured by DESI}}{4}{figure.caption.4}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Autonomous SNe Classification Templates}}{6}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces SNe Influencing DESI Redshift Fit}}{5}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Spectral Template of SN Ia SNe}}{7}{figure.caption.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagram of a Multi-Layered Perceptron}}{9}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of a CNN Unit}}{11}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Traditional CNN Architecture for Classification}}{12}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces CNN diagnostics}}{13}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces CNN's Confidence in Classification}}{14}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces CNN diagnostics with a confidence cut}}{14}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Transformer Architecture}}{16}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces ViT Architecture}}{17}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagram of a Multi-Layered Perceptron}}{10}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Example of a CNN Unit}}{12}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Traditional CNN Architecture for Classification}}{13}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces CNN diagnostics}}{14}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces CNN's Confidence in Classification}}{15}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces CNN diagnostics with a confidence cut}}{15}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Transformer Architecture}}{17}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces ViT Architecture}}{18}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Positional Embeddings for ViT}}{19}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Transformer Attention}}{22}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Synthetic spectra}}{23}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Verification of ViT: Synthetic Dataset}}{24}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Spectra Pre-Processing -- Redshift Corrected}}{25}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Spectra Pre-Processing -- Not Redshift Corrected}}{26}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces CNN Training}}{27}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Training of Spectral ViT: V1}}{28}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Training of Spectral ViT: V1 Big}}{29}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Training of Spectral ViT: V1.2}}{29}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Training of Spectral ViT: V1.3}}{30}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Training of Spectral ViT: V2}}{30}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Positional Embeddings for ViT}}{21}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Transformer Attention}}{23}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Synthetic spectra}}{24}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Verification of ViT: Synthetic Dataset}}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Spectra Pre-Processing -- Redshift Corrected}}{27}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Spectra Pre-Processing -- Not Redshift Corrected}}{27}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces CNN Training}}{28}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Training of Spectral ViT: V1}}{29}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Training of Spectral ViT: V1 Big}}{30}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Training of Spectral ViT: V1.2}}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Training of Spectral ViT: V1.3}}{31}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Training of Spectral ViT: V2}}{32}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral ViT V1 Diagnostics}}{31}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectral ViT V1 Confidence}}{32}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectral ViT V1 Diagnostics: 99\% Cut}}{32}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Spectral ViT V1 Diagnostics: 99.9999\% Cut}}{33}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Spectral ViT V2 Diagnostics}}{33}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Spectral ViT V2 Confidence}}{34}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Spectral ViT V2 Diagnostics: 99\% Cut}}{34}{figure.caption.34}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Spectral ViT V2 Binary Diagnostics}}{35}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Spectral ViT V2 Progenitor Classifier Diagnostics}}{36}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Spectral ViT V2 Type Classifier Diagnostics}}{36}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Spectral ViT V1 Diagnostics}}{33}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Spectral ViT V1 Confidence}}{34}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Spectral ViT V1 Diagnostics: 99\% Cut}}{34}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Spectral ViT V1 Diagnostics: 99.9999\% Cut}}{35}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Spectral ViT V2 Diagnostics}}{35}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Spectral ViT V2 Confidence}}{36}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Spectral ViT V2 Diagnostics: 99\% Cut}}{36}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Spectral ViT V2 Binary Diagnostics}}{37}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Spectral ViT V2 Progenitor Classifier Diagnostics}}{38}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Spectral ViT V2 Type Classifier Diagnostics}}{39}{figure.caption.40}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces CNN architecture. Figure from \blx@tocontentsinit {0}\textcite {Sepeku2022}.\relax }}{44}{figure.caption.41}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces AJ's VIT\relax }}{45}{figure.caption.42}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces CNN architecture. Figure from \blx@tocontentsinit {0}\textcite {Sepeku2022}.\relax }}{47}{figure.caption.42}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Spectral ViT Architecture\relax }}{48}{figure.caption.43}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Spectral ViT Block}}{49}{figure.caption.44}%

@@ -1,20 +1,19 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'build/main.blg'
-[56] biber-darwin:340> INFO - === Fri May  5, 2023, 03:48:22
-[67] Biber.pm:418> INFO - Reading 'build/main.bcf'
-[147] Biber.pm:972> INFO - Found 44 citekeys in bib section 0
-[159] Biber.pm:4383> INFO - Processing section 0
-[167] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
-[170] bibtex.pm:1713> INFO - LaTeX decoding ...
-[220] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
-[857] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[857] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[857] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[857] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[920] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
-[1691] bbl.pm:757> INFO - Output to build/main.bbl
-[1691] Biber.pm:130> WARN - legacy month field 'oct' in entry 'Zhao_2006' is not an integer - this will probably not sort properly.
-[1691] Biber.pm:130> WARN - ISBN '1435-568X' in entry 'cybenko1989' is invalid - run biber with '--validate_datamodel' for details.
-[1691] Biber.pm:130> WARN - ISBN '1572-834X' in entry 'Naskath2022' is invalid - run biber with '--validate_datamodel' for details.
-[1691] Biber.pm:130> WARN - BibTeX subsystem: /var/folders/80/1w80746n2pd82n9j8s9j2l4h0000gn/T/biber_tmp_Mndh/33e59b5ca9ec342068223d604c3f8d55_46280.utf8, line 452, warning: 3 characters of junk seen at toplevel
-[1691] Biber.pm:132> INFO - WARNINGS: 4
+[56] biber-darwin:340> INFO - === Sat May  6, 2023, 09:36:51
+[68] Biber.pm:418> INFO - Reading 'build/main.bcf'
+[151] Biber.pm:972> INFO - Found 50 citekeys in bib section 0
+[164] Biber.pm:4383> INFO - Processing section 0
+[172] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[175] bibtex.pm:1713> INFO - LaTeX decoding ...
+[235] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[905] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[905] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[905] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[905] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[973] bbl.pm:654> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[1744] bbl.pm:757> INFO - Output to build/main.bbl
+[1744] Biber.pm:130> WARN - ISBN '1435-568X' in entry 'cybenko1989' is invalid - run biber with '--validate_datamodel' for details.
+[1744] Biber.pm:130> WARN - ISBN '1572-834X' in entry 'Naskath2022' is invalid - run biber with '--validate_datamodel' for details.
+[1744] Biber.pm:130> WARN - BibTeX subsystem: /var/folders/80/1w80746n2pd82n9j8s9j2l4h0000gn/T/biber_tmp_ViBM/33e59b5ca9ec342068223d604c3f8d55_86587.utf8, line 452, warning: 3 characters of junk seen at toplevel
+[1745] Biber.pm:132> INFO - WARNINGS: 3

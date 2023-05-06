@@ -2,8 +2,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Hyperparameters of the CNN used to classify DESI spectra. CNN adapted from \blx@tocontentsinit {0}\textcite {Sepeku2022}.\relax }}{26}{table.caption.20}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Hyperparameters of the smaller and larger Spectral ViT architecture used to classify DESI spectra.\relax }}{27}{table.caption.22}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Hyperparameters of the CNN used to classify DESI spectra. CNN adapted from \blx@tocontentsinit {0}\textcite {Sepeku2022}.\relax }}{28}{table.caption.21}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Hyperparameters of the smaller and larger Spectral ViT architecture used to classify DESI spectra.\relax }}{29}{table.caption.23}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
