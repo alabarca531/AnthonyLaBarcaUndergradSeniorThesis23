@@ -17,26 +17,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Multi-Layer Perceptrons}\label{sec:MLP}
 
-To aid in the classification of supernovae, deep learning techniques can provide 
-flexibility and scalability that have been previously unattainable by manual 
-methods. The simplest and most widely used architecture in deep learning are feed-forward 
+To aid in the classification of SNe, DL techniques can provide 
+flexibility and scalability that have been previously unattainable using template-based 
+methods. The simplest and most widely used architecture in DL are feed-forward 
 fully connected neural networks, also known as multi-layer perceptrons (MLPs) \parencite{popescu2009}.
-These networks are composed of series of ``layers'' of neurons, or nodes, that 
+These networks are composed of a series of ``layers'' of neurons, or nodes, that 
 are ``fully connected'' to the previous layer (Figure \ref{fig:MLP}).
-Given an input vector $\vec{x}^{(0)}$ with $n$ values, an MLP applies a series of weights to each 
+Given an input vector $\vec{x}^{(0)}$ with $n$ values, a MLP applies a series of weights to each 
 element, resulting in a linear transformation from $\vec{x}^{(0)}$ to $\vec{x}^{(1)}$, where
-$\vec{x}_{(1)}$ is a vector of length $m$. This transformation is then followed by a bias added 
-to each element, and an activation function applied to each element.
+$\vec{x}^{(1)}$ is a vector of length $m$. This transformation is then followed by a bias added 
+to each element, followed by the application of an activation function.
 The transition from layer $i$ to $i+1$ can be represented mathematically as 
 \begin{equation}\label{eqn:MLP}
     \vec{x}^{(i+1)} = f(\mathbf{W}\vec{x}^{(i)} + \vec{b}^{(i+1)}),
 \end{equation}
 where $\mathbf{W}$ is an $m \times n$ matrix of weights, $\vec{b}^{(i+1)}$ is a vector of length $m$
 representing the bias, and $f$ is the activation function. The activation function can 
-be any function, but traditionally they are chosen to be continuous, non-linear, 
+be any function, but traditionally it is chosen to be a function that is continuous, non-linear, 
 monotonically increasing, and differentiable. The most common activation functions 
-are the sigmoid function, $f(x_i) = \sigma(x_i) = 1/(1 + e^{-x_i})$, hyperbolic tangent, 
-$f(x_i) = \tanh(x_i)$, and the rectified linear unit,
+are the sigmoid function $f(x_i) = \sigma(x_i) = 1/(1 + e^{-x_i})$, the hyperbolic tangen, 
+$f(x_i) = \tanh(x_i)$, and the rectified linear unit
 $f(x_i) = \mathrm{ReLU}(x_i) \equiv \max(0,x_i)$, all of which are applied element-wise.
 \begin{figure}[t]
     \centering
@@ -49,14 +49,14 @@ $f(x_i) = \mathrm{ReLU}(x_i) \equiv \max(0,x_i)$, all of which are applied eleme
 The output layer of the network is a vector tailored for the particular purpose
 of the MLP. For example, if the network is used to classify input data $\vec{x}$ into a set of classes, the output is a vector of normalized probabilities of each class. 
 
-The MLP architecture, while simplistic, is very powerful. \textcite{cybenko1989} showed that for any boolean 
-function (i.e. 2-class classification), an MLP with a single hidden layer could 
-approximate any function arbitrarily well; this is known as the Universal Approximation
-Theorem. The theorem is the basis for the success of MLPs in
+The MLP architecture, though simplistic, is very powerful. \textcite{cybenko1989} showed that for any boolean 
+function (e.g., 2-class classification), an MLP with a single hidden layer can 
+approximate any function arbitrarily well\footnote{This is known as the Universal Approximation
+Theorem.}. This is the basis for the success of MLPs in
 many fields, but it is also the reason that MLPs are not the best choice for all problems.
-MLPs begin to show many complications when training large models, such as the 
-exploding/vanishing gradient problem that makes them difficult to train \parencite{nielsen2015}, a lack of invariance under translation (important for many types of data, such as images), 
-and exponential growth of the number of trainable parameters \parencite{Naskath2022}. These problems inhibit the use of MLPs on larger datasets and in more complex problems, including 
+MLPs begin to show deficiencies when training large models, such as the 
+exploding/vanishing gradient problem, which makes them difficult to train \parencite{nielsen2015}. In addition, the lack of invariance under translation of data (important for many types of data, such as images), 
+and the exponential growth of the number of trainable parameters in a fully connected network \parencite{Naskath2022} pose serious problems which inhibit the use of MLPs on larger datasets and in more complex problems, including 
 image recognition, time series analysis, and natural language processing. Since 
 the mid-2000s, the weaknesses of MLPs have been addressed by the adoption of 
 alternative network architectures such as convolutional neural networks (CNNs) and
@@ -114,30 +114,29 @@ ImageNet challenge \parencite{krizhevsky2012}. AlexNet was the first of many CNN
 architectures popularized in the 2010s for vision classification, such as VGG~\parencite{Simonyan15}, 
 ResNet~\parencite{he2016deep}, and DenseNet~\parencite{Huang2016}. This also spurred a sudden increase in deep networks designed 
 for segmentation tasks as well, such as the FCN architecture by \textcite{Shelhamer2016}. In addition to vision tasks, it also found 
-great succes in applications such as natural language processing \parencite{Kim2014}, engineering, and 
+great success in applications such as natural language processing \parencite{Kim2014}, engineering, and 
 medicine \parencite{Kiranyaz2021}. 
 
-\subsection{CNNs on Spectroscopic Data in Astronomy}
+\subsection{Using CNNs on Spectroscopic Data in Astronomy}
 \label{sec:CNNspectra}
 CNNs excel at identifying patterns throughout their input space, stemming from their spacial invariance. 
 Theoretically, this should translate to spectral classification quite well. 
-Currently running at the National Energy Reserach Scientific Computing Center (NERSC)
+Currently running at the National Energy Research Scientific Computing Center (NERSC)
 is a 1D CNN developed by \textcite{wasserman2021} for DESI transient detection.  This model, while
 proven to be effective on training data, is limited by the number of false 
-positivies it produces. In order to perform well on DESI data, \textcite{wasserman2021} 
+positives it produces. In order to perform well on DESI data, \textcite{wasserman2021} 
 created a preprocessing pipeline that converts the spectra into a format 
 that is more easily interpretable by the CNN. This preprocessing pipeline includes 
-de-redshifting the spectra into the observed galaxies rest frame, applying a 
-log-binning to the spectra, normalizing the flux such that the maximum flux is 1, 
+de-redshifting the spectra into the observed galaxies' rest frames, applying a 
+log-binning to the spectra, normalizing the flux to values between 0 and 1, 
 and padding the spectra to a fixed length. 
 
-
-This work provides a baseline for the use of CNNs on supernovae classification 
+The work by \textcite{wasserman2021} provided a foundation for the use of CNNs on SNe classification 
 which was continued by \textcite{Sepeku2022}, who introduced the use of a
 2D CNN for SNe classification, adding a second dimension to the spectra by
-re-shaping the spectra from an array of size $N$ to an array of size $N/2\times N/2$. 
+re-shaping the input from an $N\times1$ array to an array of size $N/2\times N/2$. 
 The resulting 2D `image' was then fed to a more traditional vision 
-CNN architecture (see Appendix~\ref{fig:Sepeku2022_CNN} for a complete diagram of the architecture). 
+CNN architecture (see Appendix~\ref{fig:cnn_architecture} for a complete diagram of the architecture). 
 % TODO: Make into Subcaptions
 \begin{figure}[t]
     \centering
@@ -148,23 +147,16 @@ CNN architecture (see Appendix~\ref{fig:Sepeku2022_CNN} for a complete diagram o
 \end{figure}
 This architecture was shown to train quickly (less than 1 hour on a single GPU), 
 and was able to classify a validation set of 12888 spectra with an average precision of 0.872
-via 6-way categorical classification. 
+in a 6-label categorical classification of host galaxies and supernova sub-types. 
 
 Figure~\ref{fig:cnn_qual} shows the ROC curve and confusion matrix for the 
-CNN trained on synthetic spectra. 
-\begin{figure}[t]
+2D CNN trained on synthetic spectra. 
+\begin{figure}[t!]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/cnn/cnn_max_ypred.png}
+    \includegraphics[width=0.8\textwidth]{figures/cnn/cnn_max_ypred.png}
     \caption[CNN's Confidence in Classification]{Max value of the output vector from the CNN.\label{fig:cnn_max}}
 \end{figure}
 
-The maximum value of the output vector varied greatly between 1, which indicates a 
-confident classification, and 0.2, which indicates a random guess. Figure~\ref{fig:cnn_max} shows
-the distribution of the maximum value found. To ensure that the CNN is not
-misclassifying spectra with low confidence, a cut on the maximum value of the
-output vector can be applied. Figure~\ref{fig:cnn_qual2} shows the ROC curve and confusion matrix
-for the CNN trained on synthetic spectra with a 99\% confidence cut, resulting in 
-28.8\% of the original validation set. 
 % TODO: Make into Subcaptions
 \begin{figure}[b]
     \centering
@@ -173,6 +165,15 @@ for the CNN trained on synthetic spectra with a 99\% confidence cut, resulting i
     \includegraphics[height=4.55cm]{figures/cnn/cnn_cm99.png}
     \caption[CNN diagnostics with a confidence cut]{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut\label{fig:cnn_qual2}}
 \end{figure}
+
+The output of the CNN is a 6D ``prediction'' vector $\vec{y}_\mathrm{pred}=(y_0,y_1,y_2,y_3,y_4,y_5)^\intercal$, where $\sum_i y_i=1$. Each element corresponds to the probability that the input spectrum belongs to a host galaxy or includes one of five supernova sub-types.
+As shown in Figure~\ref{fig:cnn_max}, the maximum value of the output vector varies  between 1, indicating a perfectly confident classification, and 0.2, indicating a high degree of confusion among the host and supernova spectra. Figure~\ref{fig:cnn_max} shows
+the distribution of the maximum value found for an independent validation sample of spectra. To ensure that the CNN is not
+misclassifying spectra with low confidence, a cut on the maximum value of the
+output vector can be applied. Figure~\ref{fig:cnn_qual2} shows the ROC curve and confusion matrix
+for the CNN trained on synthetic spectra with a 99\% confidence cut $\max{\{\vec{y}_\mathrm{pred}\}}>0.99$, which preserves 
+28.8\% of the original validation set. 
+
 
 A nearly perfect ROC curve and confusion matrix are produced by the CNN when
 evaluated on only highly confident classifications. This indicates that the CNN
@@ -187,7 +188,7 @@ the overall accuracy of the networks, but also the number of confident classific
 
 \section{From CNNs to Transformers}\label{sec:transformers}
 % Advantage of transformers in this field
-Transformers are a relatively new architecture introduced in 2017 by \textcite{vaswani2017}
+Transformers are a relatively new DL architecture introduced in 2017 by \textcite{vaswani2017}
 for natural language processing (NLP) tasks. The original architecture consists of 
 an encoder-decoder system (Figure~\ref{fig:transformer_orig}). The encoder accepts a series of tokens and produces a series of vectors
 representing the input data via a series 
@@ -196,7 +197,7 @@ produces a series of output tokens, one for each input token.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[height=8cm]{figures/transformer_paper/Transformer_Original.png}
+    \includegraphics[height=10cm]{figures/transformer_paper/Transformer_Original.png}
     \caption[Transformer Architecture]{Traditional transformer architecture consisting of an enocoder and decoder. 
         Image from \textcite{vaswani2017}
     \label{fig:transformer_orig}}
@@ -217,10 +218,10 @@ Further details are provided in Section~\ref{sec:SpecViT}.
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/transformer_paper/ViT_Original.png}
-    \caption[ViT Architecture]{Traditional ViT architecture. Purple ovals indicated 
+    \includegraphics[width=0.8\textwidth]{figures/transformer_paper/ViT_Original.png}
+    \caption[ViT Architecture]{Vision transformer (ViT) architecture. Purple ovals indicate 
         positional embeddings, while pink ovals indicate the resulting tokens from 
-        the patches. Image from \textcite{dosovitskiy2020}
+        the patches. Image from \textcite{dosovitskiy2020}.
     \label{fig:ViT_orig}}
 \end{figure}
 
@@ -229,19 +230,14 @@ Previous implementations of transformers have been shown to have characteristics
 beneficial to the classification of spectral data. A transformer's 
 ability to learn contextual information is essential in spectral classification. 
 A broad absorption line, for example, may be indicative of a Type Ia supernova 
-if in one part of the spectrum, but may be indicative of a Type II supernova if
+if in one part of the spectrum but may be indicative of a Type II supernova if
 in another part of the spectrum. This contextual information is not easily learned 
 by a CNN, as the convolutional layers are not able to learn the importance of
 certain parts of the input space. Attention can also play a role in identifying 
 the purpose of features that are not in a standard location. For example, a 
-spectrum in the observers rest frame might have a continuum pattern at different locations 
-along the spectrum, but the overall shape would be similar. This change in sizing 
+spectrum in the observer frame might have a continuum pattern at different locations 
+along the spectrum than in the object's rest frame, but the overall shape would be similar (minus features redshifted out of the observer's wavelength range). This change in sizing 
 would be difficult to learn with fixed filters in a CNN, but would be identified 
 based on their positional importance by a transformer. In addition to this, ViTs 
 have been shown to outperform CNNs on vision tasks, which shows they are capable 
 of focusing on learned features. 
-
-
-* Include caveat about the fact that ViTs take longer to train than CNNs *
-Very important!!
-

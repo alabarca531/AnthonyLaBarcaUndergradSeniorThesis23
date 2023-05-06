@@ -2,7 +2,7 @@
 \label{chap:results}
 
 \section{Spectral ViT V1: A suitable replacement}\label{sec:v1_results}
-The Spectral ViT's performance was evaluated on the test set of 12888 validation spectra.
+The Spectral ViT's performance was evaluated on a test set of 12,888 validation spectra.
 These spectra were not used in the training, nor the test set of the model. The resulting 
 ROC curve and confusion matrix are shown in Figure~\ref{fig:v1_qual}. The ROC curve 
 shows the model is capable of differentiating between SNe and non-SNe with an AUC of 0.99.
@@ -40,11 +40,10 @@ average precision to 86.2\%, as shown in Figure~\ref{fig:v1_999999_qual}.
 
 While the accuracy score didn't increase significantly with the second confidence cut, 
 the important metric is the number of positive predictions made. All AUC scores 
-are above 0.95, and the number of found targets is significantly higher than the 
-CNN previously used. For example, Figure~\ref{fig:v1_999999_qual} correctly 
+are above 0.95, and the number of supernovae surviving the confidence cut is significantly higher than the previously-used CNN. For example, Figure~\ref{fig:v1_999999_qual} correctly 
 classifies 4705 targets, while Figure~\ref{fig:cnn_qual2} only correctly classifies 
-3742 targets under a less strict confidence cut. This is a 26\% increase in the
-number of correctly classified targets not excluded by the confidence cut.
+3742 targets under a less strict confidence cut. This represents a 26\% increase in the
+number of correctly classified targets with a higher degree of confidence in the classification.
 
 \begin{figure}
     \centering
@@ -66,18 +65,16 @@ number of correctly classified targets not excluded by the confidence cut.
 \end{figure}
 The goal of the Spectral ViT V2 was to see if the dependence on the redshift fit 
 provided by the DESI pipeline could be removed. The validation set was the same size 
-as the V1 validation set, 12888 specra. The ROC curve and confusion matrix are shown
-in Figure~\ref{fig:v2_qual}. Classification of SNe and non-SNe is still very good,
-with an AUC of 1.0, but the other classes are not classified as well, resulting in 
+as the V1 validation set: 12,888 spectra. The ROC curve and confusion matrix are shown
+in Figure~\ref{fig:v2_qual}. Classification of SNe versus non-SNe is still very good,
+with an AUC of 1.0, but the sub-types are not classified well, resulting in 
 an overall AUC of 0.805 and a lower average precision of 53.3\%. 
 
 
-Similar to the CNN, on a 99\% confidence cut, only 34\% of the original predictions
-remain (Figure~\ref{fig:v2_max}). The AUC score and average precision both increase, as shown in Figure~\ref{fig:v2_99_qual}, 
+Similar to the CNN, if we apply a 99\% confidence cut $\max{\{\vec{y}_\mathrm{pred}\}}>0.99$, only 34\% of the original spectra
+survive (Figure~\ref{fig:v2_max}). The AUC score and average precision both increase, as shown in Figure~\ref{fig:v2_99_qual}, 
 but the important metric is the number of positive predictions made. The ViT, 
-despite not looking at spectra in the rest frame, was still able to identify more 
-Host and SN II spectra than the CNN, but not as many of the other spectra. 
-
+despite not de-redshifting spectra to the hosts' rest frames, is still able to identify more Host and SN II spectra than the CNN (which does require de-redshifting of the spectra). However, the confusion between the supernova subtypes remains relatively large.
 
 \begin{figure}[t!]
     \centering
@@ -94,17 +91,14 @@ Host and SN II spectra than the CNN, but not as many of the other spectra.
     cut\label{fig:v2_99_qual}}
 \end{figure}
 
-This, combined with the lower AUC score, indicates that the ViT V2 is not a suitable 
-replacement for the ViT V1 for the purposes of SNe sub-type classification. However, the ViT V2
-is still able to differentiate SNe and non-SNe spectra with high accuracy, so alternative uses 
-can be derived from the existing classifier. 
+This confusion, combined with the lower AUC score, indicates that the ViT V2 is not a suitable replacement for the ViT V1 for the purposes of SNe sub-type classification. However, the ViT V2 is still able to differentiate SNe and non-SNe spectra with high accuracy, so alternative uses can be derived from the existing classifier. 
 
 \subsection{Alternative Applications of the V2 Classifier}
 
 \subsubsection{Binary Classifier}
 
 The most obvious use for a classifier capable of identifying the presence, or lack thereof, of a supernova 
-with a high degree of accuracy is a binary classifier. To alter the predictions presented by the ViT 
+with a high degree of accuracy is a binary classifier that simply identifies the presence of a supernova in the spectrum without sub-typing. To alter the predictions presented by the ViT 
 for binary classification, the probabilities of all classes apart from 
 non-SNe were summed. This resulted in a very high AUC score of 0.997, with a 
 nearly perfect average precision of 98.7\% (Figure \ref{fig:v2_binary_qual}).
@@ -141,7 +135,12 @@ cut, the classifier is able to retain 60\% of the original sample, shown in Figu
 Despite the great success in differentiating the core collapse and non-SNe spectra, there is some discrepancy 
 between the two SNe categories. This, however, still results in an average precision of 86.5\% which is slightly
 below the Spectral ViT V1 classifier on all subtypes, while recovering much of the original sample. 
-\begin{figure}[hb!]
+Another classification scheme using three final classes would be to seperate the sample into the 2 main 
+classifications: Type I vs Type II. Figure~\ref{fig:v2_99_type_qual} shows the 99\% cut on this classifications, 
+yielding 44\% of the original sample classified at an average precision of 91.8\%. Therefore, the Spectral ViT V2
+has many classification applications past just a binary classifier, regardless of its inability to produce precise 
+classification of SNe subtypes.
+\begin{figure}[t!]
     \centering
     \includegraphics[height=4.1cm]{figures/v2_applications/vit_model_V2roc99_type_e26.png}
     \quad
@@ -150,11 +149,6 @@ below the Spectral ViT V1 classifier on all subtypes, while recovering much of t
     Type Classifier Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence
     cut\label{fig:v2_99_type_qual}}
 \end{figure}
-Another classification scheme using three final classes would be to seperate the sample into the 2 main 
-classifications: Type I vs Type II. Figure~\ref{fig:v2_99_type_qual} shows the 99\% cut on this classifications, 
-yielding 44\% of the original sample classified at an average precision of 91.8\%. Therefore, the Spectral ViT V2
-has many classification applications past just a binary classifier, regardless of its inability to produce precise 
-classification of SNe subtypes.
 
 
 

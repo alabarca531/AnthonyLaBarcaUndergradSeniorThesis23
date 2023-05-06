@@ -1,7 +1,20 @@
-\chapter*{\centerline{Abstract}}
+\chapter*{\vspace{-1cm}\centerline{Abstract}\vspace{-3cm}}
 \markboth{\MakeUppercase{Abstract}}{}
 \iftoggle{fulltoc}{
   \addcontentsline{toc}{chapter}{Abstract}
 }{}
 
-This is an abstract! Read the paper :) 
+The identification and classification of supernovae transients are common hindrances in observational astronomy as they require 
+additional spectroscopic observations and traditional autonomous classification 
+techniques that are computationally expensive. In an effort to create a more efficient and autonomous 
+classification methodology, deep learning architectures have previously been trained and implemented 
+for use on the Dark Energy Spectroscopic Instrument (DESI) pipeline. Despite being  able to precisely classify some spectra, the networks are unable to definitively classify many more, leading to 
+a recall rate of approximately 20\%. The Spectral ViT is a vision transformer-based architecture
+trained for use on the DESI pipeline. When trained on spectra with redshift removed according to the
+fits provided by the DESI pipeline, the Spectral ViT (V1) is able to recall 26\% more targets while also applying a 
+stricter prediction cut, resulting in only a 13.3\% decrease in performance. The Spectral ViT V2 
+was trained for the purpose of eliminating dependence on the DESI redshift fit.  While unable to 
+match the sub-type classification power of the Spectral ViT V1, the model shows capability in acting as a 
+classifier for progenitor and supernovae type, with precision values of 86.5\% and 91.8\% respectively. We find
+the Spectral ViT V1 to be a possible replacement for the existing classification network pending further testing
+and the Spectral ViT V2 to be a supernovae filter and supplemental classifier. 

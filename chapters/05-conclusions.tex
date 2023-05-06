@@ -10,37 +10,70 @@
 % * Paragraph about performance of ViT * 
 
 % * Paragraph about future research *
-This work set out to create a machine learning-based supernova classifier to improve 
-the 1D CNN developed by \textcite{wasserman2021} that showed comparable 
-precision to the 2D CNN developed by \textcite{Sepeku2022} with an increased recall rate. 
-The Spectral ViT proposed was trained in a variety of means, and as such, can be applied in different ways.  
+% This work set out to create a machine learning-based supernova classifier to improve 
+% the exisitng 2D CNN with a comparable precision and an increased recall rate. 
+% The Spectral ViT proposed was trained in a variety of means, and as such, can be applied in different ways.  
 
-% Take citations out 
+% % Take citations out 
 
-Using the same prepossessing methodology as its predecessors, the Spectra ViT V1 is able to recall 
-26\% more correctly classified targets than the 2D CNN on a harder accuracy cut, while seeing a decrease 
-of only 13.3\% in average precision. This performance hit is as a result of mis-classification of supernova types, 
+% Using the same prepossessing methodology as its predecessors, the Spectral ViT V1 is able to recall 
+% 26\% more correctly classified targets than the 2D CNN while also applying a stronger prediction cut. Compared to the 2D CNN, the average precision of the Spectral ViT is
+% 13.3\% worse. This performance hit is a result of misclassification of supernova sub-types, 
+% as both architectures are able to differentiate between SNe and non-SNe spectra almost perfectly. This 
+% network, due to its higher recall, could be used to recover SNe missed by the 2D CNN. Further testing on visually confirmed, non-synthetic, DESI SNe is the next logical step. 
+
+% Very bright SNe are capable of outshining their host galaxies, so it is possible that 
+% redshift failures in the DESI pipeline could occur in these targets, rendering the classifier, and most downstream tasks, 
+% impaired. The Spectral ViT V2 was trained for the purpose of eliminating dependence on the redrock fit.
+% While it is unable to match the sub-type classification power of the Spectral ViT V1, the 
+% model exhibits high recall, high precision binary classification, and good precision in the classification of the spectra of host galaxies, Type Ia supernovae, and core-collapse supernovae. 
+% The V2 classifier could be implemented as a quick filter on top of an existing classification scheme, avoiding catastrophic redshift failures in case of bright supernovae.
+% %
+% % SB: I think it's good to stop here, the remaining sentences aren't needed.
+% %
+% % supplemented by a new DL framework. This network would be trained on pure classification of 
+% % SNe, rather than a detector-classifier joint network. This solution could offer the best performance at the cost 
+% % of utilizing two neural networks instead of one. This solution, however, would still more efficient than running alternative 
+% % autonomous SNe detection solutions, such as template comparisons. 
+
+% While the Spectral ViT V1 and V2 transformers show promising performance, 
+% training on a larger dataset with more specialized architectures could
+% lead to a better multi-purpose classifier capable of a high volume of precise observations. In addition, as mentioned 
+% by \textcite{Sepeku2022}, heat maps of convolutional layers are an effective method of 
+% determining what exactly a CNN is identifying as 
+% key elements in a samples classification. Heat maps of the final attention layer of a transformer 
+% have been shown by \textcite{dosovitskiy2020} to yield insightful information as to the parts of the image `brought to attention' by the transformer. 
+
+
+Supernovae classification is traditionally either a time-intensive or computationally
+expensive process. Possible candidates must almost always be re-visited by spectrographic 
+analysis to confirm its origin: Type Ia for thermonuclear events, or Type Ib,c, and Type II for the 
+death of massive stars via core collapse. For spectroscopic instruments, such as DESI, new 
+techniques developed to classify transients quickly and efficiently would prove very useful, 
+as no follow-up observations, nor human interaction, would ideally be necessary. In addition, 
+due to the bright nature of these cataclysmic events, improper handling of targets with transients 
+could lead to erroneous fits, leading to inaccurate data. 
+
+The field of deep learning encapsulates the creation and training of different neural network 
+architectures designed to learn and identify patterns in data efficiently by front-loading 
+computational costs via training. These frameworks can be applied to the categorical classification 
+of spectra, as the set patterns and rules governing the different sub-categories are mutually exclusive, 
+and synthetic training data can be created with relative ease. 
+
+We present a variation of the Vision Transformer architecture, named the Spectral ViT, to 
+be the successor to the 1D CNN currently utilized for spectral classification. After the model's 
+ability to train was verified on a trivial dataset, the Spectral ViT was trained on both 
+redshift-corrected (V1) and non-corrected (V2) spectra. 
+
+Using the same prepossessing methodology as its predecessors, the Spectral ViT V1 is able to recall 
+26\% more correctly classified targets than the 2D CNN while also applying a stronger prediction cut. Compared to the 2D CNN, the average precision of the Spectral ViT is
+13.3\% worse. This performance hit is a result of the misclassification of supernova sub-types, 
 as both architectures are able to differentiate between SNe and non-SNe spectra almost perfectly. This 
-network, due to its higher recall, could be used as a replacement on NERSC, given further testing 
-on visually confirmed, non-synthetic, DESI SNe. 
+network, due to its higher recall, could be used to recover SNe missed by the 2D CNN. Further testing on visually confirmed, non-synthetic, DESI SNe is the next logical step. 
 
-Super bright supernovae are capable of outshining the galaxies they originate in, so it is possible that 
-erroneous fits by the DESI pipeline could occur in these targets, rendering the classifier, and most downstream tasks, 
-impaired. The Spectral ViT V2 was trained for the purpose of eliminating dependence on this fit.
-While unable to match the raw subtype classification power of the Spectral ViT V1, the 
-model shows promise in high recall, high precision binary, progenitor, and type classification tasks. 
-This could be implemented as a quick filter on top of an existing classification scheme,
-supplemented by a new DL framework. This network would be trained on pure classification of 
-supernovae, rather than a detector-classifier joint network. This solution could offer the best performance at the cost 
-of utilizing two neural networks instead of one. This solution, however, would still more efficient than running alternative 
-autonomous SNe detection solutions, such as template comparisons. 
-
-
-While the Spectral ViT V1 and V2 transformers show promising performance, 
-training on a larger dataset with more specialized architectures could
-lead to a better multi-purpose classifier capable of a high volume of precise observations. In addition, as mentioned 
-by \textcite{Sepeku2022}, heat maps of convolutional layers are an effective method of 
-determining what exactly a CNN is identifying as 
-key elements in a samples classification. Heat maps of the final attention layer of a transformer 
-have been shown by \textcite{dosovitskiy2020} to yield insightful information as to the parts of the image `brought
-to attention'. 
+Very bright SNe are capable of outshining their host galaxies, so it is possible that 
+redshift failures in the DESI pipeline could occur in these targets, rendering the classifier, and most downstream tasks, 
+impaired. The Spectral ViT V2 was trained for the purpose of eliminating dependence on the redrock fit.
+While it is unable to match the sub-type classification power of the Spectral ViT V1, the 
+model exhibits high recall, high precision binary classification, and good precision in the classification of the spectra of host galaxies, Type Ia supernovae, and core-collapse supernovae. 
+The V2 classifier could be implemented as a quick filter on top of an existing classification scheme, avoiding catastrophic redshift failures in case of bright supernovae.
