@@ -1,0 +1,208 @@
+% AJ's Beamer style file!!
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{ajbeamer}
+  [2023/05 v0.1 LaTeX package for ajbeamer]
+
+% Color Theme
+% \usecolortheme{spruce}
+
+\usepackage{xcolor}
+% \definecolor{linkcolor}{rgb}{0, 0, 0.5}
+\definecolor{white}{HTML}{ffffff}
+\definecolor{blue1}{HTML}{154360}
+\definecolor{green1}{HTML}{60ce80}
+\definecolor{gray1}{HTML}{f0f0f0}
+
+
+	
+\definecolor{green1}{HTML}{37782C}
+\definecolor{green2}{HTML}{64BB6A}
+\definecolor{pistachio}{HTML}{9FD983}
+\definecolor{cream}{HTML}{FEFED3}
+\definecolor{lighterblue}{HTML}{3CB3C0}
+\definecolor{darkerblue}{HTML}{024064}
+
+
+
+\hypersetup{colorlinks=true, allcolors=darkerblue, draft=false} 
+
+
+
+\setbeamercolor{palette primary}{bg=green1,fg=cream}
+\setbeamercolor{palette secondary}{bg=pistachio,fg=cream}
+\setbeamercolor{palette tertiary}{bg=lighterblue,fg=cream}
+\setbeamercolor{palette quaternary}{bg=green2,fg=cream}
+\setbeamercolor{structure}{fg=green1} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=green1} % TOC sections
+\setbeamercolor{title}{bg=green1, fg=cream}
+
+% Clear header navigation bar
+\setbeamertemplate{headline}{}
+
+% Clear bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+% Clear footer
+\setbeamertemplate{footline}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\setbeamertemplate{headline}{%
+    \leavevmode%
+    \hbox{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{palette quaternary}%
+        % Flush the bar to the left
+        % \insertsectionnavigationhorizontal{\paperwidth}{}{\hskip0pt plus1filll}
+        % Flush the bar to the right
+        % \insertsectionnavigationhorizontal{\paperwidth}{\hskip0pt plus1filll}{}
+        % Flush the bar to the center
+        \insertsectionnavigationhorizontal{\paperwidth}{\hskip0pt plus1filll}{\hskip0pt plus1filll}
+        % \insertsectionnavigationhorizontal{\paperwidth}{left}{right}
+    \end{beamercolorbox}%
+  }
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% footer
+\makeatletter
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.31\paperwidth,ht=2.25ex,dp=1ex,center]{institute in head/foot}%
+    \usebeamerfont{title in head/foot}%
+    \insertshortauthor 
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.31\paperwidth,ht=2.25ex,dp=1ex,center]{institute in head/foot}%
+    \usebeamerfont{title in head/foot}%
+    \insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.31\paperwidth,ht=2.25ex,dp=1ex,center]{institute in head/foot}%
+    \usebeamerfont{title in head/foot}%
+    \insertshortdate
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.07\paperwidth,ht=2.25ex,dp=1ex,center]{institute in head/foot}%
+    \usebeamerfont{title in head/foot} 
+    \insertframenumber{} / \inserttotalframenumber %\hspace*{2ex} 
+  \end{beamercolorbox}}%
+}
+\makeatother
+
+\setbeamertemplate{navigation symbols}[horizontal]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{title page}
+{
+  \vbox{}
+  \vfill
+  \begin{centering}
+    \begin{beamercolorbox}[sep=8pt,center]{title}
+      \usebeamerfont{title}\inserttitle
+    \end{beamercolorbox}
+    \setbeamercolor{title}{bg=cream,fg=structure}
+    \begin{beamercolorbox}[sep=8pt,center]{title}
+      {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+      \ifx\insertsubtitle\@empty%
+      \else%
+        \vskip0.25em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+      \fi%     
+    \end{beamercolorbox}%
+    \vskip1em\par
+    \begin{beamercolorbox}[sep=8pt,center]{author}
+      \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+    \vskip-1em\par % change here
+    \begin{beamercolorbox}[sep=8pt,center]{institute}
+      \usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,center]{date}
+      \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}\vskip0.5em
+  \end{centering}
+  \vfill
+}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \setbeamercolor{mycolor}{fg=white,bg=lighterblue}
+% \setbeamertemplate{navigation symbols}{}
+% \addtobeamertemplate{footline}{
+%     \leavevmode%
+%     \hbox{%
+%     \begin{beamercolorbox}[wd=\paperwidth,ht=2.75ex,dp=.5ex,right,rightskip=1em]{mycolor}%
+% \usebeamercolor[fg]{navigation symbols}\insertslidenavigationsymbol%
+% \insertframenavigationsymbol%
+% \insertsubsectionnavigationsymbol%
+% \insertsectionnavigationsymbol%
+% \insertdocnavigationsymbol%
+% \insertbackfindforwardnavigationsymbol%
+%     \end{beamercolorbox}%
+%     }%
+%     \vskip0.5pt%
+% }{}
+
+% \setbeamertemplate{navigation symbols}{}
+% \addtobeamertemplate{navigation symbols}{}{
+%     \begin{beamercolorbox}[wd=\paperwidth,ht=2.75ex,dp=.5ex,right,rightskip=1em]{mycolor}%
+%         \usebeamercolor[fg]{navigation symbols}\insertnavigationsymbols%
+%   \insertslidenavigationsymbol%
+%   \insertframenavigationsymbol%
+%   \insertsubsectionnavigationsymbol%
+%   \insertsectionnavigationsymbol%
+%   % \insertdocnavigationsymbol%
+%   % \insertbackfindforwardnavigationsymbol%
+%         % \insertslidenavigationsymbol%
+%         % \insertframenavigationsymbol%
+%         % \insertsubsectionnavigationsymbol%
+%         % \insertsectionnavigationsymbol%
+%         % \insertdocnavigationsymbol%
+%         % \insertbackfindforwardnavigationsymbol%
+        
+%     \end{beamercolorbox}%
+% }
+
+
+\endinput
+% \usetheme{Szeged} 
+% \usetheme{Berlin}
+% \usetheme{Madrid}
+
+% \usecolortheme{dolphin}
+% \usecolortheme{spruce}
+
+
+% \setbeamertemplate{navigation symbols}{}
+% \addtobeamertemplate{navigation symbols}{}{%
+%     \usebeamerfont{footline}%
+%     \usebeamercolor[fg]{footline}%
+%     \hspace{1em}%
+%     \insertframenumber/\inserttotalframenumber
+% }
+% \setbeamertemplate{headline}{%
+% \leavevmode%
+%   \hbox{%
+%     \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{palette quaternary}%
+%     \insertsectionnavigationhorizontal{\paperwidth}{}{\hskip0pt plus1filll}
+%    \end{beamercolorbox}
+%    }
+% }
+
+
+%% Usage
+% \insertsectionnavigationhorizontal{⟨width⟩}{⟨left insert⟩}{⟨right insert⟩} 
+% \insertsubsectionnavigationhorizontal{⟨width⟩}{⟨left insert⟩}{⟨right insert⟩}
+
+% % Navigation bars
+% \insertnavigation{⟨width⟩} 
+% \insertverticalnavigation{⟨width⟩} 
+
+% \insertsectionnavigation{⟨width⟩}
+% \insertsectionnavigationhorizontal{⟨width⟩}{⟨left insert⟩}{⟨right insert⟩}
+
+% \insertsubsectionnavigation{⟨width⟩}
+% \insertsubsectionnavigationhorizontal{⟨width⟩}{⟨left insert⟩}{⟨right insert⟩}
