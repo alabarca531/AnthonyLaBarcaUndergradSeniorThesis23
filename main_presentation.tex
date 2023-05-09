@@ -1,0 +1,99 @@
+% \documentclass[handout]{beamer}
+\documentclass{beamer}
+\usepackage{ajbeamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+% \usepackage{uorthesis}  % Loads the LaTeX style package
+\usepackage[backend=biber, style=authoryear]{biblatex}
+\addbibresource{references.bib}
+\renewcommand*{\bibfont}{\small}
+% \usepackage{uorbib}
+
+
+\usepackage{csquotes}           % Makes quotes look good
+\usepackage[font=small,labelfont={bf,sf}, textfont={sf}, justification=centering]{caption}
+
+\usepackage{graphicx, subcaption, float}
+\usepackage{amsmath, amssymb, amsthm, amsfonts, nicefrac}
+\usepackage{booktabs}
+
+%% Font setup
+\usepackage{mathptmx, lmodern, helvet}
+\usepackage{microtype}      % microtypography
+\usepackage{verbatim}       % verbatim 
+\usepackage{arydshln}
+\usepackage{multirow}
+
+\usepackage{tikz}     % For drawing
+\input{tikzconfig}    % Configuration for drawing
+\usepackage{comment}  % For commenting out block text
+
+
+\setbeamercolor{block body alerted}{bg=alerted text.fg!10}
+\setbeamercolor{block title alerted}{bg=alerted text.fg!20}
+\setbeamercolor{block body}{bg=structure!10}
+\setbeamercolor{block title}{bg=structure!20}
+\setbeamercolor{block body example}{bg=lightblue!10}
+\setbeamercolor{block title example}{bg=lightblue!20}
+\setbeamertemplate{blocks}[rounded][shadow]
+
+% Adoption of the Transformer Architecture \\for Supernova Detection\\ in the DESI Survey\par
+
+% \title[Transfer Learning]{Effectiveness of Transfer Learning For Medical Computer Vision}
+\title[Undergraduate Thesis 2023]{Adoption of the Transformer Architecture for Supernova Detection in the DESI Survey}
+\subtitle{Undergraduate Senior Thesis 2023}
+% \subtitle{CSC 266 Final Project}
+\author[\href{mailto:alabarca@u.rochester.edu}{Anthony (AJ) LaBarca}]
+{
+\href{mailto:alabarca@u.rochester.edu}{Anthony (AJ) LaBarca}\\{\small Supervised by: \href{mailto:sybenzvi@pas.rochester.edu}{Professor Segev BenZvi}}}
+% \author{
+% \author{}}
+\institute{University of Rochester}
+\date{\href{https://www.timeanddate.com/worldclock/usa/rochester}{May 9, 2023}}
+
+\begin{document}
+
+% Title SLide
+{
+\setbeamertemplate{footline}{} 
+\setbeamertemplate{headline}{}
+\setbeamertemplate{navigationsymbols}{}
+\begin{frame}
+    \titlepage{}
+\end{frame}
+}
+
+\begin{frame}
+    \frametitle{Outline}
+    \tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{sections/01-motivation-intro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{sections/02-background}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{sections/03-methods}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{sections/04-results}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{sections/05-conclusions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[allowframebreaks]{References}
+    
+    \printbibliography[heading=none]
+\end{frame}
+\end{document}

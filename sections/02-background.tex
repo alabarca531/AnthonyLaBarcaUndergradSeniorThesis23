@@ -1,0 +1,124 @@
+\section{Deep Learning Techniques}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \begin{figure}[t]
+        \centering
+        \resizebox{.6\linewidth}{!}{\input{tikz/MLP}}
+        \caption{Multi-Layered Perceptron (adapted from \textcite{neutelings2021_nn})}
+        % ]{A simple MLP with an input dimension of 4 (green nodes), three hidden layers (blue nodes), and an output dimension of 3 (red nodes). Each node is connected to every node in the previous and next layer. The lines represent the weights, and each  node has an associated bias. Figure adapted from 
+        \label{fig:MLP}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}[t]
+        \centering 
+        \resizebox{.6\linewidth}{!}{\input{tikz/conn_unit}}
+        \caption{CNN Unit ( adapted from \textcite{neutelings2022_conv})}
+        \label{fig:convolution}
+    % \end{figure}
+    % \begin{figure}[t]
+    %     \centering
+        \includegraphics[width=.8\linewidth]{figures/Typical-CNN-architecture.png}
+        \caption{Traditional CNN Architecture for Classification (adapted from \cite{kumar2022_cnn})}
+        \label{fig:CNN}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{2D CNN Performance}
+    \begin{figure}
+        \centering
+        \includegraphics[height=2.8cm]{figures/cnn/cnn_rocfull.png}
+        \quad
+        \includegraphics[height=2.8cm]{figures/cnn/cnn_cmfull.png}
+        \caption[CNN diagnostics]{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right)\label{fig:cnn_qual}}
+%     \end{figure}
+% \end{frame}
+
+% \begin{frame}
+%     \begin{figure}[t!]
+%         \centering
+        \includegraphics[width=0.5\textwidth]{figures/cnn/cnn_max_ypred.png}
+        \caption{CNN's Maximum Output Vector\label{fig:cnn_max}}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{CNN Cut to Increase Performance}
+    \begin{figure}[b]
+        \centering
+        \includegraphics[height=2.6cm]{figures/cnn/cnn_roc99.png}
+        \quad
+        \includegraphics[height=2.6cm]{figures/cnn/cnn_cm99.png}
+        \caption[CNN diagnostics with a confidence cut]{CNN Diagnostics: ROC Curve (left) and Confusion Matrix (right) with a 99\% confidence cut\label{fig:cnn_qual2}}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{The Transformer Architecture}
+\begin{columns}
+\column{.4\textwidth}
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[width=.9\textwidth]{figures/transformer_paper/Transformer_Original.png}
+        \caption{Original Transformer Architecture (Image from \textcite{vaswani2017})
+        % ]{Traditional transformer architecture consisting of an enocoder and decoder. 
+        \label{fig:transformer_orig}}
+    \end{figure}
+% \end{frame}
+
+% \begin{frame}
+\column{.58\textwidth}
+    \begin{figure}[t]
+        \centering
+        \includegraphics[width=\textwidth]{figures/transformer_paper/ViT_Original.png}
+        \caption{ViT Architecture (Image from \textcite{dosovitskiy2020})
+        % ]{Vision transformer (ViT) architecture. Purple ovals indicate 
+        %     positional embeddings, while pink ovals indicate the resulting tokens from 
+        %     the patches. 
+        \label{fig:ViT_orig}}
+    \end{figure}
+    \end{columns}
+\end{frame}
+
+\begin{comment}
+\begin{frame}
+    \begin{columns}
+        \column{0.4\textwidth}
+            This is an example of text and image in the same slide using columns environment.
+        \column{0.6\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=\textwidth]{Neural-Network.jpg}
+                \caption{Neural Network with 5 neurons in the hidden layer. }
+            \end{figure}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{HAM10000 Dataset \cite{Sagar2022}}
+        {
+            \small
+            \begin{table}
+            \centering
+            \caption{HAM10000 Dataset Classes}\label{tab:HAM}
+            \resizebox{.3\linewidth}{!}{\input{tables/table}}
+            \end{table}
+        }
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.3\textwidth]{figures/blackbox.jpeg}
+            \caption{Example of HAM10000 dataset with true classes and segmentation}
+        \end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+    \frametitle{Classification Models}
+    \small
+    \begin{table}[]
+        \centering
+        \caption{Models}\label{tab:models}
+        \resizebox{\linewidth}{!}{\input{tables/table}}
+    \end{table}
+    
+\end{frame}
+\end{comment}
