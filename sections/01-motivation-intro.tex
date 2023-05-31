@@ -13,7 +13,20 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{DESI}
+    \begin{itemize}
+        \item Located at Kitt Peak National Observatory, Az
+        \item Capable of resolving the [O II] $\lambda \lambda3726,3729$ doublet \parencite{Guy2023}
+        \item Bright Galaxy Survey (BGS): $z<0.5$, $\sim10^5$ observed SNe! \parencite{desicollaboration2016, hahn2022}
+    \end{itemize}
+% The DESI survey focuses on four classes of targets: 14 million bright galaxies\footnote{The BGS contains galaxies with $r$-band magnitudes above 19.5.} in a Bright Galaxy Survey (BGS) at redshifts $z<0.5$; 8 million luminous red galaxies (LRGs) at redshifts $0.4<z<1.2$; 17 million emission line galaxies (ELGs) at $0.6<z<1.6$; and 3 million quasi-stellar objects (QSOs) between $0.9<z<4$. In this work, we will focus on the Bright Galaxy Survey, which is observing host galaxies with a median redshift of $z\approx0.2$ \parencite{desicollaboration2016, hahn2022}.
+% DESI began its main survey in May 2021. Over the five-year span of observations, DESI will inevitably observe host galaxies with active SNe, leading to 
+% contaminated spectra. The BGS may contain as many as $\sim10^5$ serendipitously observed supernova 
+% \parencite{desicollaboration2016}. An example of a supernova observed in a BGS host by DESI and with an independent spectroscopic classification is shown in 
+% The presence of transients in DESI spectra is a contaminant for the survey's dark energy program, since the transient can cause a catastrophic failure in the redshift fit, as shown in Figure~\ref{fig:desi_supernova_fail}. Thus it is useful to identify these contaminants whenever possible. Moreover, the serendipitous observation of supernovae is inherently useful since the spectroscopy provides an opportunity to classify {\sl most} types of supernovae without requiring additional follow-up. Both of these factors motivate this study.
+\end{frame}
+
+\begin{frame}{DESI Spectra SNe Classification}
     \begin{figure}[t]
         \centering
         \includegraphics[width=\textwidth]{figures/desi_figures/SNe_Detection.png}
@@ -33,7 +46,7 @@
 \end{frame}
 
 
-\begin{frame}
+\begin{frame}{SNe Template}
     \begin{figure}[t]
         % \centering
         \includegraphics[width=.6\textwidth]{figures/desi_figures/snia_templates.png}
@@ -43,13 +56,13 @@
     \end{figure}
 \end{frame}
 
-
-
-
-
-
-
-
+\begin{frame}{DL in DESI Transient Analysis}
+\begin{itemize}
+    \item 1D CNN \parencite{wasserman2021}
+    \item 2D CNN \parencite{Sepeku2022}
+\end{itemize}
+Problem: High precision, Low recall
+\end{frame}
 
 
 \begin{comment}

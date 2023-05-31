@@ -66,35 +66,34 @@ Transformer architecture must satisfy
 \end{columns}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+\begin{frame}{Training on Synthetic Data}
     \begin{figure}[t]
         \centering
         \includegraphics[width=\textwidth]{figures/synth_data_new.png}
-        \caption[Synthetic spectra]{Synthetic spectra used to verify the performance of Spectral~ViT. Red and green vertical lines represent features used to 
-        separate the data into distinct classes for SNR=2 and SNR=10, respectively. Two classes are shown for each SNR.}
+        \caption{Synthetic spectra}
         \label{fig:synth_spectra}
     \end{figure}
+    \begin{columns}
+    \column{.48\linewidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{figures/pre_testing/SNR10_training_epoch.png}
+            \caption{SNR=10}
+        \end{figure}
+    \column{.48\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{figures/pre_testing/SNR2_training_epoch.png}
+            \caption{SNR=2}
+        \end{figure}
+    \end{columns}
 \end{frame}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-    \begin{figure}[t]
-        \centering
-        \subfloat[\centering~SNR = 2\label{fig:snr2}]{\includegraphics[width=11cm]{figures/pre_testing/SNR2_training_epoch.png}}
-        \qquad
-        \subfloat[\centering~SNR = 10\label{fig:snr10}]{\includegraphics[width=11cm]{figures/pre_testing/SNR10_training_epoch.png}}
-        \caption[Verification of ViT: Synthetic Dataset]{Training of Spectral ViT on synthetic datasets. The model was able to reach 100\% accuracy on the test set of SNR=10 (top), 
-        but failed to reach an accuracy of 50\% on the test set of SNR=2 (bottom).}
-    \label{fig:synth_spectra_training}
-    \end{figure}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+\begin{frame}{DESI Synthetic Data}
     \begin{figure}[t!]
         \centering
-        \includegraphics[width=\textwidth]{figures/preprocess/3600_Zcorrected_spectra.png}
+        \includegraphics[width=.9\textwidth]{figures/preprocess/3600_Zcorrected_spectra.png}
         \caption{DESI Spectra Pre-Processing --  Redshift Corrected}
         % ]{DESI synthetic spectra undergoing pre-processing. The different bands
         % are first coadded together (left image). This is then  corrected to the galaxies rest frame and separated into 3600 
@@ -104,7 +103,7 @@ Transformer architecture must satisfy
 % \end{frame}
 %     \begin{figure}[b!]
 %         \centering
-        \includegraphics[width=\textwidth]{figures/preprocess/3600_Zrestframe_spectra.png}
+        \includegraphics[width=.9\textwidth]{figures/preprocess/3600_Zrestframe_spectra.png}
         \caption{DESI Spectra Pre-Processing --  Non-Redshift Corrected}
         % \caption[Spectra Pre-Processing -- Not Redshift Corrected]{DESI synthetic spectra undergoing pre-processing. 
         % The different bands are first coadded together (left image). This is then separated 
@@ -115,40 +114,41 @@ Transformer architecture must satisfy
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+\begin{frame}{CNN Training}
     \begin{table}[t!]
         \small
         \centering
         \sffamily
-        \input{tables/cnn_hyperparameters.tex}
-        \caption{Hyperparameters of the CNN used to classify DESI spectra. CNN adapted 
-        from \textcite{Sepeku2022}.}
+        % \input{tables/cnn_hyperparameters.tex}
+        \resizebox{.6\linewidth}{!}{\input{tables/cnn_hyperparameters}}
+        \caption{Hyperparameters of the CNN, model adapted from \textcite{Sepeku2022}.}
         \label{tab:cnn_hyperparameters}
     \end{table}
     \begin{figure}[b!]
         \centering
-        \includegraphics[width=.85\linewidth]{figures/cnn/cnn_training_history.jpg}
-        \caption[CNN Training]{Training of the CNN on synthetic DESI spectra.}
+        \includegraphics[width=.65\linewidth]{figures/cnn/cnn_training_history.jpg}
+        \caption{Hyperparameters used during CNN training \parencite{Sepeku2022}}
         \label{fig:cnn_training}
     \end{figure}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+\begin{frame}{Spectral ViT Training}
     \begin{table}[t!]
         \small
         \centering
         \sffamily
-        \input{tables/transformer_hyperparameters.tex}
-        \caption{Hyperparameters of the smaller and larger Spectral ViT architecture used to classify DESI spectra.}
+        % \input{tables/transformer_hyperparameters.tex}table
+        \resizebox{.6\linewidth}{!}{\input{tables/transformer_hyperparameters}}
+        \caption{Hyperparameters used during Spectral ViT training}
         \label{tab:t_hyper}
     \end{table}
     
     \begin{figure}[b!]
         \centering
-        \includegraphics[width=.85\linewidth]{figures/v1_real/vit_model_V1_original_redotraining_new.png}
-        \caption{Training of Spectral ViT: V1}
+        \includegraphics[width=\linewidth]{figures/Presentation/v1/vit_model_V1_original_redotraining_new.png}
+        \caption{Training of Spectral ViT: V1 (3600 Bins)}
         % {Training of the small architecture on redshift-corrected spectra downsampled to 3600 bins. Over-fitting was determined to have occurred by Epoch 31.}
         \label{fig:vit1_training}
     \end{figure}
@@ -157,56 +157,59 @@ Transformer architecture must satisfy
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Additional (Failed) Training}
-\centering
-\includegraphics[width=5.5cm]{figures/v1_real/vit_model_V1_bigtraining_new.png}\\
-\begin{columns}[t]
-\column{.5\textwidth}
-\centering
-\includegraphics[width=5.5cm]{figures/vit_model_V1.2training_new.png}
-\column{.5\textwidth}
-\centering
-\includegraphics[width=5.5cm]{figures/vit_model_V1.3_muchsmallermodeltraining_new.png}\\
-\end{columns}
-\end{frame}
+% \begin{frame}{Additional (Failed) Training}
+% \centering
+% \includegraphics[width=5.5cm]{figures/v1_real/vit_model_V1_bigtraining_new.png}\\
+% \begin{columns}[t]
+% \column{.5\textwidth}
+% \centering
+% \includegraphics[width=5.5cm]{figures/vit_model_V1.2training_new.png}
+% \column{.5\textwidth}
+% \centering
+% \includegraphics[width=5.5cm]{figures/vit_model_V1.3_muchsmallermodeltraining_new.png}\\
+% \end{columns}
+% \end{frame}
 
-
-\begin{frame}{Training for Non-Redshift Corrected Data}
-\centering
-\includegraphics[width=.85\linewidth]{figures/v2_real/vit_model_V2training_new.png}
-\end{frame}
-
-
-\begin{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+\begin{frame}{Additional (Failed) Training}
     \begin{figure}[t!]
         \centering
-        \includegraphics[width=.85\linewidth]{figures/v1_real/vit_model_V1_bigtraining_new.png}
-        \caption[Training of Spectral ViT: V1 Big]{Training of the large architecture on Redshift-corrected spectra downsampled to 3600 bins. No convergence above random guessing was observed. }
+        \includegraphics[width=\linewidth]{figures/v1_real/vit_model_V1_bigtraining_new.png}
+        \caption{Training of Spectral ViT: V1 Big (3600 Bins)}
+        % \caption[Training of Spectral ViT: V1 Big]{Training of the large architecture on Redshift-corrected spectra downsampled to 3600 bins. No convergence above random guessing was observed. }
         \label{fig:vit1_big_training}
     \end{figure}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+\begin{frame}{Additional (Failed) Training}
     \begin{figure}[hb!]
         \centering
-        \includegraphics[width=.85\linewidth]{figures/vit_model_V1.2training_new.png}
-        \caption[Training of Spectral ViT: V1.2]{Training of the small architecture on Redshift-corrected spectra downsampled to 1800 bins. No convergence above random guessing was observed. }
+        \includegraphics[width=\linewidth]{figures/vit_model_V1.2training_new.png}
+        \caption{Training of Spectral ViT: V1.2 (1800 Bins)}
+        % \caption[Training of Spectral ViT: V1.2]{Training of the small architecture on Redshift-corrected spectra downsampled to 1800 bins. No convergence above random guessing was observed. }
         \label{fig:vit1.2_training}
     \end{figure}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+\begin{frame}{Additional (Failed) Training}
     \begin{figure}[t!]
         \centering
-        \includegraphics[width=.85\linewidth]{figures/vit_model_V1.3_muchsmallermodeltraining_new.png}
-        \caption[Training of Spectral ViT: V1.3]{Training of the small architecture on Redshift-corrected spectra downsampled to 900 bins. No convergence above random guessing was observed. }
+        \includegraphics[width=\linewidth]{figures/vit_model_V1.3_muchsmallermodeltraining_new.png}
+        \caption{Training of Spectral ViT: V1.3 (900 Bins)}
+        % {Training of the small architecture on Redshift-corrected spectra downsampled to 900 bins. No convergence above random guessing was observed. }
         \label{fig:vit1.3_training}
     \end{figure}
 \end{frame}
+
+\begin{frame}{Training for Non-Redshift Corrected Data}
+\centering
+\includegraphics[width=\linewidth]{figures/Presentation/v1/vit_model_V1_bigtraining_new.png}
+\end{frame}
+
+
+\begin{comment}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
